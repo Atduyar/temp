@@ -4,6 +4,7 @@
     padding: 0px;
     font-family: 'Bona Nova', serif;
     cursor: default;
+    --icerik-w: 900px;
 }
 
 .main-div {
@@ -12,7 +13,7 @@
 }
 
 .div-icerik {
-    max-width: 900px;
+    max-width: var(--icerik-w);
     margin: 0px auto 0px auto;
     text-align: center;
     position: relative;
@@ -81,7 +82,7 @@ p {
     text-align: center;
 }
 
-.p-published-title {
+.p-publis-title {
     text-align: center;
     font-size: 16px;
     font-family: 'Bona Nova', serif;
