@@ -145,6 +145,7 @@ img:hover {
 .top-bar .img-div {
     width: 100vw;
     left: calc(((100vw - var(--icerik-w)) / -2) - 11px);
+    position: relative;
 }
 
 .img-subtitle {
@@ -170,4 +171,8 @@ img:hover {
     padding: 0px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+.shared-buttons {
+    display: block;
 }
