@@ -8,6 +8,10 @@
     --navbar-h: 65px;
 }
 
+@media (min-width:320px) {
+    body {}
+}
+
 .main-div {
     height: 100%;
     width: 100%;
