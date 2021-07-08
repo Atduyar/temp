@@ -1,0 +1,157 @@
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'Bona Nova', serif;
+    cursor: default;
+}
+
+.main-div {
+    height: 100%;
+    width: 100%;
+}
+
+.div-icerik {
+    max-width: 900px;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.lst-n {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: underline;
+}
+
+p {
+    cursor: text;
+}
+
+.def-tittle-color {
+    color: black;
+}
+
+.inactive {
+    color: #a7a7a7;
+}
+
+.def-text-color {
+    color: rgb(30, 30, 30);
+}
+
+.td-n {
+    text-decoration: none;
+}
+
+.nav-bar {
+    height: 65px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 0.3px solid rgb(223, 223, 223);
+    display: flex;
+}
+
+.nav-item-ul {
+    margin: auto 10px auto auto;
+}
+
+.nav-item-li {
+    float: left;
+    text-align: center;
+}
+
+.a-nav {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.096);
+    border-radius: 10px;
+}
+
+.top-bar {
+    margin: 0px 10px 0px 10px;
+}
+
+.p-main-title {
+    font-family: 'Bona Nova', serif;
+    font-size: 36px;
+    text-align: left;
+}
+
+.kategori-bar {
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.logo {
+    margin: auto 0px auto 10%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+}
+
+.p-kategori {
+    text-align: left;
+    display: inline;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+.c-p {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    cursor: zoom-in;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+.img-div {
+    max-width: 900px;
+    margin: 20px 10px 20px 10px;
+    overflow: hidden;
+}
+
+.img-div img {
+    transition: transform .5s ease;
+}
+
+.img-subtitle {
+    font-size: 16px;
+    margin: 5px 0px 20px 0px;
+}
+
+.p-text {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.div-makale {
+    margin: 20px 20px 0px 20px;
+}
+
+.seperator {
+    font-size: 58px;
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
