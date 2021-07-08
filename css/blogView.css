@@ -50,7 +50,7 @@ p {
 }
 
 .nav-bar {
-    height: 65px;
+    height: var(--navbar-h);
     background-color: #fff;
     position: fixed;
     z-index: 999;
