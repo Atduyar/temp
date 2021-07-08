@@ -9,7 +9,9 @@
 }
 
 @media (min-width:320px) {
-    body {color: red;}
+    body {
+        color: red;
+    }
 }
 
 .main-div {
@@ -182,7 +184,6 @@ img:hover {
 
 .share-buttons i {
     display: block;
-    color: red;
     margin-bottom: 20px;
     font-size: 1.563em;
 }
