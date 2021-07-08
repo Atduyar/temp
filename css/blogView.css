@@ -177,5 +177,6 @@ img:hover {
 .share-buttons i {
     display: block;
     color: red;
+    margin-bottom: 20px;
     font-size: 25px;
 }
