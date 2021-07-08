@@ -146,6 +146,7 @@ img:hover {
     width: 100vw;
     left: calc(((100vw - var(--icerik-w)) / -2) - 11px);
     position: relative;
+    max-height: 100vh;
 }
 
 .img-subtitle {
