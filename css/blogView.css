@@ -9,7 +9,7 @@
 }
 
 @media (min-width:320px) {
-    body {}
+    body {color: red;}
 }
 
 .main-div {
