@@ -44,6 +44,10 @@ p {
     text-decoration: none;
 }
 
+.td-u {
+    text-decoration: underline;
+}
+
 .nav-bar {
     height: 65px;
     background-color: #fff;
