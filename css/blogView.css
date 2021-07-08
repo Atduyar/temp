@@ -144,7 +144,9 @@ img:hover {
 
 .top-bar .img-div {
     width: 100vw;
-    left: calc(((100vw - var(--icerik-w)) / -2) - 11px);
+    /* left: calc(((100vw - var(--icerik-w)) / -2) - 11px); */
+    left: 50%;
+    transform: translateX(calc(-50% - 2px));
     position: relative;
     max-height: 100vh;
 }
