@@ -53,7 +53,6 @@ p {
     position: fixed;
     z-index: 999;
     width: 100%;
-    border-bottom: 0.3px solid rgb(223, 223, 223);
     display: flex;
 }
 
