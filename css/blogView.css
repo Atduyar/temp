@@ -91,7 +91,8 @@ p {
     text-align: center;
 }
 
-.p-publish-title {
+.p-publish-title,
+.p-expected-read-time {
     text-align: center;
     font-size: 16px;
     font-family: 'Bona Nova', serif;
