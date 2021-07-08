@@ -148,7 +148,7 @@ img:hover {
     left: 50%;
     transform: translateX(calc(-50% - 2px));
     position: relative;
-    max-height: 100vh;
+    max-height: calc(100vh - var(--navbar-h));
 }
 
 .img-subtitle {
