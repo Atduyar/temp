@@ -5,6 +5,7 @@
     font-family: 'Bona Nova', serif;
     cursor: default;
     --icerik-w: 900px;
+    --navbar-h: 65px;
 }
 
 .main-div {
@@ -17,7 +18,7 @@
     margin: 0px auto 0px auto;
     text-align: center;
     position: relative;
-    top: 100px;
+    top: calc(var(--navbar-h) + 35px);
 }
 
 .lst-n {
