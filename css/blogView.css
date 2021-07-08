@@ -23,7 +23,8 @@
     list-style-type: none;
 }
 
-a {
+a,
+.a {
     text-decoration: underline;
 }
 
