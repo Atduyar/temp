@@ -13,3 +13,5 @@ git add .\make.bat
 git commit -m "tamam"
 git push -u origin master
 cls
+sleep 5
+./make
