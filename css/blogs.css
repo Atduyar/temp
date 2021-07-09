@@ -31,6 +31,8 @@ img:hover {
 
 .div-blog-details {
     transform: translateY(-100%);
+    margin: 0px 50px;
+    background-color: red;
 }
 
 
