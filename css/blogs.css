@@ -27,7 +27,7 @@ img {
 
 .div-blog-details {
     transform: translateY(-75%);
-    margin: 0px 50px;
+    margin: 0px 40% 0 10%;
     background-color: white;
     padding: 20px;
     display: flex;
