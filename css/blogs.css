@@ -33,9 +33,10 @@ img:hover {
     transform: translateY(-100%);
     margin: 0px 50px;
     background-color: red;
-    padding
+    padding: 20px;
 }
-.title{
+
+.title {
     display: inline-block;
     width: 50%;
 }
