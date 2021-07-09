@@ -27,6 +27,7 @@ img:hover {
 .kategori-bar {
     margin-bottom: 20px;
     text-align: left;
+    display: block;
 }
 
 .div-blog-details {
