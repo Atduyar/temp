@@ -19,6 +19,11 @@ img {
     overflow: hidden;
 }
 
+.div-image{
+    max-height: 54vh;
+    overflow: hidden;
+}
+
 .kategori-bar {
     margin-bottom: 20px;
     text-align: left;
