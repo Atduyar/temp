@@ -29,7 +29,7 @@ img:hover {
 }
 
 .div-blog-details {
-    margin-top: calc(-2.25em + -20px);
+    transform: translateY(-100%);
 }
 
 
