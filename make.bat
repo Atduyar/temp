@@ -12,3 +12,4 @@ git add .\make.bat
 
 git commit -m "tamam"
 git push -u origin master
+clear
