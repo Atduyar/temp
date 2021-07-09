@@ -32,3 +32,13 @@ p {
     font-size: 1.250em;
     line-height: 28px;
 }
+
+.p-kategori {
+    text-align: left;
+    display: inline;
+    margin-right: 10px;
+    font-size: 1.125em;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+}

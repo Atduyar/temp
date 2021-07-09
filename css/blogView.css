@@ -53,16 +53,6 @@
     margin-bottom: 40px;
 }
 
-.p-kategori {
-    text-align: left;
-    display: inline;
-    margin-right: 10px;
-    font-size: 1.125em;
-    padding: 10px;
-    background-color: rgb(245, 245, 245);
-    border-radius: 5px;
-}
-
 .c-p {
     cursor: pointer;
 }
