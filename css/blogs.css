@@ -21,5 +21,5 @@ img:hover {
 
 .div-blog {
     margin-top: var(--navbar-h);
-    overflow-x: hidden;
+    overflow: hidden;
 }
