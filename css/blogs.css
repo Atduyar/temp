@@ -33,6 +33,11 @@ img:hover {
     transform: translateY(-100%);
     margin: 0px 50px;
     background-color: red;
+    padding
+}
+.title{
+    display: inline-block;
+    width: 50%;
 }
 
 
