@@ -37,7 +37,7 @@ img {
 .title {
     display: inline-block;
     width: 50%;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .description {
