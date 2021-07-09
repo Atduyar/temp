@@ -29,26 +29,6 @@
     top: calc(var(--navbar-h) + 35px);
 }
 
-.lst-n {
-    list-style-type: none;
-}
-
-p {
-    cursor: text;
-}
-
-.c-p {
-    cursor: pointer;
-}
-
-.inactive {
-    color: #a7a7a7;
-}
-
-.def-text-color {
-    color: rgb(30, 30, 30);
-}
-
 .top-bar {
     margin: 0px 10px 0px 10px;
 }
@@ -120,13 +100,6 @@ img:hover {
 .img-subtitle {
     font-size: 1em;
     margin: 5px 0px 20px 0px;
-}
-
-.p-text {
-    text-align: left;
-    margin-bottom: 20px;
-    font-size: 1.250em;
-    line-height: 28px;
 }
 
 .div-makale {

@@ -5,3 +5,30 @@
 .td-u {
     text-decoration: underline;
 }
+
+.c-p {
+    cursor: pointer;
+}
+
+.inactive {
+    color: #a7a7a7;
+}
+
+.def-text-color {
+    color: rgb(30, 30, 30);
+}
+
+p {
+    cursor: text;
+}
+
+.lst-n {
+    list-style-type: none;
+}
+
+.p-text {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.250em;
+    line-height: 28px;
+}
