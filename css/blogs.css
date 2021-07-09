@@ -48,7 +48,6 @@ img {
 
 .description p {
     position: relative;
-    top: 100%;
     transform: translateY(-100%);
 }
 
