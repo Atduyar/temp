@@ -48,7 +48,6 @@ img {
 
 .description p {
     position: relative;
-    transform: translateY(-100%);
 }
 
 .p-main-title {
