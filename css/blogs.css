@@ -30,6 +30,8 @@ img {
     margin: 0px 50px;
     background-color: white;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .title {
