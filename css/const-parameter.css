@@ -49,6 +49,10 @@ p {
     margin-bottom: 40px;
 }
 
+.d-i-b {
+    display: inline-block;
+}
+
 .p-main-title {
     font-family: 'Bona Nova', serif;
     font-size: 2.25em;
