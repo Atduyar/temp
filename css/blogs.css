@@ -22,6 +22,7 @@ img:hover {
 .div-blog {
     margin-top: var(--navbar-h);
     overflow: hidden;
+    display: inline-block;
 }
 
 .kategori-bar {
