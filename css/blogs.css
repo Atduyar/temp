@@ -18,6 +18,7 @@ img {
 img:hover {
     transform: scale(1.02);
 }
-.div-blog{
+
+.div-blog {
     margin-top: var(--navbar-h);
 }
