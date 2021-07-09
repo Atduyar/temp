@@ -37,6 +37,11 @@ img {
     width: 50%;
 }
 
+.description{    
+    display: inline-block;
+    width: 50%;
+}
+
 .p-main-title {
     text-align: left;
 }
