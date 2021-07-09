@@ -8,7 +8,7 @@
     --navbar-h: 65px;
 }
 
-@media only screen and (max-device-width: calc((100vw - 1px) + (100vh / 100vw) ) ) {
+@media only screen and (max-device-width: calc((100vw - 1px) + (100vh / 100vw))) {
     body {
         color: red;
         background-color: red;
