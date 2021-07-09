@@ -34,12 +34,13 @@ img {
 
 .title {
     display: inline-block;
-    width: 50%;
+    width: 51%;
 }
 
 .description {
     display: inline-block;
     width: 50%;
+    float: left;
 }
 
 .p-main-title {
