@@ -45,6 +45,12 @@ img {
     text-align: left;
 }
 
+.description p {
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
 .p-main-title {
     text-align: left;
 }
