@@ -18,6 +18,14 @@
     color: rgb(30, 30, 30);
 }
 
+.p-publish-title,
+.p-expected-read-time {
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Bona Nova', serif;
+    margin-bottom: 10px;
+}
+
 p {
     cursor: text;
 }

@@ -33,14 +33,6 @@
     margin: 0px 10px 0px 10px;
 }
 
-.p-publish-title,
-.p-expected-read-time {
-    text-align: center;
-    font-size: 1em;
-    font-family: 'Bona Nova', serif;
-    margin-bottom: 10px;
-}
-
 .c-p {
     cursor: pointer;
 }
