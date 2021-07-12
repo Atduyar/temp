@@ -26,7 +26,6 @@ img {
     min-height: 45vh;
     max-height: 80vh;
     overflow: hidden;
-    background-image: url("../img/w.webp");
 }
 
 .kategori-bar {
