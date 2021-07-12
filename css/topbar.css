@@ -7,6 +7,35 @@
     }
 }
 
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  #myMask{
+    display:none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+
+
 .logo {
     margin: auto 0px auto 5%;
     font-family: 'Roboto', sans-serif;
