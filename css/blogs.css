@@ -15,11 +15,17 @@
     .div-blog-details {
         margin: 0px!important;
     }
-    .title{
+    .title {
         width: 100%!important;
     }
-    .description{
+    .description {
         width: 100%!important;
+    }
+    .div-blog-details{
+        transform: translateY(-5%)!important;
+    }
+    .div-image{
+        min-height: 30vh!important;
     }
 }
 
@@ -30,11 +36,17 @@
     .div-blog-details {
         margin: 0px!important;
     }
-    .title{
+    .title {
         width: 100%!important;
     }
-    .description{
+    .description {
         width: 100%!important;
+    }
+    .div-blog-details{
+        transform: translateY(-5%)!important;
+    }
+    .div-image{
+        min-height: 30vh!important;
     }
 }
 
