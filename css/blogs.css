@@ -25,6 +25,7 @@ img {
 .div-image {
     max-height: 80vh;
     overflow: hidden;
+    background-image: url("img/w.webp");
 }
 
 .kategori-bar {
