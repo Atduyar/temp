@@ -18,6 +18,10 @@
     top: 0px;
 }
 
+.nav-bar-phone {
+    display: none;
+}
+
 .nav-item-ul {
     margin: auto auto auto 10px;
 }

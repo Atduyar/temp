@@ -27,6 +27,12 @@
     .div-image {
         min-height: 30vh!important;
     }
+    .nav-bar-pc {
+        display: none;
+    }
+    .nav-bar-phone {
+        display: inline-block!important;
+    }
 }
 
 .div-image img {
