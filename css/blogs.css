@@ -19,9 +19,9 @@ img {
     margin-top: var(--navbar-h);
     overflow: hidden;
 }
-
+/* I see you */
 .div-image {
-    max-height: 70vh;
+    max-height: 80vh;
     overflow: hidden;
 }
 
