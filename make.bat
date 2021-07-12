@@ -7,6 +7,8 @@ git add .\css\blogs.css
 git add .\css\topbar.css
 git add .\css\const-parameter.css
 
+git add .\js\navbar.js
+
 git add .\make.bat
 
 

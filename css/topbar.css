@@ -1,3 +1,12 @@
+@media only screen and (max-height: 1285px) and (max-width: 725px) {
+    .nav-bar-pc {
+        display: none!important;
+    }
+    .nav-bar-phone {
+        display: flex!important;
+    }
+}
+
 .logo {
     margin: auto 0px auto 5%;
     font-family: 'Roboto', sans-serif;
