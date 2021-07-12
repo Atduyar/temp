@@ -50,7 +50,7 @@
     height: var(--navbar-h);
     background-color: #fff;
     position: fixed;
-    z-index: 999;
+    z-index: 4;
     width: 100%;
     display: flex;
     top: 0px;
