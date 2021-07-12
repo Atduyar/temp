@@ -31,7 +31,7 @@
         display: none!important;
     }
     .nav-bar-phone {
-        display: inline-block!important;
+        display: flex!important;
     }
 }
 
