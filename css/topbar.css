@@ -17,8 +17,7 @@
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
   
 #myMask{
@@ -31,9 +30,24 @@
     left: 0;
     background-color: rgba(0,0,0,0);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 
 
 .logo {
