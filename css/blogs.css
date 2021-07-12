@@ -8,6 +8,12 @@
     --navbar-h: 65px;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+}
+
 img {
     width: 100%;
     /* height: 100%; */
