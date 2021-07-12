@@ -21,6 +21,9 @@
     body {
         background-color: blue;
     }
+    .div-blog-details {
+        margin: 0px;
+    }
 }
 
 .div-image img {
