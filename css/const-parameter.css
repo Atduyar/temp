@@ -63,6 +63,16 @@ p {
     border-radius: 5px;
 }
 
+.p-kategori-black {
+    text-align: left;
+    display: inline;
+    margin-right: 10px;
+    font-size: 1.125em;
+    padding: 10px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 5px;
+}
+
 .kategori-bar {
     margin-top: 25px;
     text-align: center;
