@@ -22,6 +22,13 @@
     display: none;
 }
 
+.nav-bar-icon {
+    height: var(--navbar-h);
+    width: var(--navbar-h);
+    padding: 10px;
+    display: inline-block;
+}
+
 .nav-item-ul {
     margin: auto auto auto 10px;
 }
