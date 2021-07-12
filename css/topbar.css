@@ -55,6 +55,7 @@
     margin: auto 0px auto 5%;
     font-family: 'Roboto', sans-serif;
     font-size: 2.125em;
+    cursor: crosshair;
 }
 
 .def-tittle-color {
@@ -88,6 +89,7 @@
     width: var(--navbar-h);
     padding: 10px;
     display: inline-block;
+    cursor: crosshair;
 }
 
 .nav-item-ul {
