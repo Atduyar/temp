@@ -87,7 +87,7 @@
 .nav-bar-icon {
     height: var(--navbar-h);
     width: var(--navbar-h);
-    padding: 10px;
+    padding: 15px;
     display: inline-block;
     cursor: crosshair;
 }
