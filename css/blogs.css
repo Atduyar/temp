@@ -29,7 +29,7 @@
     }
 }
 
-@media only screen and (max-width: 2565px) and(max-width: 1445px) and (min-height: 2555px) and (min-height: 1435px) {
+@media only screen and (max-height: 2565px) and (max-width: 1445px) and (min-height: 2555px) and (min-width: 1435px) {
     body {
         background-color: blue;
     }
