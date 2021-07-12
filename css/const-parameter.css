@@ -18,6 +18,18 @@
     color: rgb(30, 30, 30);
 }
 
+.white-tittle-color {
+    color: white;
+}
+
+.inactive-blackbg {
+    color: white;
+}
+
+.white-text-color {
+    color: white;
+}
+
 .p-publish-title,
 .p-expected-read-time {
     text-align: center;
