@@ -6,7 +6,7 @@ git add .\css\blogView.css
 git add .\css\blogs.css
 git add .\css\topbar.css
 git add .\css\const-parameter.css
-
+git add .\img|title.webp
 git add .\make.bat
 
 
