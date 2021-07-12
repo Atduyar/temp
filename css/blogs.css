@@ -13,6 +13,11 @@
         background-color: red;
     }
 }
+@media only screen and (height: 1445px) and (max-max-width: 2565px) and (height: 1435px) and (max-max-width: 2555px) {
+    body {
+        background-color: red;
+    }
+}  x 
 
 img {
     width: 100%;
