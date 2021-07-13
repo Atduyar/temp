@@ -56,7 +56,8 @@ p {
 
 .p-baslik-blog-item {
     font-family: 'Bona Nova', serif;
-    color: wheat;
+    color: black;
+    font-size: 2em;
 }
 
 .p-kategori {
