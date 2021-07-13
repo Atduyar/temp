@@ -54,6 +54,11 @@ p {
     line-height: 28px;
 }
 
+.p-baslik-blog-item {
+    font-family: 'Bona Nova', serif;
+    color: black;
+}
+
 .p-kategori {
     text-align: left;
     display: inline-block;
