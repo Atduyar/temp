@@ -14,6 +14,7 @@
     }
     .div-blog-details {
         margin: 0px!important;
+        position: relative!important;
     }
     .title {
         width: 100%!important;
@@ -29,7 +30,9 @@
     }
     .blogList {
         width: 100%!important;
+        margin-top: 0px!important;
     }
+    
 }
 
 .div-image img {
