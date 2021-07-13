@@ -66,6 +66,7 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 5px;
+    position: absolute;
 }
 
 .title {
@@ -96,7 +97,7 @@
 .blogList {
     display: flex;
     width: 1000px;
-    margin: 0px auto;
+    margin: 100px auto 0px auto;
 }
 
 .blogItem {
