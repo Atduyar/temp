@@ -28,7 +28,7 @@
     .div-image {
         min-height: 30vh!important;
     }
-    .blogList {
+    .blog-list {
         width: 100%!important;
         margin-top: 0px!important;
     }
@@ -99,13 +99,13 @@
     text-align: left;
 }
 
-.blogList {
+.blog-list {
     display: flex;
     width: 1000px;
     margin: 150px auto 0px auto;
 }
 
-.blogItem {
+.blog-item {
     width: calc(100% / 3);
     display: inline-block;
     padding: 0px 15px;
