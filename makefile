@@ -10,7 +10,7 @@ github:
 
 	git add .\js\navbar.js
 
-	git add .\make.bat
+	git add .\makefile
 
 
 	git commit -m "tamam"
