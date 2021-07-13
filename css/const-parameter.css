@@ -60,10 +60,6 @@ p {
     font-size: 1.5em;
 }
 
-.kategori-bar-blog-item {
-    margin-bottom: 5px;
-}
-
 .p-kategori {
     text-align: left;
     display: inline-block;
@@ -89,6 +85,10 @@ p {
     margin-top: 25px;
     text-align: center;
     margin-bottom: 40px;
+}
+
+.kategori-bar-blog-item {
+    margin-bottom: 5px;
 }
 
 .p-main-title {
