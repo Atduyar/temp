@@ -58,8 +58,8 @@ p {
     font-family: 'Poppins', sans-serif;
     color: rgb(14, 14, 14);
     font-size: 1.5em;
-    font-weight: 500;
-    line-height: 10px;
+    font-weight: bolder;
+    line-height: 25px;
 }
 
 .p-kategori {
