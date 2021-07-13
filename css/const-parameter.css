@@ -100,11 +100,11 @@ p {
 .kategori-bar-blog-item {
     margin-bottom: 20px;
     margin-top: 25px;
-    text-align: center;
+    text-align: left;
 }
 
 .p-main-title {
     font-family: 'Bona Nova', serif;
     font-size: 2.25em;
-    text-align: left;
+    text-align: center;
 }
