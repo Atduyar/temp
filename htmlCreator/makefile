@@ -1,14 +1,13 @@
-makeall: mblogs mblogView
-
+makeall: mblogs mblogView m
 
 mblogs:
 	main.exe blogs blogs
 mblogView:
-	main.exe blogView blogs
+	main.exe blogView blogView
 
 
 
-m%:
+m:
 	batmake.bat
 
 
