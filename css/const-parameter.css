@@ -84,9 +84,8 @@ p {
 .p-kategori-black-blog-item {
     text-align: left;
     display: inline;
-    margin-right: 10px;
     font-size: 1.125em;
-    padding: 5px;
+    padding: 10px;
     background-color: rgb(45, 49, 58);
     border-radius: 5px;
 }
@@ -99,7 +98,7 @@ p {
 
 .kategori-bar-blog-item {
     margin-bottom: 20px;
-    margin-top: 25px;
+    margin-top: 15px;
     text-align: left;
 }
 
