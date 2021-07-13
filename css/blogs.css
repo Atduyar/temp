@@ -95,12 +95,14 @@
 
 .blogList {
     display: flex;
-    width: 750px;
+    width: 1000px;
+    margin: 0px auto;
 }
 
 .blogItem {
     width: calc(100% / 3);
     display: inline-block;
+    padding: 0px 15px;
 }
 
 
