@@ -17,6 +17,8 @@ int gci;
 char **gar;
 string exitFile = "";
 
+const string innerP = "\t";
+
 void getHtml(string filePath, string tree){
 
     string line;
@@ -37,12 +39,12 @@ void getHtml(string filePath, string tree){
                     name += line[i];
                 }
 
-                cout << tree << "found! - " << name << ": " << '\n';
+                cout << tree << "-" << name << ": " << '\n';
                 
                 string upperName = "";
                 for (auto & c: name) upperName += toupper(c);
                 exitFile += "<!-- START " + upperName + " -->\n";
-                getHtml(name, tree + "\t");
+                getHtml(name, tree + innerP);
                 exitFile += "<!-- STOP  " + upperName + " -->\n";
             }
             else if(line.find("<atdr/>") != std::string::npos){
@@ -53,16 +55,16 @@ void getHtml(string filePath, string tree){
                     ++gci;
                 }
                 else{
-                    cerr << "paramatre eksik - " << name << " - " << filePath << " - " << gci << endl;
+                    cerr << "paramatre eksik - " << name << "-" << filePath << " - " << gci << endl;
                 }
                 
 
-                cout << tree << "found! - " << name << ": " << '\n';
+                cout << tree << " -" << name << ": " << '\n';
                 
                 string upperName = "";
                 for (auto & c: name) upperName += toupper(c);
                 exitFile += "<!-- START " + upperName + " R-->\n";
-                getHtml(name, tree + "\t");
+                getHtml(name, tree + innerP);
                 exitFile += "<!-- STOP  " + upperName + " R-->\n";
             }
             else{
@@ -78,7 +80,8 @@ void getHtml(string filePath, string tree){
 }
 
 void setHtml(string name){
-    ofstream myfile("output/" + name + ".html");
+    //ofstream myfile("output/" + name + ".html");
+    ofstream myfile("../" + name + ".html");
 
     if (myfile.is_open() ){
         myfile << exitFile;
@@ -87,13 +90,19 @@ void setHtml(string name){
     else cout << "Dosya olusturulamadı!" << endl;
 }
 
+void getLink(){
+
+}
+
 int main(int argc, char** argv) {
-    cout << "Start: HtmlCreator - " << argc << " - " << argv[1] << endl << endl;
+    cout << "Start: HtmlCreator - " << argc << " - " << argv[1] << endl;
     gc = argc;
     gci = 2;
     gar = argv;
 
     getHtml("main","");
+
+    getLink();
 
     setHtml(argv[1]);
 
