@@ -108,7 +108,7 @@
 .blog-item {
     width: calc(100% / 3);
     display: inline-block;
-    padding: 0px 15px;
+    margin: 0px 15px;
 }
 
 .img-blog-item {
