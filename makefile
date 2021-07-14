@@ -1,4 +1,4 @@
-makeall: mblogs mblogView m
+makeall: mblogs mblogView github
 
 mblogs:
 	htmlCreator/main.exe blogs blogs
@@ -7,7 +7,6 @@ mblogView:
 
 
 
-m: github
 
 
 
