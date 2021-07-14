@@ -16,9 +16,10 @@ m: github
 cr: delete compile run
 
 delete:
-	del htmlCreator/main.exe
+	del htmlCreator\main.exe
 compile:
 	mingw32-g++.exe -o htmlCreator/main.exe htmlCreator/main.cpp
+d: delete
 c: compile
 run: mblogs
 

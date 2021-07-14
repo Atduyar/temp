@@ -37,7 +37,7 @@ const string cScriptEx = "<atdl!/>";
 void getHtml(string filePath, string tree){
 
     string line;
-    ifstream myfile("input/" + filePath + ".html");
+    ifstream myfile("htmlCreator/input/" + filePath + ".html");
 
     if (myfile.is_open())
     {
@@ -137,7 +137,7 @@ void getHtml(string filePath, string tree){
 
 void setHtml(string name){
     //ofstream myfile("output/" + name + ".html");
-    ofstream myfile("../" + name + ".html");
+    ofstream myfile("" + name + ".html");
 
     if (myfile.is_open() ){
         myfile << exitFile;
