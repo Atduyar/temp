@@ -1,3 +1,28 @@
+makeall: mblogs mblogView m
+
+mblogs:
+	htmlCreator/main.exe blogs blogs
+mblogView:
+	htmlCreator/main.exe blogView blogView
+
+
+
+m: github
+
+
+
+
+
+cr: delete compile run
+
+delete:
+	del htmlCreator/main.exe
+compile:
+	mingw32-g++.exe -o htmlCreator/main.exe htmlCreator/main.cpp
+c: compile
+run: mblogs
+
+
 github:
 	git add .\index.html
 	git add .\blogView.html
