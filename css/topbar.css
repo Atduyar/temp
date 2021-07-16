@@ -7,7 +7,9 @@
     }
 }
 
-.box {}
+.box {
+    height: var(--navbar-h);
+}
 
 .input {
     padding: 10px;
