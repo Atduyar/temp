@@ -27,12 +27,12 @@
     }
     .div-image {
         min-height: 30vh!important;
-        width: calc(100% / 1)!important;
     }
     .blog-list {
         width: 100%!important;
         margin-top: 0px!important;
     }
+    width: calc(100% / 1)!important;
 }
 
 .div-image img {
@@ -110,7 +110,6 @@
 .blog-item {
     width: calc(100% / 3);
     display: inline-block;
-    padding: 0px 25px;
     margin: 20px;
 }
 
