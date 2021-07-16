@@ -137,7 +137,7 @@
         /* width */
         
          ::-webkit-scrollbar {
-            width: --scrollbar-w;
+            width: var(--scrollbar-w);
         }
         /* Track */
         
