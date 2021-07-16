@@ -16,6 +16,9 @@
             .blog-item {
                 width: calc(100% / 2)!important;
             }
+            .div-blog-details{
+                margin: 0px 5% 0 5%;
+            }
         }
         
         @media only screen and (max-height: 1285px) and (max-width: 725px) {
