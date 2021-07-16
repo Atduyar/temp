@@ -22,9 +22,6 @@
         }
         
         @media only screen and (max-height: 1285px) and (max-width: 725px) {
-            body {
-                background-color: red;
-            }
             .div-blog-details {
                 margin: 0px!important;
                 position: relative!important;
@@ -128,7 +125,7 @@
             display: inline-block;
             padding: 0 25px;
             margin-bottom: 20px;
-                    transition: 0.3s;
+            transition: 0.3s;
         }
         
         .img-blog-item {
