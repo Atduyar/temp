@@ -78,7 +78,9 @@
         
         .div-blog-details {
             transform: translateY(-75%);
-            margin: 0px 40% 0 5%;
+            /* margin: 0px 40% 0 5%; */
+            margin: 0px auto 0 5%;
+            width: calc(900px - 10%);
             background-color: rgb(21, 25, 33);
             padding: 20px;
             display: flex;
