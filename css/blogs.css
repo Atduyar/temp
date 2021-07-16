@@ -33,6 +33,7 @@
                 width: 100%!important;
             }
             .div-blog-details {
+                margin: 0px!important;
                 transform: translateY(-5%)!important;
             }
             .div-image {
