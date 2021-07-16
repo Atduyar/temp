@@ -10,7 +10,8 @@
         
         @media only screen and (max-width: 900px) and (min-width: 725px) {
             * {
-                --icerik-w: 700px;
+                --icerik-w: 600px;
+                width: calc(100% / 2)!important;
             }
         }
 
