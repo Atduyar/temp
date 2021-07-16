@@ -27,6 +27,7 @@
     }
     .div-image {
         min-height: 30vh!important;
+        width: calc(100% / 1)!important;
     }
     .blog-list {
         width: 100%!important;
