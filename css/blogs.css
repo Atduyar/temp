@@ -20,7 +20,6 @@
         
         @media only screen and (max-height: 1285px) and (max-width: 725px) {
             .div-blog-details {
-                /* margin: 0px!important; */
                 position: relative!important;
             }
             .title {
