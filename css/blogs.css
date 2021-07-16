@@ -16,8 +16,8 @@
             .blog-item {
                 width: calc(100% / 2)!important;
             }
-            .div-blog-details{
-                margin: 0px 5% 0 5%;
+            .div-blog-details {
+                margin: 0px 5% 0 5%!important;
             }
         }
         
