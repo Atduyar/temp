@@ -101,6 +101,7 @@
 
 .blog-list {
     display: flex;
+    flex-wrap: wrap;
     width: 1000px;
     margin: 150px auto 0px auto;
 }
