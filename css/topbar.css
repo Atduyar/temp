@@ -28,7 +28,7 @@
 }
 
 .box:hover input {
-    width: 350px;
+    width: 200px;
     background: #272133;
     border-radius: 10px;
 }
