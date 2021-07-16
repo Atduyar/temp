@@ -9,7 +9,7 @@
             --scrollbar-w: 10px
         }
         
-        @media only screen and (max-width: calc(910px)) and (min-width: 725px) {
+        @media only screen and (max-width: 910px) and (min-width: 725px) {
             * {
                 --icerik-w: 600px;
             }
