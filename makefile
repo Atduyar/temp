@@ -1,7 +1,7 @@
 makeall: mblogs mblogView github
 
 mblogs:
-	htmlCreator/main.exe blogs blogs navbar
+	htmlCreator/main.exe blogs blogs
 mblogView:
 	htmlCreator/main.exe blogView blogView
 
