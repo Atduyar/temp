@@ -1,4 +1,4 @@
-@media only screen and (max-height: 1285px) and (max-width: 725px) {
+@media only screen and (max-height: 1285px) and (max-width: calc(var(--icerik-w) + 4em)) {
     body {
         color: red;
         background-color: red;
