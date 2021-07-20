@@ -1,3 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'Bona Nova', serif;
+    cursor: default;
+    --icerik-w: 900px;
+    --navbar-h: 65px;
+    --scrollbar-w: 10px
+}
+
 .td-n {
     text-decoration: none;
 }

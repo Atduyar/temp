@@ -1,13 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
-    font-family: 'Bona Nova', serif;
-    cursor: default;
-    --icerik-w: 900px;
-    --navbar-h: 65px;
-}
-
 @media only screen and (max-device-width: calc((100vw - 1px) + (100vh / 100vw))) {
     body {
         color: red;

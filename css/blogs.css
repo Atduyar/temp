@@ -1,14 +1,4 @@
-        * {
-            box-sizing: border-box;
-            margin: 0px 0px 0px 0px;
-            padding: 0px;
-            font-family: 'Bona Nova', serif;
-            cursor: default;
-            --icerik-w: 900px;
-            --navbar-h: 65px;
-            --scrollbar-w: 10px
-        }
-        
+       
         @media only screen and (max-width: 910px) and (min-width: 725px) {
             * {
                 --icerik-w: 600px;
