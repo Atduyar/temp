@@ -82,10 +82,10 @@ img:hover {
     left: 16px;
     top: 127px;
     height: 50px;
-    width: 50px;
+    width: 1.575em;
 }
 .share-buttons i {
-    display: block;
+    display: contents;
     margin-bottom: 20px;
-    font-size: 1.563em;
+    font-size: 1.575em;
 }
