@@ -76,6 +76,9 @@ img:hover {
     margin-top: 10px;
 }
 
+.share-buttons{
+    position: absolute;
+}
 .share-buttons i {
     display: block;
     margin-bottom: 20px;
