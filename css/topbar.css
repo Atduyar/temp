@@ -31,7 +31,7 @@
 
 .box:hover input {
     width: 200px;
-    background: #272133;
+    background: #e6e6e6;
     border-radius: 10px;
 }
 
@@ -42,7 +42,7 @@ i {
     right: 15px;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    color: #ffd52d;
+    color: #000;
     transition: .2s;
 }
 
