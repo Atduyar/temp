@@ -1,9 +1,9 @@
 makeall: mblogs mblogView github
 
 mblogs:
-	htmlCreator/main.exe blogs blogs null
+	htmlCreator/main.exe blogs null blogs 
 mblogView:
-	htmlCreator/main.exe blogView blogView blogViewShareBtn
+	htmlCreator/main.exe blogView blogViewShareBtn blogView 
 
 
 
