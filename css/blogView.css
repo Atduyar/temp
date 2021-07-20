@@ -80,7 +80,8 @@ img:hover {
 .share-buttons{
     position: fixed;
     left: 30px;
-    top: 100px;
+    top: 50%;
+    transform: translateY(-50%);
     height: 150px;
     width: 1.575em;
 }
