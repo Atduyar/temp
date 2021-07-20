@@ -82,6 +82,7 @@ img:hover {
     left: calc(((100vw - var(--icerik-w)) / -2) + 2.5em);
     height: 150px;
     width: 1.575em;
+    margin-top: 100px;
 }
 .share-buttons i {
     display: block;
