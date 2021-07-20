@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: calc((100vw - 1px) + (100vh / 100vw))) {
+@media only screen and (max-height: 1285px) and (max-width: 725px) {
     body {
         color: red;
         background-color: red;
