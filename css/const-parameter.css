@@ -94,6 +94,7 @@ p {
     padding: 10px;
     background-color: rgb(45, 49, 58);
     border-radius: 5px;
+    margin: 5px 5px 0px 0px;
 }
 
 .kategori-bar {
@@ -103,9 +104,11 @@ p {
 }
 
 .kategori-bar-blog-item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 15px;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .p-main-title {
