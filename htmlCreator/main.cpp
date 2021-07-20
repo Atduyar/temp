@@ -29,6 +29,7 @@ const string cLinkStart = "<atdl>";
 const string cLinkEnd = "</atdl>";
 const string cScriptStart = "<atds>";
 const string cScriptEnd = "</atds>";
+
 const string cLinkEx = "<atdl!/>";
 const string cScriptEx = "<atdl!/>";
 
@@ -83,12 +84,18 @@ void getHtml(string filePath, string tree){
                 #ifdef _WIN32
                 SetConsoleTextAttribute(hConsole, 15);
                 #endif
-
-                string upperName = "";
-                for (auto & c: name) upperName += toupper(c);
-                exitFile += "<!-- START " + upperName + " R-->\n";
-                getHtml(name, tree + innerP);
-                exitFile += "<!-- STOP  " + upperName + " R-->\n";
+                
+                if(name == "null"){
+                    exitFile += "<!-- NULL  R-->\n";
+                }
+                else{
+                    string upperName = "";
+                    for (auto & c: name) upperName += toupper(c);
+                    exitFile += "<!-- START " + upperName + " R-->\n";
+                    getHtml(name, tree + innerP);
+                    exitFile += "<!-- STOP  " + upperName + " R-->\n";
+                }
+                
             }
             else if(line.find(cLinkStart) != std::string::npos){
                 string name = "";
@@ -126,6 +133,7 @@ void getHtml(string filePath, string tree){
                 exitFile += line + "\n";
             }
         }
+        
         myfile.close();
         if(cEndOfName != "")
             cout << tree.substr(0, (tree.size()-innerP.size())) << cEndOfName << endl; 
@@ -146,7 +154,7 @@ void setHtml(string name){
     else cout << "Dosya olusturulamadı!" << endl;
 }
 
-void getLink(){//<atds!/>
+void getLink(){//<atdl!/>
     if (exitFile.find(cLinkEx) != std::string::npos) {
         int i = exitFile.find(cLinkEx);
         string temp = exitFile;
