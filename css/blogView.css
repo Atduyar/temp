@@ -79,13 +79,14 @@ img:hover {
 
 .share-buttons{
     position: fixed;
-    left: 16px;
-    top: 127px;
+    left: 30px;
+    top: 100px;
     height: 50px;
     width: 1.575em;
 }
 .share-buttons i {
     display: contents;
-    margin-bottom: 20px;
+    position: initial;
+    margin: 0px 0px 10px 0px;
     font-size: 1.575em;
 }
