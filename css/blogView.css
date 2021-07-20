@@ -53,7 +53,7 @@ img:hover {
     width: 100vw;
     /* left: calc(((100vw - var(--icerik-w)) / -2) - 11px); */
     left: 50%;
-    transform: translateX(calc(-50% - 2px));
+    transform: translateX(calc(-50% - var(--scrollbar-w)));
     position: relative;
     max-height: calc(100vh - var(--navbar-h));
 }
