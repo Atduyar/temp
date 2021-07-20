@@ -9,6 +9,8 @@
 
 .box {
     height: var(--navbar-h);
+    position: absolute;
+    right: 0px;
 }
 
 .input {
