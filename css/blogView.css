@@ -78,10 +78,8 @@ img:hover {
 }
 
 .share-buttons{
-    position: fixed;
-    left: 30px;
-    top: 50%;
-    transform: translateY(calc(-50% + var(--scrollbar-w)));
+    position: absolute;
+    left: calc(((100vw - var(--icerik-w)) / -2) + 2.5em);
     height: 150px;
     width: 1.575em;
 }
