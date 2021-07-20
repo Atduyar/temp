@@ -18,12 +18,12 @@
     width: calc(var(--navbar-h) - 20px);
     height: calc(var(--navbar-h) - 20px);
     background: none;
-    border: 4px solid #ffd52d;
+    border: 4px solid #000;
     border-radius: 50px;
     box-sizing: border-box;
     font-family: Comic Sans MS;
     font-size: 26px;
-    color: #ffd52d;
+    color: #000;
     outline: none;
     margin: 10px 10px 0 0;
     transition: .5s;
