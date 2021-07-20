@@ -81,7 +81,7 @@ img:hover {
     position: fixed;
     left: 30px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(calc(-50% + var(--scrollbar-w)));
     height: 150px;
     width: 1.575em;
 }
