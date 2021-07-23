@@ -16,6 +16,7 @@
     }
     .container {
         width: calc(768px / 2)!important;
+        box-shadow: none;
     }
     .container.right-panel-active .sign-in-container {
         transform: translateX(0%)!important;
