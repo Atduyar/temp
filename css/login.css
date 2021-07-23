@@ -29,6 +29,9 @@
     .mobil {
         display: inline-block!important;
     }
+    .form-container{
+        padding: 0 25px;
+    }
 }
 
 .mobil {
