@@ -15,6 +15,7 @@
 
 .fa-search {
     font-size: 16px;
+    margin-right: -0.15em;
     position: absolute;
     top: 50%;
     right: 15px;
