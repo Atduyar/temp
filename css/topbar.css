@@ -11,7 +11,6 @@
     height: var(--navbar-h);
     position: absolute;
     right: 0px;
-    border-width: 1px;
 }
 
 .fa-search {
@@ -31,7 +30,7 @@
     width: calc(var(--navbar-h) - 20px);
     height: calc(var(--navbar-h) - 20px);
     background: none;
-    border: 0.5px solid rgb(61, 61, 61);
+    border: 5px solid rgb(61, 61, 61);
     border-radius: 50px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
