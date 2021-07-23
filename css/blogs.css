@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 910px) and (min-width: 725px) {
     * {
-        --icerik-w: 600px;
+        --icerik-w: 750px;
     }
     .blog-item {
         width: calc(100% / 2)!important;
