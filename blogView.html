@@ -78,7 +78,7 @@
 
         </ul>
         <ul>
-            <div class="search-box" onmouseover="document.search.txt.focus()" onmouseleave="document.search.txt.value = '';document.search.txt.blur();">
+            <div class="search-box" onmouseover="document.search.txt.focus(); document.search.txt.style=''" onmouseleave="document.search.txt.value = '';document.search.txt.blur(); document.search.txt.style='display: none';">
                 <form name="search">
                     <input type="text" class="search-input" name="txt" autocomplete="off">
                 </form>
