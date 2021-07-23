@@ -29,9 +29,16 @@
         z-index: 5;
         animation: show 0.6s;
     }
+    .mobil {
+        display: inline-block!important;
+    }
 }
 
-.block-div {
+.mobil {
+    display: none;
+}
+
+. .block-div {
     width: 100vw;
     height: 100vh;
     background-color: red;
