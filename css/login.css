@@ -1,7 +1,12 @@
-.blok-center {
+.block-div {
+    width: 100vw;
+    height: 100vh;
     background-color: red;
 }
 
-.blok {
+.block {
+    width: 25%;
+    height: 25%;
     background-color: blue;
+    margin: auto;
 }
