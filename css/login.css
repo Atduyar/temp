@@ -11,13 +11,13 @@
     .overlay-container {
         display: none!important;
     }
-    .sign-in-container{
+    .sign-in-container {
         width: 100%!important;
     }
-    .sign-up-container{
+    .sign-up-container {
         width: 100%!important;
     }
-    .container{
+    .container {
         width: calc(768px / 2)!important;
     }
     .container.right-panel-active .sign-in-container {
