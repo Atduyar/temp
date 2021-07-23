@@ -30,12 +30,12 @@
     width: calc(var(--navbar-h) - 20px);
     height: calc(var(--navbar-h) - 20px);
     background: none;
-    border: 0.1px solid rgb(180, 180, 180);
+    border: 0.1px solid rgb(30, 30, 30);
     border-radius: 50px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: rgb(12, 12, 12);
+    color: rgb(30, 30, 30);
     outline: none;
     margin: 10px 10px 0 0;
     transition: .5s;
