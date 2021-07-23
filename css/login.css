@@ -5,8 +5,8 @@
 }
 
 .block {
-    width: 25%;
-    height: 25%;
+    width: var(--icerik-w);
+    height: auto;
     margin: auto;
     top: 50%;
     position: relative;

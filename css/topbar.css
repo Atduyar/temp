@@ -18,12 +18,12 @@
     width: calc(var(--navbar-h) - 20px);
     height: calc(var(--navbar-h) - 20px);
     background: none;
-    border: 2px solid #000;
+    border: 0.5px solid rgb(61, 61, 61);
     border-radius: 50px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    color: #000;
+    font-size: 16px;
+    color: rgb(61, 61, 61);
     outline: none;
     margin: 10px 10px 0 0;
     transition: .5s;
