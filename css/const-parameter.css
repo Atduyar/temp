@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px 0px 0px 0px;
     padding: 0px;
     font-family: 'Bona Nova', serif;
     cursor: default;
-    --icerik-w: 900px;
+    --icerik-w: 1100px;
     --navbar-h: 65px;
     --scrollbar-w: 10px
 }
@@ -134,16 +134,22 @@ p {
 ::-webkit-scrollbar {
     width: var(--scrollbar-w);
 }
+
+
 /* Track */
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
+
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
+
+
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
