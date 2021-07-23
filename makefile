@@ -38,6 +38,7 @@ github:
 	git add .\css\login.css
 
 	git add .\js\navbar.js
+	git add .\js\login.js
 
 	git add .\makefile
 
