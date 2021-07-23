@@ -17,16 +17,21 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-h1 {
+.form-container form h1 {
     font-weight: bold;
     margin: 0;
 }
 
-h2 {
+.form-container form h2 {
     text-align: center;
 }
 
-p {
+.overlay-panel form h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.overlay-panel p {
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
@@ -34,18 +39,18 @@ p {
     margin: 20px 0 30px;
 }
 
-span {
+.form-container form span {
     font-size: 12px;
 }
 
-a {
+.social-container a {
     color: #333;
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
 }
 
-button {
+.form-container form button {
     border-radius: 20px;
     border: 1px solid #FF4B2B;
     background-color: #FF4B2B;
@@ -58,20 +63,20 @@ button {
     transition: transform 80ms ease-in;
 }
 
-button:active {
+.overlay-panel button:active {
     transform: scale(0.95);
 }
 
-button:focus {
+.overlay-panel button:focus {
     outline: none;
 }
 
-button.ghost {
+.overlay-panel button.ghost {
     background-color: transparent;
     border-color: #FFFFFF;
 }
 
-form {
+.form-container form {
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -82,7 +87,7 @@ form {
     text-align: center;
 }
 
-input {
+.form-container form input {
     background-color: #eee;
     border: none;
     padding: 12px 15px;
@@ -229,29 +234,4 @@ input {
     margin: 0 5px;
     height: 40px;
     width: 40px;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
 }
