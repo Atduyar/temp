@@ -77,7 +77,10 @@
 
         </ul>
         <ul>
-            <div class="search-box" onmouseover="document.search.txt.focus(); document.search.txt.removeAttribute('disabled')" onmouseleave="document.search.txt.blur(); document.search.txt.setAttribute('disabled','disabled');">
+            <div class="search-box" 
+            onmouseover="document.search.txt.value = (typeof(searchBoxTemp) === 'undefined')?'':searchBoxTemp ; document.search.txt.focus(); document.search.txt.removeAttribute('disabled')" 
+            onmouseleave="document.search.txt.value = ''; document.search.txt.blur(); document.search.txt.setAttribute('disabled','disabled');" 
+            onmouseout="var searchBoxTemp = document.search.txt.value;">
                 <form name="search">
                     <input type="text" class="search-input" name="txt" autocomplete="off">
                 </form>
