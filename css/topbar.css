@@ -13,6 +13,10 @@
     right: 0px;
 }
 
+.fa-search {
+    font-size: 16px;
+}
+
 .input {
     padding: 10px;
     width: calc(var(--navbar-h) - 20px);
