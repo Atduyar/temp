@@ -38,6 +38,8 @@
 
 .mobil {
     display: none;
+    border: 1px solid #2b64ff;
+    background-color: #2b64ff;
 }
 
 .block-div {
