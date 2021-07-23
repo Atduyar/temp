@@ -8,6 +8,18 @@
     .block-div {
         background-color: yellow!important;
     }
+    .overlay-container {
+        display: none!important;
+    }
+    .sign-in-container{
+        width: 100%!important;
+    }
+    .sign-up-container{
+        width: 100%!important;
+    }
+    .container{
+        width: calc(768px / 2)!important;
+    }
 }
 
 .block-div {
