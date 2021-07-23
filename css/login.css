@@ -5,9 +5,6 @@
 }
 
 @media only screen and (max-height: 1285px) and (max-width: 775px) {
-    .block-div {
-        background-color: yellow!important;
-    }
     .overlay-container {
         display: none!important;
     }
