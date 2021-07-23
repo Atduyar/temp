@@ -76,13 +76,15 @@ img:hover {
     margin-top: 10px;
 }
 
-.share-buttons{
+.share-buttons {
     position: absolute;
     left: calc(((100vw - var(--icerik-w)) / -2) + 2.5em);
     height: 150px;
     width: 1.575em;
-    margin-top: 100px;
+    margin-left: 25px;
+    margin-top: 300px;
 }
+
 .share-buttons i {
     display: block;
     position: initial;
