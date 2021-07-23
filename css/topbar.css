@@ -7,7 +7,7 @@
     }
 }
 
-.box {
+.search-box {
     height: var(--navbar-h);
     position: absolute;
     right: 0px;
@@ -25,7 +25,7 @@
     transition: .2s;
 }
 
-.input {
+.search-input {
     padding: 10px;
     width: calc(var(--navbar-h) - 20px);
     height: calc(var(--navbar-h) - 20px);
