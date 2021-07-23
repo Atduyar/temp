@@ -1,9 +1,11 @@
-makeall: mblogs mblogView github
+makeall: mblogs mblogView login github
 
 mblogs:
 	htmlCreator/main.exe blogs blogs 
 mblogView:
 	htmlCreator/main.exe blogView blogView 
+login:
+	htmlCreator/main.exe login login
 
 
 
