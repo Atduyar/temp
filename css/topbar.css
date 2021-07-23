@@ -20,7 +20,7 @@
     top: 50%;
     right: 15px;
     transform: translate(-50%, -50%);
-    color: rgb(53, 53, 53);
+    color: rgb(180, 180, 180);
     transition: .2s;
     cursor: pointer;
 }
