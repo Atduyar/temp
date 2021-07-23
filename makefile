@@ -31,10 +31,11 @@ github:
 	git add .\blogs.html
 	git add .\login.html
 
+	git add .\css\const-parameter.css
+	git add .\css\topbar.css
 	git add .\css\blogView.css
 	git add .\css\blogs.css
-	git add .\css\topbar.css
-	git add .\css\const-parameter.css
+	git add .\css\login.css
 
 	git add .\js\navbar.js
 
