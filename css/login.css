@@ -1,3 +1,15 @@
+@media only screen and (max-width: 900px) and (min-width: 775px) {
+    .block-div {
+        background-color: green;
+    }
+}
+
+@media only screen and (max-height: 1285px) and (max-width: 775px) {
+    .block-div {
+        background-color: yellow;
+    }
+}
+
 .block-div {
     width: 100vw;
     height: 100vh;
