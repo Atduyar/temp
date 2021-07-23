@@ -7,7 +7,7 @@
     }
 }
 
-@media only screen and (max-width: 910px) and (min-width: 715px) {
+@media only screen and (max-width: 910px) and (min-width: 735px) {
     * {
         --icerik-w: 725px;
     }
@@ -16,7 +16,7 @@
     }
 }
 
-@media only screen and (max-height: 1285px) and (max-width: 715px) {
+@media only screen and (max-height: 1285px) and (max-width: 735px) {
     .div-blog-details {
         position: relative!important;
     }
