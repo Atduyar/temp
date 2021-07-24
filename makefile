@@ -19,7 +19,10 @@ cr: delete compile run
 delete:
 	del htmlCreator\main.exe
 compile:
-	mingw32-g++.exe -o htmlCreator/main.exe htmlCreator/main.cpp
+	g++.exe -c htmlCreator/htmlCreator.cpp -o htmlCreator/htmlCreator.o -std=c++17
+	g++.exe -c htmlCreator/main.cpp -o htmlCreator/main.o -std=c++17
+	g++.exe htmlCreator/main.o htmlCreator/htmlCreator.o -o htmlCreator/main.exe -std=c++17
+
 d: delete
 c: compile
 run: mblogs
