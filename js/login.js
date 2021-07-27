@@ -26,7 +26,7 @@ function login() {
     var loginFormInputs = document.getElementById("loginForm").getElementsByTagName("input");
 
     api.loginBody = { emailornickname: loginFormInputs[0].value, password: loginFormInputs[1].value }
-    userAction();
+    api.userAction();
 
     console.log("anan");
 }
