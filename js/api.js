@@ -13,7 +13,7 @@ class ApiAuth {
             }
         });
         const t = await response.json();
-        SaveToken(t);
+        ApiAuth.SaveToken(t);
         this.resultFunction(t);
     }
 
