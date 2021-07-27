@@ -28,7 +28,7 @@ function login() {
     ApiAuth.SaveUser({ emailornickname: loginFormInputs[0].value, password: loginFormInputs[1].value });
 
     api.resultFunction = (t) => {
-        // console.log(t);
+        console.log(123);
         window.location.href = window.location.origin;
     };
     api.resultErrFunction = (t) => {
