@@ -43,7 +43,7 @@ class ApiAuth {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer '+ApiAuth.GetToken(rf, ref)
+                    'Authorization': 'Bearer '+ApiAuth.GetToken(new ApiAuth(rf,ref))
                 }
             });
             const r = await response.json();
