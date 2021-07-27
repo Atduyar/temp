@@ -5,26 +5,10 @@ class ApiAuth {
         this.resultFunction = resultFunction;
         this.resultErrFunction = resultErrFunction;
     }
-    Login = async() => {
+    Login = async(user = undefined) => {
         const response = await fetch(mainUrl + 'auth/login', {
             method: 'POST',
-            body: JSON.stringify(ApiAuth.GetUser()),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        const t = await response.json();
-        if (t.success == undefined || t.success) {
-            ApiAuth.SaveToken(t);
-            this.resultFunction(t);
-        } else {
-            this.resultErrFunction(t);
-        }
-    }
-    Login = async(user) => {
-        const response = await fetch(mainUrl + 'auth/login', {
-            method: 'POST',
-            body: JSON.stringify(user),
+            body: JSON.stringify((user == undefined) ? ApiAuth.GetUser() : user),
             headers: {
                 'Content-Type': 'application/json'
             }

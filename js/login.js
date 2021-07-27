@@ -35,7 +35,7 @@ function login() {
         console.log(t);
         alertify.error(t.message);
     };
-    api.Login();
+    api.Login(user);
 }
 
 function aaa() {
