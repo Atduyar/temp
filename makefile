@@ -1,11 +1,13 @@
-makeall: mblogs mblogView login github
+makeall: mblogs mblogView login signup github
 
 mblogs:
 	htmlCreator/main.exe blogs blogs 
 mblogView:
 	htmlCreator/main.exe blogView blogView 
 login:
-	htmlCreator/main.exe login login
+	htmlCreator/main.exe login login null
+signup:
+	htmlCreator/main.exe signup login signup
 
 
 
@@ -35,6 +37,7 @@ github:
 	git add .\blogView.html
 	git add .\blogs.html
 	git add .\login.html
+	git add .\signup.html
 
 	git add .\css\const-parameter.css
 	git add .\css\topbar.css

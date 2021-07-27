@@ -21,10 +21,10 @@ class ApiAuth {
             this.resultErrFunction(t);
         }
     }
-    Register = async() => {
+    Register = async(user) => {
         const response = await fetch(mainUrl + 'auth/register', {
             method: 'POST',
-            body: JSON.stringify(ApiAuth.GetUser()),
+            body: JSON.stringify(user),
             headers: {
                 'Content-Type': 'application/json'
             }
