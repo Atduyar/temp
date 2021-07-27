@@ -18,3 +18,11 @@ signUpButtonM.addEventListener('click', () => {
 signInButtonM.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
 });
+
+function login() {
+    var email = document.getElementById("loginForm").getElementsByTagName("input");
+    var pass = email[1].value;
+    email = email[0].value;
+    console.log(email);
+    console.log(pass);
+}

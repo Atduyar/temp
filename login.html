@@ -76,8 +76,11 @@
 
         </ul>
         <ul>
-            <div class="search-box" onmouseover="document.search.txt.value = (typeof(searchBoxTemp) === 'undefined')?'':searchBoxTemp ; document.search.txt.focus(); document.search.txt.removeAttribute('disabled')" onmouseleave="searchBoxTemp = document.search.txt.value; document.search.txt.value = ''; document.search.txt.blur(); document.search.txt.setAttribute('disabled','disabled');"
-                onmouseout="searchBoxTemp = document.search.txt.value;">
+            <div class="search-box" 
+            onmouseover="document.search.txt.value = (typeof(searchBoxTemp) === 'undefined')?'':searchBoxTemp ; document.search.txt.focus(); document.search.txt.removeAttribute('disabled')" 
+            onmouseleave="searchBoxTemp = document.search.txt.value; document.search.txt.value = ''; document.search.txt.blur(); document.search.txt.setAttribute('disabled','disabled');"
+                
+            onmouseout="searchBoxTemp = document.search.txt.value;">
                 <form name="search">
                     <input type="text" class="search-input" name="txt" autocomplete="off">
                 </form>
@@ -93,50 +96,50 @@
 <div class="block-div">
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form action="#" id="registerForm">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <span>or use your email for registration</span>
+                <span>ya da mail bilgilerininle kayıt ol</span>
                 <input type="text" placeholder="Nickname" />
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <button>Kayıt Ol</button>
                 <div class="mobil button-line"></div>
-                <button class="mobil ghost" id="signInM">Sign In</button>
+                <button class="mobil ghost" id="signInM">Giriş Yap</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>Sign in</h1>
+            <form action="#" id="loginForm">
+                <h1>Kayıt ol</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <span>or use your account</span>
+                <span>ya da mail bilgilerini kullan</span>
                 <input type="email" placeholder="Email or Nickname" />
                 <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <a href="#">Şifreni mi unuttun?</a>
+                <button>Giriş yap</button>
                 <div class="mobil button-line"></div>
-                <button class="mobil ghost" id="signUpM">Sign Up</button>
+                <button class="mobil ghost" id="signUpM">Kayıt Ol</button>
             </form>
         </div>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
+                    <h1>Tekrar hoş geldin!</h1>
+                    <p>Bilimle bağlantıda kalmak için lütfen giriş yap.</p>
+                    <button class="ghost" id="signIn">Giriş yap</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
+                    <h1>Merhaba bilimsever!</h1>
                     <p>Enter your personal details and start journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+                    <button class="ghost" id="signUp">Kayıt Ol</button>
                 </div>
             </div>
         </div>
