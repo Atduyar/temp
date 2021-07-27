@@ -17,16 +17,12 @@ var apii = new ApiAuth;
 getUser()
 
 function getUser() {
-    apii.resultFunction = (u)=>{
-        console.log(u);
+    apii.resultFunction = (t)=>{    
+        apii.GetMyProfil(t);
+        console.log(t);
     };
-    apii.resultErrFunction = (u)=>{
-        console.log(u);
+    apii.resultErrFunction = (t)=>{
+        console.log(t);
     };
-    apii.GetMyProfil((u)=>{
-        console.log(u);
-    },
-    (u)=>{
-        console.log(u);
-    });
+    ApiAuth.GetToken(new ApiAuth(apii));
 }

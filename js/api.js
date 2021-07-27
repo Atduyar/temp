@@ -37,13 +37,13 @@ class ApiAuth {
             this.resultErrFunction(t);
         }
     }
-    GetMyProfil = async(rf = () => {}, ref = () => {}) => {
+    GetMyProfil = async(t, rf = () => {}, ref = () => {}) => {
         try{
             const response = await fetch(mainUrl + 'users/getmyprofil', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer '+ApiAuth.GetToken(new ApiAuth(rf,ref))
+                    'Authorization': 'Bearer ' + t
                 }
             });
             const r = await response.json();
