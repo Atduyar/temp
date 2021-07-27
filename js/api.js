@@ -6,7 +6,7 @@ class ApiAuth {
         console.log(loginBody);
         const response = await fetch('https://api.atduyar.com/api/auth/login', {
             method: 'POST',
-            body: JSON.stringify(loginBody),
+            body: JSON.stringify(this.loginBody),
             headers: {
                 'Content-Type': 'application/json'
             }
