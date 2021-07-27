@@ -14,9 +14,9 @@ function closeNav() {
 
 }
 
-var user = ApiAuth.GetUser();
+var token = ApiAuth.GetToken();
 getUser()
 
 function getUser() {
-    console.log(user);
+    console.log(token);
 }
