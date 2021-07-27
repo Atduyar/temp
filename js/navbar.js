@@ -13,8 +13,8 @@ function closeNav() {
     setTimeout(() => { document.getElementById("myMask").style = ""; }, 500);
 
 }
-
-var token = ApiAuth.GetToken();
+var apii = new ApiAuth;
+var token = ApiAuth.GetToken(apii);
 getUser()
 
 function getUser() {
