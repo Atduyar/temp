@@ -69,13 +69,19 @@ class ApiAuth {
             var remainderTs = Date.parse(r.expiration) - new Date().getTime();
             if (remainderTs < 1000) {
                 x.Login(); // token alır sonra x.resultFunction(r); uygular. 
-                return 1; //süre geçmis
+                return 1; // süre geçmis
             } else {
                 x.resultFunction(r);
-                return 0; //Ok
+                return 0; // Ok
             }
         } else {
-            return -1; //giris yapılmamıs
+            if(localStorage.getItem("Evrimolog-User") != undefined){
+                x.Login(); // token alır sonra x.resultFunction(r); uygular. 
+                return 0; // yeniden giris yapılmıs
+            }
+            else{
+                return -1; // giris yapılmamıs
+            }
         }
     }
 }
