@@ -65,8 +65,8 @@ class ApiAuth {
     }
     static GetToken(x) {
         var r = JSON.parse(sessionStorage.getItem("Evrimolog-Token"));
-        var remainderTs = Date.parse(r.expiration) - new Date().getTime();
         if (r != null) {
+            var remainderTs = Date.parse(r.expiration) - new Date().getTime();
             if (remainderTs < 1000) {
                 x.Login(); // token alır sonra x.resultFunction(r); uygular. 
                 return 1; //süre geçmis
