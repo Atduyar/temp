@@ -50,7 +50,7 @@ class ApiAuth {
             this.resultFunction(r);
         }
         catch(err){
-            this.resultErrFunction(r);
+            this.resultErrFunction(err);
         }
     }
 
