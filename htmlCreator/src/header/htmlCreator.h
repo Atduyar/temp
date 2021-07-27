@@ -24,6 +24,8 @@ const std::string innerP = "\t";
 #endif
 const std::string cBeforeName = "";
 const std::string cEndOfName = "";//" Finish.";
+const std::string cNull = "null>";
+const std::string cNullEx = "nulll";
 
 
 const std::string cStandart = "<atd-";

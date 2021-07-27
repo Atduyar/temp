@@ -46,19 +46,43 @@ void getHtml(std::string filePath, std::string tree){
                     std::cerr << "paramatre eksik - " << name << "-" << filePath << " - " << gci << std::endl;
                 }
                 
-
                 std::cout << tree << cBeforeName;
                 #ifdef _WIN32
                 SetConsoleTextAttribute(hConsole, routingColor);
+                
+                if(name.find(cNullEx) != std::string::npos && name != cNullEx){
+                    SetConsoleTextAttribute(hConsole, 31);
+                    std::cout << "N";
+                    SetConsoleTextAttribute(hConsole, routingColor);
+                    SetConsoleTextAttribute(hConsole, routingColor);
+                    std::cout << name.substr(cNullEx.length(), name.length()) << ": " << '\n';
+                }
+                else{
+                    std::cout << name << ": " << '\n';
+                }
+                
                 --routingColor;
+                #else
+                    std::cout << "N-" << name.substr(cNullEx.length(), name.length()) << ": " << '\n';
                 #endif
-                std::cout << name << ": " << '\n';
+
+
+
                 #ifdef _WIN32
                 SetConsoleTextAttribute(hConsole, 15);
                 #endif
                 
-                if(name == "null"){
+                if(name == cNull){
                     exitFile += "<!-- NULL  R-->\n";
+                }
+                else if(name == cNullEx){
+                    exitFile += line.substr(0,line.find(cRouter));
+                    exitFile += line.substr(line.find(cRouter)+cRouter.length(),line.length());
+                }
+                else if(name.find(cNullEx) != std::string::npos){
+                    exitFile += line.substr(0,line.find(cRouter));
+                    getHtml(name.substr(cNullEx.length(), name.length()), tree + innerP);
+                    exitFile += line.substr(line.find(cRouter)+cRouter.length(),line.length());
                 }
                 else{
                     std::string upperName = "";
