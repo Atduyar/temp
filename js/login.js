@@ -22,13 +22,7 @@ signInButtonM.addEventListener('click', () => {
 
 var api = new ApiAuth();
 var loginFormInputs = document.getElementById("loginForm").getElementsByTagName("input");
-var user = GetUser();
-if (user) {
-    loginFormInputs[0].value = user.emailornickname;
-    loginFormInputs[1].value = user.password;
-} else {
-    console.log(user);
-}
+var user = ApiAuth.GetUser();
 
 function login() {
 
@@ -41,7 +35,7 @@ function login() {
         console.log(t);
         alertify.error(t.message);
     };
-    api.Login(user);
+    api.Login();
 }
 
 function aaa() {
