@@ -38,4 +38,5 @@ function login() {
     email = email[0].value;
     console.log(email);
     console.log(pass);
+    userAction();
 }
