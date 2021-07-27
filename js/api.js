@@ -27,18 +27,17 @@ class ApiAuth {
         return JSON.parse(localStorage.getItem("Evrimolog-User"));
     }
     static GetToken() {
-        var r = sessionStorage.getItem("Evrimolog-Token");
-        var remainderTs = Date.parse(r.expiration) - new Date().getTime();
-        console.log(remainderTs);
-        if (r != null) {
-            if (remainderTs < 100) {
-                this.resultFunction = () => { console.log("a"); return GetToken() };
-                Login();
-            } else {
-                return r;
+        var r = JSON.parse(sessionStorage.getItem("Evrimolog-Token"));
+            var remainderTs = Date.parse(r.expiration) - new Date().getTime(); console.log(remainderTs);
+            if (r != null) {
+                if (remainderTs < 100) {
+                    this.resultFunction = () => { console.log("a"); return GetToken() };
+                    Login();
+                } else {
+                    return r;
+                }
+            } else { //giris yapılmamıs
+                return null;
             }
-        } else { //giris yapılmamıs
-            return null;
         }
     }
-}
