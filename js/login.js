@@ -50,7 +50,7 @@ function signup() {
         console.log(t);
         alertify.error(t.message);
     };
-    api.Login(userR);
+    api.Register(userR);
 
 }
 
