@@ -30,9 +30,9 @@ class ApiAuth {
         var remainderTs = Date.parse(r.expiration) - new Date().getTime();
         console.log(remainderTs);
         if (r != null) {
-            if (remainderTs < 100) {
+            if (remainderTs < 1000) {
                 this.resultFunction = () => { console.log("a"); return GetToken() };
-                Login();
+                this.Login();
             } else {
                 return r;
             }
