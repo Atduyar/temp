@@ -17,14 +17,14 @@ class ApiAuth {
     }
 
     static SaveToken(t) {
-        sessionStorage.setItem("Evrimolog-Token", JSON.parse(t));
+        sessionStorage.setItem("Evrimolog-Token", JSON.stringify(t));
     }
     static SaveUser(u) {
         console.log(u);
-        localStorage.setItem("Evrimolog-User", JSON.parse(u));
+        localStorage.setItem("Evrimolog-User", JSON.stringify(u));
     }
     static GetUser() {
-        return JSON.stringify(localStorage.getItem("Evrimolog-User"));
+        return JSON.parse(localStorage.getItem("Evrimolog-User"));
     }
     static GetToken() {
         var r = sessionStorage.getItem("Evrimolog-Token");
