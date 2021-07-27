@@ -33,6 +33,6 @@ function login() {
     api.Login();
 }
 function aaa() {
-    api.resultFunction = ()=>{};
-   ApiAuth.GetToken(api);
+    api.resultFunction = ()=>{};//token geçikmisse yapılcak islem
+    ApiAuth.GetToken(api);
 }

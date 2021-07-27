@@ -31,13 +31,14 @@ class ApiAuth {
         console.log(remainderTs);
         if (r != null) {
             if (remainderTs < 1000) {
-                this.resultFunction = () => { console.log("a"); return GetToken() };
-                x.Login();
+                x.Login();// token alır sonra x.resultFunction(r); uygular. 
+                return 1;//süre geçmis
             } else {
-                return r;
+                x.resultFunction(r);
+                return 0;//Ok
             }
-        } else { //giris yapılmamıs
-            return null;
+        } else { 
+            return -1;//giris yapılmamıs
         }
     }
 }
