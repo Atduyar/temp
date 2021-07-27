@@ -3,7 +3,7 @@ class ApiAuth {
         this.loginBody = loginBody;
     }
     Login = async() => {
-        console.log(loginBody);
+        console.log(this.loginBody);
         const response = await fetch('https://api.atduyar.com/api/auth/login', {
             method: 'POST',
             body: JSON.stringify(this.loginBody),
