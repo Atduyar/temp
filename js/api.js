@@ -20,6 +20,7 @@ class ApiAuth {
         sessionStorage.setItem("Evrimolog-Token", JSON.parse(t));
     }
     static SaveUser(u) {
+        console.log(u);
         localStorage.setItem("Evrimolog-User", JSON.parse(u));
     }
     static GetUser() {
