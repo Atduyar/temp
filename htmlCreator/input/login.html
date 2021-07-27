@@ -3,55 +3,59 @@
 </atdl>
 <atds>
     <script type="text/javascript" src="js/login.js"></script>
+    
+    <link rel="stylesheet" href="/alertifyjs/alertify.min.css" />
+    <link rel="stylesheet" href="/alertifyjs/themes/default.min.css" />
+    <script src="/alertifyjs/alertify.min.js"></script>
 </atds>
 
 <div class="block-div">
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
-                <h1>Create Account</h1>
+            <form action="#" id="registerForm">
+                <h1>Hesap oluştur</h1>
                 <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social c-p"><i class="fab fa-facebook-f c-p"></i></a>
+                    <a href="#" class="social c-p"><i class="fab fa-google-plus-g c-p"></i></a>
+                    <a href="#" class="social c-p"><i class="fab fa-linkedin-in c-p"></i></a>
                 </div>
-                <span>or use your email for registration</span>
-                <input type="text" placeholder="Nickname" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <span>ya da mail bilgilerininle kayıt ol</span>
+                <input class="c-t" type="text" placeholder="Kullanıcı adı" />
+                <input class="c-t" type="email" placeholder="Email" />
+                <input class="c-t" type="password" placeholder="Şifre" />
+                <button class="c-p">Kayıt Ol</button>
                 <div class="mobil button-line"></div>
-                <button class="mobil ghost" id="signInM">Sign In</button>
+                <button class="mobil ghost c-p" id="signInM">Giriş Yap</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>Sign in</h1>
+            <form action="#" id="loginForm">
+                <h1>Giriş yap</h1>
                 <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social c-p"><i class="fab fa-facebook-f c-p"></i></a>
+                    <a href="#" class="social c-p"><i class="fab fa-google-plus-g c-p"></i></a>
+                    <a href="#" class="social c-p"><i class="fab fa-linkedin-in c-p"></i></a>
                 </div>
-                <span>or use your account</span>
-                <input type="email" placeholder="Email or Nickname" />
-                <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <span>ya da mail bilgilerini kullan</span>
+                <input class="c-t" type="text" placeholder="Email ya da kullanıcı adı" />
+                <input class="c-t" type="password" placeholder="Şifre" />
+                <a class="c-p" href="#">Şifreni mi unuttun?</a>
+                <button class="c-p" onclick="login()">Giriş yap</button>
                 <div class="mobil button-line"></div>
-                <button class="mobil ghost" id="signUpM">Sign Up</button>
+                <button class="mobil ghost c-p" id="signUpM">Kayıt Ol</button>
             </form>
         </div>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
+                    <h1>Tekrar hoş geldin!</h1>
+                    <p>Hadi giriş yap, çok evrim kaçırdın.</p>
+                    <button class="ghost c-p" id="signIn">Giriş yap</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+                    <h1>Merhaba bilimsever!</h1>
+                    <p>Kayıt olmanı milyonlarca yıl bekledik. Evrimin artık yeterli düzeyde, daha fazla bekletme bence.</p>
+                    <button class="ghost c-p" id="signUp">Kayıt Ol</button>
                 </div>
             </div>
         </div>
