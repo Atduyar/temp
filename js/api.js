@@ -12,9 +12,7 @@ class ApiAuth {
                 'Content-Type': 'application/json'
             }
         });
-        const myJson = await response.json(); //extract JSON from the http response
-        // do something with myJson
+        const myJson = await response.json();
         this.resultFunction(myJson);
-        console.log(myJson);
     }
 }
