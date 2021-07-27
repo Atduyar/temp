@@ -21,6 +21,7 @@ function getUser() {
     apiNav.resultFunction = (t)=>{    //token alırsan
         apiNav.resultFunction = (u)=>{//kullanıcıyı alırsan
             console.log(u);
+            document.getElementsByClassName("nav-bar")[0].getElementsByClassName("nav-bar-pc")[0].children[0].innerText = u.nickname;
         }
         // apiNav.resultErrFunction = apiNav.resultErrFunction;//kullanıcıyı almasa
         apiNav.GetMyProfil(t.token);
