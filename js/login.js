@@ -25,7 +25,11 @@ var api = new ApiAuth();
 function login() {
     var loginFormInputs = document.getElementById("loginForm").getElementsByTagName("input");
 
-    api.loginBody = { emailornickname: loginFormInputs[0].value, password: loginFormInputs[1].value }
+    api.loginBody = { emailornickname: loginFormInputs[0].value, password: loginFormInputs[1].value };
+    api.resultFunction = (x)=>{
+        console.log(":D");
+        console.log(x);
+    };
     api.Login();
 
     console.log("anan");

@@ -1,6 +1,7 @@
 class ApiAuth {
-    constructor(loginBody = null) {
+    constructor(loginBody = null, resultFunction = null) {
         this.loginBody = loginBody;
+        this.resultFunction = resultFunction;
     }
     Login = async() => {
         console.log(this.loginBody);
@@ -13,6 +14,7 @@ class ApiAuth {
         });
         const myJson = await response.json(); //extract JSON from the http response
         // do something with myJson
+        this.resultFunction(JSON.parse(myJson));
         console.log(myJson);
     }
 }
