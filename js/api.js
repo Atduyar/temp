@@ -1,8 +1,9 @@
 const mainUrl = "https://api.atduyar.com/api/";
 
 class ApiAuth {
-    constructor(resultFunction = null) {
+    constructor(resultFunction = null, resultErrFunction = null) {
         this.resultFunction = resultFunction;
+        this.resultErrFunction = resultErrFunction;
     }
     Login = async() => {
         const response = await fetch(mainUrl + 'auth/login', {
@@ -13,8 +14,12 @@ class ApiAuth {
             }
         });
         const t = await response.json();
-        ApiAuth.SaveToken(t);
-        this.resultFunction(t);
+        if(t.success == true){
+            ApiAuth.SaveToken(t);
+            this.resultFunction(t);
+        }else {
+            this.resultErrFunction(t);
+        }
     }
     Register = async() => {
         const response = await fetch(mainUrl + 'auth/register', {
