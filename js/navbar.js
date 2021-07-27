@@ -24,5 +24,5 @@ function getUser() {
     apii.resultErrFunction = (t)=>{
         console.log(t);
     };
-    ApiAuth.GetToken(new ApiAuth(apii));
+    ApiAuth.GetToken(apii);
 }
