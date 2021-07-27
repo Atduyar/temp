@@ -18,6 +18,9 @@ getUser()
 
 function getUser() {
     apii.resultFunction = (t)=>{    
+        apii.resultFunction = (u)=>{
+            console.log(u);
+        }
         apii.GetMyProfil(t.token);
         console.log(t);
     };
