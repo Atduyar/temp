@@ -25,14 +25,14 @@ class ApiAuth {
     static GetUser() {
         return JSON.parse(localStorage.getItem("Evrimolog-User"));
     }
-    static GetToken() {
+    static GetToken(x) {
         var r = JSON.parse(sessionStorage.getItem("Evrimolog-Token"));
         var remainderTs = Date.parse(r.expiration) - new Date().getTime();
         console.log(remainderTs);
         if (r != null) {
             if (remainderTs < 1000) {
                 this.resultFunction = () => { console.log("a"); return GetToken() };
-                this.Login();
+                x.Login();
             } else {
                 return r;
             }

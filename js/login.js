@@ -33,5 +33,6 @@ function login() {
     api.Login();
 }
 function aaa() {
-   ApiAuth.GetToken();
+    api.resultFunction = ()=>{};
+   ApiAuth.GetToken(api);
 }
