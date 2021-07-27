@@ -21,9 +21,14 @@ signInButtonM.addEventListener('click', () => {
 
 
 var api = new ApiAuth();
+var loginFormInputs = document.getElementById("loginForm").getElementsByTagName("input");
+var user = GetUser();
+if (user) {
+    loginFormInputs[0].value = user.emailornickname;
+    loginFormInputs[1].value = user.password;
+}
 
 function login() {
-    var loginFormInputs = document.getElementById("loginForm").getElementsByTagName("input");
 
     ApiAuth.SaveUser({ emailornickname: loginFormInputs[0].value, password: loginFormInputs[1].value });
 
@@ -36,7 +41,8 @@ function login() {
     };
     api.Login();
 }
+
 function aaa() {
-    api.resultFunction = ()=>{};//token geçikmisse yapılcak islem
+    api.resultFunction = () => {}; //token geçikmisse yapılcak islem
     ApiAuth.GetToken(api);
 }
