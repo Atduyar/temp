@@ -31,6 +31,9 @@ function login() {
         // console.log(t);
         window.location.href = window.location.origin;
     };
+    api.resultErrFunction = (t) => {
+        console.log(t);
+    };
     api.Login();
 }
 function aaa() {
