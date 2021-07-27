@@ -22,7 +22,7 @@ signInButtonM.addEventListener('click', () => {
 const userAction = async() => {
     const response = await fetch('https://api.atduyar.com/api/auth/login', {
         method: 'POST',
-        body: { emailornickname: email, password: pass },
+        body: loginBody,
         headers: {
             'Content-Type': 'application/json'
         }
@@ -33,11 +33,12 @@ const userAction = async() => {
     console.log(myJson);
 }
 
+var loginBody = null;
+
 function login() {
     var email = document.getElementById("loginForm").getElementsByTagName("input");
     var pass = email[1].value;
     email = email[0].value;
-    console.log(email);
-    console.log(pass);
+    loginBody = { emailornickname: email, password: pass };
     userAction();
 }
