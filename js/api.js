@@ -1,6 +1,6 @@
 class ApiAuth {
-    constructor() {
-        this.loginBody = null;
+    constructor(loginBody = null) {
+        this.loginBody = loginBody;
     }
     static Login = async() => {
         const response = await fetch('https://api.atduyar.com/api/auth/login', {
