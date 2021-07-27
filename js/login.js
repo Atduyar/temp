@@ -32,16 +32,16 @@ if (user) {
 
 function login() {
 
-    ApiAuth.SaveUser({ emailornickname: loginFormInputs[0].value, password: loginFormInputs[1].value });
-
+    user = { emailornickname: loginFormInputs[0].value, password: loginFormInputs[1].value };
     api.resultFunction = (t) => {
+        ApiAuth.SaveUser(user);
         window.location.href = window.location.origin;
     };
     api.resultErrFunction = (t) => {
         console.log(t);
         alertify.error(t.message);
     };
-    api.Login();
+    api.Login(user);
 }
 
 function aaa() {

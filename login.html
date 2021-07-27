@@ -25,10 +25,11 @@
 <!-- START SIDEBAR -->
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#">Ana Sayfa</a>
+    <a href="#">Son İçerikler</a>
+    <a href="#">Teknoloji</a>
+    <a href="#">Evrim</a>
+    <a href="#">Uzay Bilimleri</a>
 </div>
 
 <div id="myMask" onclick="closeNav()">
@@ -62,7 +63,7 @@
         <p class="logo def-tittle-color c-p">Evrimolog</p>
         <ul class="nav-item-ul lst-n">
             <li class="nav-item-li">
-                <a href="#" class="a-nav td-n def-text-color c-p">Yeniler</a>
+                <a href="#" class="a-nav td-n def-text-color c-p">Son içerikler</a>
             </li>
             <li class="nav-item-li">
                 <a href="#" class="a-nav td-n def-text-color c-p">Teknoloji</a>
@@ -71,16 +72,13 @@
                 <a href="#" class="a-nav td-n def-text-color c-p">Evrim</a>
             </li>
             <li class="nav-item-li">
-                <a href="#" class="a-nav td-n def-text-color c-p">Uzay Bilimleri</a>
+                <a href="#" class="a-nav td-n def-text-color c-p">Uzay bilimleri</a>
             </li>
 
         </ul>
         <ul>
-            <div class="search-box" 
-            onmouseover="document.search.txt.value = (typeof(searchBoxTemp) === 'undefined')?'':searchBoxTemp ; document.search.txt.focus(); document.search.txt.removeAttribute('disabled')" 
-            onmouseleave="searchBoxTemp = document.search.txt.value; document.search.txt.value = ''; document.search.txt.blur(); document.search.txt.setAttribute('disabled','disabled');"
-                
-            onmouseout="searchBoxTemp = document.search.txt.value;">
+            <div class="search-box" onmouseover="document.search.txt.value = (typeof(searchBoxTemp) === 'undefined')?'':searchBoxTemp ; document.search.txt.focus(); document.search.txt.removeAttribute('disabled')" onmouseleave="searchBoxTemp = document.search.txt.value; document.search.txt.value = ''; document.search.txt.blur(); document.search.txt.setAttribute('disabled','disabled');"
+                onmouseout="searchBoxTemp = document.search.txt.value;">
                 <form name="search">
                     <input type="text" class="search-input" name="txt" autocomplete="off">
                 </form>
