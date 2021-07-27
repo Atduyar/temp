@@ -37,6 +37,22 @@ class ApiAuth {
             this.resultErrFunction(t);
         }
     }
+    GetMyProfil = async(rf = () => {}, ref = () => {}) => {
+        try{
+            const response = await fetch(mainUrl + 'users/getmyprofil', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer '+ApiAuth.GetToken(rf, ref)
+                }
+            });
+            const r = await response.json();
+            this.resultFunction(r);
+        }
+        catch(err){
+            this.resultErrFunction(r);
+        }
+    }
 
     static SaveToken(t) {
         sessionStorage.setItem("Evrimolog-Token", JSON.stringify(t));

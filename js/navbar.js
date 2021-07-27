@@ -14,9 +14,13 @@ function closeNav() {
 
 }
 var apii = new ApiAuth;
-var token = ApiAuth.GetToken(apii);
 getUser()
 
 function getUser() {
-    console.log(token);
+    apii.GetMyProfil((u)=>{
+        console.log(u);
+    },
+    (u)=>{
+        console.log(u);
+    });
 }
