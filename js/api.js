@@ -3,6 +3,7 @@ class ApiAuth {
         this.loginBody = loginBody;
     }
     Login = async() => {
+        console.log(loginBody);
         const response = await fetch('https://api.atduyar.com/api/auth/login', {
             method: 'POST',
             body: JSON.stringify(loginBody),
@@ -12,7 +13,6 @@ class ApiAuth {
         });
         const myJson = await response.json(); //extract JSON from the http response
         // do something with myJson
-        console.log(loginBody);
         console.log(myJson);
     }
 }
