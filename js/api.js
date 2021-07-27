@@ -37,7 +37,7 @@ class ApiAuth {
             this.resultErrFunction(t);
         }
     }
-    GetMyProfil = async(t, rf = () => {}, ref = () => {}) => {
+    GetMyProfil = async(t) => {
         try{
             const response = await fetch(mainUrl + 'users/getmyprofil', {
                 method: 'GET',

@@ -1,6 +1,9 @@
 var mySidenav = document.getElementById("mySidenav");
 var myMask = document.getElementById("myMask");
 
+const capitalizeFirstLetter = ([ first, ...rest ], locale = navigator.language) =>
+  first.toLocaleUpperCase(locale) + rest.join('')
+
 function openNav() {
     mySidenav.style.width = "250px";
     myMask.style = "display:block!important;";
@@ -15,9 +18,8 @@ function closeNav() {
 }
 
 var apiNav = new ApiAuth;
+
 getUser()
-const capitalizeFirstLetter = ([ first, ...rest ], locale = navigator.language) =>
-  first.toLocaleUpperCase(locale) + rest.join('')
 function getUser() {
     apiNav.resultFunction = (t)=>{    //token alırsan
         apiNav.resultFunction = (u)=>{//kullanıcıyı alırsan
