@@ -21,6 +21,10 @@
     cursor: pointer;
 }
 
+.c-t {
+    cursor: text;
+}
+
 .inactive {
     color: #a7a7a7;
 }
