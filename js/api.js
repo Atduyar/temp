@@ -3,7 +3,6 @@ class ApiAuth {
         this.resultFunction = resultFunction;
     }
     Login = async() => {
-        console.log(this.loginBody);
         const response = await fetch('https://api.atduyar.com/api/auth/login', {
             method: 'POST',
             body: JSON.stringify(ApiAuth.GetUser()),
@@ -28,16 +27,17 @@ class ApiAuth {
     }
     static GetToken() {
         var r = JSON.parse(sessionStorage.getItem("Evrimolog-Token"));
-            var remainderTs = Date.parse(r.expiration) - new Date().getTime(); console.log(remainderTs);
-            if (r != null) {
-                if (remainderTs < 100) {
-                    this.resultFunction = () => { console.log("a"); return GetToken() };
-                    Login();
-                } else {
-                    return r;
-                }
-            } else { //giris yapılmamıs
-                return null;
+        var remainderTs = Date.parse(r.expiration) - new Date().getTime();
+        console.log(remainderTs);
+        if (r != null) {
+            if (remainderTs < 100) {
+                this.resultFunction = () => { console.log("a"); return GetToken() };
+                Login();
+            } else {
+                return r;
             }
+        } else { //giris yapılmamıs
+            return null;
         }
     }
+}
