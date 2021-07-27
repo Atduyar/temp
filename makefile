@@ -5,9 +5,9 @@ mblogs:
 mblogView:
 	htmlCreator/main.exe blogView blogView 
 login:
-	htmlCreator/main.exe login login null
+	htmlCreator/main.exe login login nulll
 signup:
-	htmlCreator/main.exe signup login signup
+	htmlCreator/main.exe signup login nulllsignup
 
 
 
