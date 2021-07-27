@@ -25,7 +25,8 @@ var api = new ApiAuth();
 function login() {
     var loginFormInputs = document.getElementById("loginForm").getElementsByTagName("input");
 
-    api.loginBody = { emailornickname: loginFormInputs[0].value, password: loginFormInputs[1].value };
+    ApiAuth.SaveUser({ emailornickname: loginFormInputs[0].value, password: loginFormInputs[1].value });
+
     api.resultFunction = (t) => {
         console.log(t);
     };

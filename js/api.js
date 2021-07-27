@@ -1,13 +1,12 @@
 class ApiAuth {
-    constructor(loginBody = null, resultFunction = null) {
-        this.loginBody = loginBody;
+    constructor(resultFunction = null) {
         this.resultFunction = resultFunction;
     }
     Login = async() => {
         console.log(this.loginBody);
         const response = await fetch('https://api.atduyar.com/api/auth/login', {
             method: 'POST',
-            body: JSON.stringify(this.loginBody),
+            body: JSON.stringify(ApiAuth.GetUser()),
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -33,7 +32,6 @@ class ApiAuth {
         if (r != null) {
             if (remainderTs < 100) {
                 this.resultFunction = () => { console.log("a"); return GetToken() };
-                this.loginBody = GetUser();
                 Login();
             } else {
                 return r;
