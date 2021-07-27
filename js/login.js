@@ -26,6 +26,8 @@ var user = GetUser();
 if (user) {
     loginFormInputs[0].value = user.emailornickname;
     loginFormInputs[1].value = user.password;
+} else {
+    console.log(user);
 }
 
 function login() {
