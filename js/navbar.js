@@ -16,6 +16,7 @@ function closeNav() {
 
 var user = ApiAuth.GetUser();
 getUser()
+
 function getUser() {
-    
+    console.log(user);
 }
