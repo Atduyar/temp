@@ -12,7 +12,34 @@ class ApiAuth {
                 'Content-Type': 'application/json'
             }
         });
-        const myJson = await response.json();
-        this.resultFunction(myJson);
+        const t = await response.json();
+        SaveToken(t);
+        this.resultFunction(t);
+    }
+
+    static SaveToken(t) {
+        sessionStorage.setItem("Evrimolog-Token", t);
+    }
+    static SaveUser(u) {
+        localStorage.setItem("Evrimolog-User", u);
+    }
+    static GetUser() {
+        return localStorage.getItem("Evrimolog-User");
+    }
+    static GetToken() {
+        var r = sessionStorage.getItem("Evrimolog-Token");
+        var remainderTs = Date.parse(r.expiration) - new Date().getTime();
+        console.log(remainderTs);
+        if (r != null) {
+            if (remainderTs < 100) {
+                this.resultFunction = () => { console.log("a"); return GetToken() };
+                this.loginBody = GetUser();
+                Login();
+            } else {
+                return r;
+            }
+        } else { //giris yapılmamıs
+            return null;
+        }
     }
 }
