@@ -35,6 +35,10 @@
     }
 }
 
+* {
+    font-family: 'Bona Nova', serif;
+}
+
 .mobil {
     display: none;
 }
