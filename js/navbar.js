@@ -13,19 +13,20 @@ function closeNav() {
     setTimeout(() => { document.getElementById("myMask").style = ""; }, 500);
 
 }
-var apii = new ApiAuth;
+
+var apiNav = new ApiAuth;
 getUser()
 
 function getUser() {
-    apii.resultFunction = (t)=>{    
-        apii.resultFunction = (u)=>{
+    apiNav.resultFunction = (t)=>{    //token alırsan
+        apiNav.resultFunction = (u)=>{//kullanıcıyı alırsan
             console.log(u);
         }
-        apii.GetMyProfil(t.token);
+        // apiNav.resultErrFunction = apiNav.resultErrFunction;//kullanıcıyı almasa
+        apiNav.GetMyProfil(t.token);
+    };
+    apiNav.resultErrFunction = (t)=>{//token almasa
         console.log(t);
     };
-    apii.resultErrFunction = (t)=>{
-        console.log(t);
-    };
-    ApiAuth.GetToken(apii);
+    ApiAuth.GetToken(apiNav);
 }
