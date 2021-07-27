@@ -30,7 +30,7 @@ class ApiAuth {
             }
         });
         const t = await response.json();
-        if (t.success == undefined || t.success) {
+        if (t.success == undefined) {
             ApiAuth.SaveToken(t);
             this.resultFunction(t);
         } else {
