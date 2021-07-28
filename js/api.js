@@ -53,6 +53,49 @@ class ApiAuth {
             this.resultErrFunction(err);
         }
     }
+    Post = async(url,b) => {
+        try{
+            const response = await fetch(mainUrl + url, {
+                method: 'GET',
+                body: JSON.stringify(b),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            const r = await response.json();
+            if (r.success != undefined && t.success == false) {
+                this.resultErrFunction(r);
+            }
+            else{
+                this.resultFunction(r);
+            }
+        }
+        catch(err){
+            this.resultErrFunction(err);
+        }
+    }
+    PostAuth = async(url,t,b) => {
+        try{
+            const response = await fetch(mainUrl + url, {
+                method: 'GET',
+                body: JSON.stringify(b),
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + t
+                }
+            });
+            const r = await response.json();
+            if (r.success != undefined && t.success == false) {
+                this.resultErrFunction(r);
+            }
+            else{
+                this.resultFunction(r);
+            }
+        }
+        catch(err){
+            this.resultErrFunction(err);
+        }
+    }
 
     static SaveToken(t) {
         sessionStorage.setItem("Evrimolog-Token", JSON.stringify(t));
