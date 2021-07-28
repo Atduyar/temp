@@ -21,7 +21,7 @@ function getBlogs(pageNumber = 1){
             document.getElementById("blog-list").innerHTML = blogsHtml;
         }
         apiNav.resultErrFunction = apiNav.resultErrFunction;
-        apiNav.PostAuth("blogs/getbypage", t, {PageNumber: pageNumber, PageSize: 50});
+        apiNav.PostAuth("blogs/getbypage", t.expiration, {PageNumber: pageNumber, PageSize: 50});
     }
     apiNav.resultErrFunction = (t)=>{
         if(tokenNumber == -1){//guest giris yapılıyor
