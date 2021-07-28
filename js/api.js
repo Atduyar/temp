@@ -1,9 +1,10 @@
 const mainUrl = "https://api.atduyar.com/api/";
 
 class ApiAuth {
-    constructor(resultFunction = () => {}, resultErrFunction = () => {}) {
+    constructor(resultFunction = () => {}, resultErrFunction = () => {}, resultUnAuthFunction =  ()=>{}) {
         this.resultFunction = resultFunction;
         this.resultErrFunction = resultErrFunction;
+        this.resultUnAuthFunction = resultUnAuthFunction;
     }
     Login = async(user = undefined) => {
         const response = await fetch(mainUrl + 'auth/login', {
@@ -123,7 +124,7 @@ class ApiAuth {
                 return 0; // yeniden giris yapılmıs
             }
             else{
-                x.resultErrFunction(r);
+                x.resultUnAuthFunction(r);
                 return -1; // giris yapılmamıs
             }
         }
