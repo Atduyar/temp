@@ -3,7 +3,6 @@
 getBlogs()
 function getBlogs(pageNumber = 1){
     var blogsHtml = "";
-    var tokenNumber = -2;
     apiNav.resultFunction = (t)=>{
         console.log(tokenNumber);
         apiNav.resultFunction = (b)=>{
@@ -48,6 +47,5 @@ function getBlogs(pageNumber = 1){
         apiNav.resultErrFunction = apiNav.resultErrFunction;
         apiNav.Post("blogs/getbypageGuest", {PageNumber: pageNumber, PageSize: 50});
     }
-    tokenNumber = -3;
-    tokenNumber = ApiAuth.GetToken(apiNav)
+    ApiAuth.GetToken(apiNav)
 }
