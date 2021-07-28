@@ -1,4 +1,4 @@
-var apiNav = ApiAuth();
+// var apiNav = ApiAuth();
 
 getBlogs()
 function getBlogs(pageNumber = 1){
