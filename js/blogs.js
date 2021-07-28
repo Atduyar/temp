@@ -17,6 +17,7 @@ function getBlogs(pageNumber = 1){
                 <p class="p-aciklama-blog-item">${b[i].blogSummary}</p>
             </div>`;
             }
+            document.getElementById("blog-list").innerHTML = blogsHtml;
         }
         apiNav.resultErrFunction = apiNav.resultErrFunction;
         apiNav.PostAuth("blogs/getbypageGuest", t, {PageNumber: pageNumber, PageSize: 50});
