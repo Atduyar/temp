@@ -56,7 +56,7 @@ class ApiAuth {
     Post = async(url,b) => {
         try{
             const response = await fetch(mainUrl + url, {
-                method: 'GET',
+                method: 'POST',
                 body: JSON.stringify(b),
                 headers: {
                     'Content-Type': 'application/json'
@@ -77,7 +77,7 @@ class ApiAuth {
     PostAuth = async(url,t,b) => {
         try{
             const response = await fetch(mainUrl + url, {
-                method: 'GET',
+                method: 'POST',
                 body: JSON.stringify(b),
                 headers: {
                     'Content-Type': 'application/json',
