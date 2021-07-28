@@ -3,7 +3,9 @@
 getBlogs()
 function getBlogs(pageNumber = 1){
     var blogsHtml = "";
+    var tokenNumber = -2;
     apiNav.resultFunction = (t)=>{
+        console.log(tokenNumber);
         apiNav.resultFunction = (b)=>{
             console.log(b);
             for(var i = 0;i<b.length;i++){
@@ -24,6 +26,7 @@ function getBlogs(pageNumber = 1){
         apiNav.PostAuth("blogs/getbypage", t.token, {PageNumber: pageNumber, PageSize: 50});
     }
     apiNav.resultErrFunction = (t)=>{
+        console.log(tokenNumber);
         if(tokenNumber == -1){//guest giris yapılıyor
             apiNav.resultFunction = (b)=>{
                 console.log(b);
@@ -48,5 +51,6 @@ function getBlogs(pageNumber = 1){
             console.log(t);
         }
     }
-    var tokenNumber = ApiAuth.GetToken(apiNav)
+    tokenNumber = -3;
+    tokenNumber = ApiAuth.GetToken(apiNav)
 }
