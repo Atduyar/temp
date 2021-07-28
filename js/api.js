@@ -123,6 +123,7 @@ class ApiAuth {
                 return 0; // yeniden giris yapılmıs
             }
             else{
+                x.resultErrFunction(r);
                 return -1; // giris yapılmamıs
             }
         }
