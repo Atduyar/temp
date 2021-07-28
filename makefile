@@ -48,6 +48,7 @@ github:
 	git add .\js\navbar.js
 	git add .\js\login.js
 	git add .\js\api.js
+	git add .\js\blogs.js
 
 	git add .\makefile
 
