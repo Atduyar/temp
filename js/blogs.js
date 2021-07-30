@@ -2,7 +2,7 @@ var apiBlogs = new ApiAuth();
 let pageNumber = 1;
 
 function setBlogs(b) {
-
+    var blogsHtml = "";
     for (var i = 0; i < b.length; i++) {
         blogsHtml +=
             `<div class="blog-item">
@@ -28,7 +28,6 @@ function setBlogs(b) {
 getBlogs()
 
 function getBlogs(pageNumber = 1) {
-    var blogsHtml = "";
     apiBlogs.resultFunction = (t) => {
         console.log(t);
         apiBlogs.resultFunction = (b) => {
