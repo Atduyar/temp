@@ -62,7 +62,7 @@ function anan() {
     documentHeight = document.body.scrollHeight;
     currentScroll = window.scrollY + window.innerHeight;
     if (documentHeight < currentScroll + modifier && pageNumber == pageNumberTemp) {
-        console.log("getBlog!!!!!");
+        console.log("getBlog!!!!!: ", pageNumber);
         pageNumberTemp = pageNumber + 1;
         getBlogs(pageNumber);
     }
