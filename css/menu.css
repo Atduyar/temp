@@ -10,6 +10,16 @@
     transform: translateY(calc(-50% - var(--navbar-h)));
 }
 
+.nav-bar-menu {
+    width: 25%;
+}
+
+.nav-bar-search {
+    width: 50%;}
+
+.nav-bar-title {
+    width: 25%;}
+
 .sidenav {
     height: 100%;
     width: 0;
