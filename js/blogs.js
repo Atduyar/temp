@@ -15,10 +15,10 @@ function setBlogs(b) {
             <p class="p-aciklama-blog-item">${b[i].blogSummary}</p>
         </div>`;
     }
-    if (b.length / 4 < 3) {
-        modifier = 0;
+    if (b.length < 50) {
+        pageNumberTemp++;
+        pageNumberTemp++;
     }
-    document.getElementById("blog-list").innerHTML = blogsHtml;
 
     if (pageNumber == 1) {
         document.getElementById("blog-list").innerHTML = blogsHtml;
