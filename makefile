@@ -40,7 +40,6 @@ github:
 	git add .\signup.html
 
 	git add .\css\const-parameter.css
-	git add .\css\topbar.css
 	git add .\css\blogView.css
 	git add .\css\blogs.css
 	git add .\css\login.css
