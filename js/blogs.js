@@ -1,15 +1,16 @@
 // var apiNav = ApiAuth();
 
 getBlogs()
-function getBlogs(pageNumber = 1){
+
+function getBlogs(pageNumber = 1) {
     var blogsHtml = "";
-    apiNav.resultFunction = (t)=>{
-        console.log(tokenNumber);
-        apiNav.resultFunction = (b)=>{
+    apiNav.resultFunction = (t) => {
+        console.log(t);
+        apiNav.resultFunction = (b) => {
             console.log(b);
-            for(var i = 0;i<b.length;i++){
-                blogsHtml += 
-                `<div class="blog-item">
+            for (var i = 0; i < b.length; i++) {
+                blogsHtml +=
+                    `<div class="blog-item">
                     <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}">
                     <div class="kategori-bar-blog-item">
                         <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
@@ -22,17 +23,17 @@ function getBlogs(pageNumber = 1){
             document.getElementById("blog-list").innerHTML = blogsHtml;
         }
         apiNav.resultErrFunction = apiNav.resultErrFunction;
-        apiNav.PostAuth("blogs/getbypage", t.token, {PageNumber: pageNumber, PageSize: 50});
+        apiNav.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: 50 });
     }
-    apiNav.resultErrFunction = (t)=>{
+    apiNav.resultErrFunction = (t) => {
         console.log(t);
     }
-    apiNav.resultUnAuthFunction = (t)=>{//guest giris yapılıyor
-        apiNav.resultFunction = (b)=>{
+    apiNav.resultUnAuthFunction = (t) => { //guest giris yapılıyor
+        apiNav.resultFunction = (b) => {
             console.log(b);
-            for(var i = 0;i<b.length;i++){
-                blogsHtml += 
-                `<div class="blog-item">
+            for (var i = 0; i < b.length; i++) {
+                blogsHtml +=
+                    `<div class="blog-item">
                     <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}">
                     <div class="kategori-bar-blog-item">
                         <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
@@ -45,7 +46,7 @@ function getBlogs(pageNumber = 1){
             document.getElementById("blog-list").innerHTML = blogsHtml;
         }
         apiNav.resultErrFunction = apiNav.resultErrFunction;
-        apiNav.Post("blogs/getbypageGuest", {PageNumber: pageNumber, PageSize: 50});
+        apiNav.Post("blogs/getbypageGuest", { PageNumber: pageNumber, PageSize: 50 });
     }
     ApiAuth.GetToken(apiNav)
 }
