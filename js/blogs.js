@@ -1,6 +1,30 @@
 var apiBlogs = new ApiAuth();
-var firstLoad = false;
 let pageNumber = 1;
+
+function setBlogs(b) {
+
+    for (var i = 0; i < b.length; i++) {
+        blogsHtml +=
+            `<div class="blog-item">
+            <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}">
+            <div class="kategori-bar-blog-item">
+                <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
+                <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
+            </div>
+            <p class="text-color p-baslik-blog-item c-p">${b[i].blogTitle}</p>
+            <p class="p-aciklama-blog-item">${b[i].blogSummary}</p>
+        </div>`;
+    }
+    document.getElementById("blog-list").innerHTML = blogsHtml;
+    pageNumber++;
+
+    if (pageNumber == 1) {
+        document.getElementById("blog-list").innerHTML = blogsHtml;
+    } else {
+        document.getElementById("blog-list").innerHTML += blogsHtml;
+    }
+}
+
 getBlogs()
 
 function getBlogs(pageNumber = 1) {
@@ -9,21 +33,7 @@ function getBlogs(pageNumber = 1) {
         console.log(t);
         apiBlogs.resultFunction = (b) => {
             console.log(b);
-            for (var i = 0; i < b.length; i++) {
-                blogsHtml +=
-                    `<div class="blog-item">
-                    <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}">
-                    <div class="kategori-bar-blog-item">
-                        <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
-                        <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
-                    </div>
-                    <p class="text-color p-baslik-blog-item c-p">${b[i].blogTitle}</p>
-                    <p class="p-aciklama-blog-item">${b[i].blogSummary}</p>
-                </div>`;
-            }
-            document.getElementById("blog-list").innerHTML = blogsHtml;
-            pageNumber++;
-            firstLoad = true;
+            setBlogs(b);
         }
         apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
         apiBlogs.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: 50 });
@@ -34,21 +44,7 @@ function getBlogs(pageNumber = 1) {
     apiBlogs.resultUnAuthFunction = (t) => { //guest giris yapılıyor
         apiBlogs.resultFunction = (b) => {
             console.log(b);
-            for (var i = 0; i < b.length; i++) {
-                blogsHtml +=
-                    `<div class="blog-item">
-                    <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}">
-                    <div class="kategori-bar-blog-item">
-                        <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
-                        <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
-                    </div>
-                    <p class="text-color p-baslik-blog-item c-p">${b[i].blogTitle}</p>
-                    <p class="p-aciklama-blog-item">${b[i].blogSummary}</p>
-                </div>`;
-            }
-            document.getElementById("blog-list").innerHTML = blogsHtml;
-            pageNumber++;
-            firstLoad = true;
+            setBlogs(b);
         }
         apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
         apiBlogs.Post("blogs/getbypageGuest", { PageNumber: pageNumber, PageSize: 50 });
@@ -59,7 +55,7 @@ function getBlogs(pageNumber = 1) {
 let documentHeight;
 let currentScroll;
 let modifier = 750;
-var pageNumberTemp;
+var pageNumberTemp = 2; //1.sayfa cekildiyse
 
 anan();
 
@@ -67,7 +63,11 @@ function anan() {
     console.clear();
     documentHeight = document.body.scrollHeight;
     currentScroll = window.scrollY + window.innerHeight;
-    console.log(documentHeight < currentScroll + modifier);
+    if (documentHeight < currentScroll + modifier && pageNumber == pageNumberTemp) {
+        console.log("getBlog!!!!!");
+        pageNumberTemp = pageNumber + 1;
+        getBlogs(pageNumber);
+    }
 
-    setTimeout(anan, 200);
+    setTimeout(anan, 250);
 }

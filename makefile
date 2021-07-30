@@ -44,6 +44,7 @@ github:
 	git add .\css\blogView.css
 	git add .\css\blogs.css
 	git add .\css\login.css
+	git add .\css\menu.css
 
 	git add .\js\navbar.js
 	git add .\js\login.js
