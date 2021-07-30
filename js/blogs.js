@@ -1,12 +1,12 @@
-// var apiNav = ApiAuth();
+var apiBlogs = ApiAuth();
 
 getBlogs()
 
 function getBlogs(pageNumber = 1) {
     var blogsHtml = "";
-    apiNav.resultFunction = (t) => {
+    apiBlogs.resultFunction = (t) => {
         console.log(t);
-        apiNav.resultFunction = (b) => {
+        apiBlogs.resultFunction = (b) => {
             console.log(b);
             for (var i = 0; i < b.length; i++) {
                 blogsHtml +=
@@ -22,14 +22,14 @@ function getBlogs(pageNumber = 1) {
             }
             document.getElementById("blog-list").innerHTML = blogsHtml;
         }
-        apiNav.resultErrFunction = apiNav.resultErrFunction;
-        apiNav.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: 50 });
+        apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
+        apiBlogs.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: 50 });
     }
-    apiNav.resultErrFunction = (t) => {
+    apiBlogs.resultErrFunction = (t) => {
         console.log(t);
     }
-    apiNav.resultUnAuthFunction = (t) => { //guest giris yapılıyor
-        apiNav.resultFunction = (b) => {
+    apiBlogs.resultUnAuthFunction = (t) => { //guest giris yapılıyor
+        apiBlogs.resultFunction = (b) => {
             console.log(b);
             for (var i = 0; i < b.length; i++) {
                 blogsHtml +=
@@ -45,8 +45,8 @@ function getBlogs(pageNumber = 1) {
             }
             document.getElementById("blog-list").innerHTML = blogsHtml;
         }
-        apiNav.resultErrFunction = apiNav.resultErrFunction;
-        apiNav.Post("blogs/getbypageGuest", { PageNumber: pageNumber, PageSize: 50 });
+        apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
+        apiBlogs.Post("blogs/getbypageGuest", { PageNumber: pageNumber, PageSize: 50 });
     }
-    ApiAuth.GetToken(apiNav)
+    ApiAuth.GetToken(apiBlogs)
 }
