@@ -1,7 +1,7 @@
 const mainUrl = "https://api.atduyar.com/api/";
 
 class ApiAuth {
-    constructor(resultFunction = () => {}, resultErrFunction = () => {}, resultUnAuthFunction =  ()=>{}) {
+    constructor(resultFunction = () => {}, resultErrFunction = () => {}, resultUnAuthFunction = () => {}) {
         this.resultFunction = resultFunction;
         this.resultErrFunction = resultErrFunction;
         this.resultUnAuthFunction = resultUnAuthFunction;
@@ -39,7 +39,7 @@ class ApiAuth {
         }
     }
     GetMyProfil = async(t) => {
-        try{
+        try {
             const response = await fetch(mainUrl + 'users/getmyprofil', {
                 method: 'GET',
                 headers: {
@@ -49,13 +49,12 @@ class ApiAuth {
             });
             const r = await response.json();
             this.resultFunction(r);
-        }
-        catch(err){
+        } catch (err) {
             this.resultErrFunction(err);
         }
     }
-    Post = async(url,b) => {
-        try{
+    Post = async(url, b) => {
+        try {
             const response = await fetch(mainUrl + url, {
                 method: 'POST',
                 body: JSON.stringify(b),
@@ -66,17 +65,15 @@ class ApiAuth {
             const r = await response.json();
             if (r.success != undefined && t.success == false) {
                 this.resultErrFunction(r);
-            }
-            else{
+            } else {
                 this.resultFunction(r);
             }
-        }
-        catch(err){
+        } catch (err) {
             this.resultErrFunction(err);
         }
     }
-    PostAuth = async(url,t,b) => {
-        try{
+    PostAuth = async(url, t, b) => {
+        try {
             const response = await fetch(mainUrl + url, {
                 method: 'POST',
                 body: JSON.stringify(b),
@@ -88,12 +85,10 @@ class ApiAuth {
             const r = await response.json();
             if (r.success != undefined && t.success == false) {
                 this.resultErrFunction(r);
-            }
-            else{
+            } else {
                 this.resultFunction(r);
             }
-        }
-        catch(err){
+        } catch (err) {
             this.resultErrFunction(err);
         }
     }
@@ -119,11 +114,10 @@ class ApiAuth {
                 return 0; // Ok
             }
         } else {
-            if(localStorage.getItem("Evrimolog-User") != undefined){
+            if (localStorage.getItem("Evrimolog-User") != undefined) {
                 x.Login(); // token alır sonra x.resultFunction(r); uygular. 
                 return 0; // yeniden giris yapılmıs
-            }
-            else{
+            } else {
                 x.resultUnAuthFunction(r);
                 return -1; // giris yapılmamıs
             }
