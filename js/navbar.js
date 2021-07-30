@@ -1,11 +1,11 @@
 var mySidenav = document.getElementById("mySidenav");
 var myMask = document.getElementById("myMask");
 
-const capitalizeFirstLetter = ([ first, ...rest ], locale = navigator.language) =>
-  first.toLocaleUpperCase(locale) + rest.join('')
+const capitalizeFirstLetter = ([first, ...rest], locale = navigator.language) =>
+    first.toLocaleUpperCase(locale) + rest.join('')
 
 function openNav() {
-    mySidenav.style.width = "250px";
+    mySidenav.style.width = "100%";
     myMask.style = "display:block!important;";
     myMask.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
@@ -20,16 +20,17 @@ function closeNav() {
 var apiNav = new ApiAuth;
 
 getUser()
+
 function getUser() {
-    apiNav.resultFunction = (t)=>{    //token alırsan
-        apiNav.resultFunction = (u)=>{//kullanıcıyı alırsan
-            console.log(u);
-            document.getElementsByClassName("nav-bar")[0].getElementsByClassName("nav-bar-pc")[0].children[0].innerText = capitalizeFirstLetter(u.nickname);
-        }
-        // apiNav.resultErrFunction = apiNav.resultErrFunction;//kullanıcıyı almasa
+    apiNav.resultFunction = (t) => { //token alırsan
+        apiNav.resultFunction = (u) => { //kullanıcıyı alırsan
+                console.log(u);
+                document.getElementsByClassName("nav-bar")[0].getElementsByClassName("nav-bar-pc")[0].children[0].innerText = capitalizeFirstLetter(u.nickname);
+            }
+            // apiNav.resultErrFunction = apiNav.resultErrFunction;//kullanıcıyı almasa
         apiNav.GetMyProfil(t.token);
     };
-    apiNav.resultErrFunction = (t)=>{//token almasa
+    apiNav.resultErrFunction = (t) => { //token almasa
         console.log(t);
     };
     ApiAuth.GetToken(apiNav);
