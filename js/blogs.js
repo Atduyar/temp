@@ -1,4 +1,5 @@
 var apiBlogs = new ApiAuth();
+var firstLoad = false;
 
 getBlogs()
 
@@ -21,6 +22,7 @@ function getBlogs(pageNumber = 1) {
                 </div>`;
             }
             document.getElementById("blog-list").innerHTML = blogsHtml;
+            firstLoad = true;
         }
         apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
         apiBlogs.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: 50 });
@@ -44,9 +46,21 @@ function getBlogs(pageNumber = 1) {
                 </div>`;
             }
             document.getElementById("blog-list").innerHTML = blogsHtml;
+            firstLoad = true;
         }
         apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
         apiBlogs.Post("blogs/getbypageGuest", { PageNumber: pageNumber, PageSize: 50 });
     }
     ApiAuth.GetToken(apiBlogs)
+}
+let documentHeight;
+let currentScroll;
+
+function anan() {
+    documentHeight = document.body.scrollHeight;
+    currentScroll = window.scrollY + window.innerHeight;
+    console.log(documentHeight, " - ", currentScroll);
+    console.clear();
+    
+  setTimeout(anan, 200); 
 }
