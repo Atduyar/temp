@@ -16,8 +16,7 @@ function setBlogs(b) {
         </div>`;
     }
     if (b.length < 50) {
-        pageNumberTemp++;
-        pageNumberTemp++;
+        pageNumberTemp = -1;
     }
 
     if (pageNumber == 1) {

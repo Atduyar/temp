@@ -4,6 +4,13 @@
     } */
 }
 
+.menu-items {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(calc(-50% - var(--navbar-h)));
+}
+
 .sidenav {
     height: 100%;
     width: 0;
