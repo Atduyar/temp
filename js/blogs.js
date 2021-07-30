@@ -16,13 +16,13 @@ function setBlogs(b) {
         </div>`;
     }
     document.getElementById("blog-list").innerHTML = blogsHtml;
-    pageNumber++;
 
     if (pageNumber == 1) {
         document.getElementById("blog-list").innerHTML = blogsHtml;
     } else {
         document.getElementById("blog-list").innerHTML += blogsHtml;
     }
+    pageNumber++;
 }
 
 getBlogs()
