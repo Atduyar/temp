@@ -12,12 +12,12 @@ function setBlogs(b) {
                 <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
             </div>
             <p class="text-color p-baslik-blog-item c-p">${b[i].blogTitle}</p>
-            <p class="p-aciklama-blog-item">${b[i].blogSummary}</p>
+            <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
         </div>`;
     }
     if (b.length < 50) {
         pageNumberTemp = -1;
-    }
+    } //str.substring(1, 3)
 
     if (pageNumber == 1) {
         document.getElementById("blog-list").innerHTML = blogsHtml;
