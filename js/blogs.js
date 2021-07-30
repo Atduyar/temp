@@ -15,6 +15,9 @@ function setBlogs(b) {
             <p class="p-aciklama-blog-item">${b[i].blogSummary}</p>
         </div>`;
     }
+    if(b.length/4 < 3){
+        modifier = 0;
+    }
     document.getElementById("blog-list").innerHTML = blogsHtml;
 
     if (pageNumber == 1) {
