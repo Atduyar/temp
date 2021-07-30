@@ -57,10 +57,10 @@ let documentHeight;
 let currentScroll;
 
 function anan() {
+    console.clear();
     documentHeight = document.body.scrollHeight;
     currentScroll = window.scrollY + window.innerHeight;
     console.log(documentHeight, " - ", currentScroll);
 
     setTimeout(anan, 200);
-    console.clear();
 }
