@@ -10,6 +10,10 @@
     transform: translateY(calc(-50% - var(--navbar-h)));
 }
 
+.menu-items a {
+    margin-bottom: 20px;
+}
+
 .nav-bar-menu {
     height: 100%;
     width: 25%;
@@ -21,6 +25,7 @@
     height: 100%;
     width: 50%;
     display: flex;
+    justify-content: center;
 }
 
 .nav-bar-title {
