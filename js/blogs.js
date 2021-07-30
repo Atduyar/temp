@@ -58,15 +58,16 @@ function getBlogs(pageNumber = 1) {
 
 let documentHeight;
 let currentScroll;
-let modifier = 400;
+let modifier = 750;
 var pageNumberTemp;
 
 anan();
+
 function anan() {
     console.clear();
     documentHeight = document.body.scrollHeight;
     currentScroll = window.scrollY + window.innerHeight;
-    console.log(documentHeight < currentScroll+modifier);
+    console.log(documentHeight < currentScroll + modifier);
 
     setTimeout(anan, 200);
 }
