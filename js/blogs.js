@@ -1,4 +1,4 @@
-var apiBlogs = ApiAuth();
+var apiBlogs = new ApiAuth();
 
 getBlogs()
 
