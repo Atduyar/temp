@@ -32,8 +32,9 @@ getBlogs()
 function getBlogs(pageNumber = 1) {
     apiBlogs.resultFunction = (t) => {
         console.log(t);
-        apiBlogs.resultFunction = (b) => {
+        apiBlogs.resultFunction = (b, h) => {
             console.log(b);
+            console.log(h);
             setBlogs(b);
         }
         apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
@@ -43,7 +44,7 @@ function getBlogs(pageNumber = 1) {
         console.log(t);
     }
     apiBlogs.resultUnAuthFunction = (t) => { //guest giris yapılıyor
-        apiBlogs.resultFunction = (b) => {
+        apiBlogs.resultFunction = (b, h) => {
             console.log(b);
             setBlogs(b);
         }
