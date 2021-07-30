@@ -60,7 +60,6 @@ var pageNumberTemp = 2; //1.sayfa cekildiyse
 anan();
 
 function anan() {
-    console.clear();
     documentHeight = document.body.scrollHeight;
     currentScroll = window.scrollY + window.innerHeight;
     if (documentHeight < currentScroll + modifier && pageNumber == pageNumberTemp) {
