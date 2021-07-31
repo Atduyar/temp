@@ -31,71 +31,71 @@ function setBlogs(b) {
         </div>`;
     }
     fakeNavBar(false); //sahte nav barı kapat
-    if (b.length < (pageNumber == 1) ? (pageBlogCounter - 1): pageBlogCounter) {
-            pageNumberTemp = -1; //make last page
+    if (b.length < ((pageNumber == 1) ? (pageBlogCounter - 1) : pageBlogCounter)) {
+        pageNumberTemp = -1; //make last page
 
-        }
-
-        document.getElementById("blog-list").innerHTML += blogsHtml;
-
-        pageNumber++;
     }
 
-    getBlogs()
+    document.getElementById("blog-list").innerHTML += blogsHtml;
 
-    function getBlogs(pageNumber = 1) {
-        apiBlogs.resultFunction = (t) => {
-            console.log(t);
-            apiBlogs.resultFunction = (b) => {
-                console.log(b);
-                setBlogs(b);
-            }
-            apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
-            apiBlogs.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: pageBlogCounter });
+    pageNumber++;
+}
+
+getBlogs()
+
+function getBlogs(pageNumber = 1) {
+    apiBlogs.resultFunction = (t) => {
+        console.log(t);
+        apiBlogs.resultFunction = (b) => {
+            console.log(b);
+            setBlogs(b);
         }
-        apiBlogs.resultErrFunction = (t) => {
-            if (t instanceof TypeError) {
-                pageNumberTemp = -1; // make last page
-                console.log("Sanslı zaman ;D");
-            } else {
-                console.log(t);
-            }
-        }
-        apiBlogs.resultUnAuthFunction = (t) => { //guest giris yapılıyor
-            apiBlogs.resultFunction = (b) => {
-                console.log(b);
-                setBlogs(b);
-            }
-            apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
-            apiBlogs.Post("blogs/getbypageGuest", { PageNumber: pageNumber, PageSize: pageBlogCounter });
-        }
-        ApiAuth.GetToken(apiBlogs)
+        apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
+        apiBlogs.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: pageBlogCounter });
     }
-
-    let documentHeight;
-    let currentScroll;
-    let modifier = 750;
-    var pageNumberTemp = 2; //1.sayfa cekildiyse
-
-    anan();
-
-    function anan() {
-        documentHeight = document.body.scrollHeight;
-        currentScroll = window.scrollY + window.innerHeight;
-        if (documentHeight < currentScroll + modifier && pageNumber == pageNumberTemp) {
-            console.log("getBlog!!!!!: ", pageNumber);
-            fakeNavBar(true); //sahte nav barı aç
-            pageNumberTemp = pageNumber + 1;
-            getBlogs(pageNumber);
-        }
-
-        setTimeout(anan, 250);
-    }
-
-    function fakeNavBar(bool) {
-        if (!bool) {
-            document.getElementById("blog-list-fake").style = "display: none;";
+    apiBlogs.resultErrFunction = (t) => {
+        if (t instanceof TypeError) {
+            pageNumberTemp = -1; // make last page
+            console.log("Sanslı zaman ;D");
         } else {
-            document.getElementById("blog-list-fake").style = "";
+            console.log(t);
         }
     }
+    apiBlogs.resultUnAuthFunction = (t) => { //guest giris yapılıyor
+        apiBlogs.resultFunction = (b) => {
+            console.log(b);
+            setBlogs(b);
+        }
+        apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
+        apiBlogs.Post("blogs/getbypageGuest", { PageNumber: pageNumber, PageSize: pageBlogCounter });
+    }
+    ApiAuth.GetToken(apiBlogs)
+}
+
+let documentHeight;
+let currentScroll;
+let modifier = 750;
+var pageNumberTemp = 2; //1.sayfa cekildiyse
+
+anan();
+
+function anan() {
+    documentHeight = document.body.scrollHeight;
+    currentScroll = window.scrollY + window.innerHeight;
+    if (documentHeight < currentScroll + modifier && pageNumber == pageNumberTemp) {
+        console.log("getBlog!!!!!: ", pageNumber);
+        fakeNavBar(true); //sahte nav barı aç
+        pageNumberTemp = pageNumber + 1;
+        getBlogs(pageNumber);
+    }
+
+    setTimeout(anan, 250);
+}
+
+function fakeNavBar(bool) {
+    if (!bool) {
+        document.getElementById("blog-list-fake").style = "display: none;";
+    } else {
+        document.getElementById("blog-list-fake").style = "";
+    }
+}
