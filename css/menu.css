@@ -91,7 +91,7 @@
 .nav-bar-icon {
     height: var(--navbar-h);
     width: var(--navbar-h);
-    padding: 15px;
+    padding: 18.5px 15px;
     display: inline-block;
 }
 
