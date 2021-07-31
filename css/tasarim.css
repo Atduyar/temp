@@ -21,6 +21,12 @@
     background-color: blue;
 }
 
+.right-bar img {
+    width: 100%;
+    height: 100%;
+    padding: 0px 25px;
+}
+
 .item {
     height: 200px;
     width: 100%;
