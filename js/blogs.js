@@ -21,7 +21,7 @@ function setBlogs(b) {
     }
 
     if (pageNumber == 1) {
-        document.getElementById("blog-list").innerHTML = blogsHtml;
+        document.getElementById("blog-list").innerHTML += blogsHtml;
     } else {
         document.getElementById("blog-list").innerHTML += blogsHtml;
     }
