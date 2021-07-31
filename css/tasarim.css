@@ -11,3 +11,7 @@
 .baslik {
     font-weight: bold;
 }
+
+p {
+    display: inline;
+}
