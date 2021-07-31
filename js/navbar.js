@@ -5,11 +5,11 @@ const capitalizeFirstLetter = ([first, ...rest], locale = navigator.language) =>
     first.toLocaleUpperCase(locale) + rest.join('')
 
 function openNav() {
-    
-    mySidenav.style.opacity = "0";
     mySidenav.style.display = "block";
+    myMask.style.display = "block";
     setTimeout(() => { mySidenav.style.opacity = "1"; }, 100);
-    myMask.style = "background-color: rgba(0,0,0,0.4); display:block!important;";
+    setTimeout(() => { myMask.style.backgroundColor = "rgba(0,0,0,0.4)"; }, 100);
+    
 }
 
 function closeNav() {
