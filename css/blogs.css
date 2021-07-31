@@ -125,6 +125,31 @@
     width: var(--icerik-w);
     margin: 150px auto 0px auto;
 }
+.blog-list-long{
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--icerik-w);
+    margin: 150px auto 0px auto;
+    width: 70%!important;
+    padding: 0;
+    position: relative;
+}
+.blog-list-long .p-publish-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.blog-list-long .img-blog-item{
+    z-index: 5;
+    position: relative;
+    right: calc(-100%);
+    width: 43%;
+}
+.blog-list-long .kategori-bar-blog-item{
+    position: absolute;
+    top: calc(1em);
+    left: 0;
+}
 /* fake */
 #blog-list-fake {
 

@@ -26,8 +26,10 @@ function setBlogs(b) {
                 <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
                 <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
             </div>
-            <p class="text-color p-baslik-blog-item c-p">${b[i].blogTitle}</p>
-            <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
+            <div class="blog-des-group">
+                <p class="text-color p-baslik-blog-item c-p">${b[i].blogTitle}</p>
+                <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
+            </div>
         </div>`;
     }
     fakeNavBar(false); //sahte nav barı kapat
