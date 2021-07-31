@@ -43,7 +43,8 @@
     top: 0;
     left: 0;
     padding-top: 60px;
-    background-color: rgba(17,17,17,0);/* değistirersen navbar.js den de değistir */
+    opacity: 0;/* değistirersen navbar.js den de değistir */
+    background-color: #111;
     overflow-x: hidden;
     transition: 0.2s;
 }
