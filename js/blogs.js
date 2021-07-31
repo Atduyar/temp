@@ -30,7 +30,7 @@ function setBlogs(b) {
         </div>`;
     }
     fakeNavBar(false); //sahte nav barı kapat
-    if (b.length < 50) {
+    if (b.length < (pageNumber==1)? 49 : 50) {
         pageNumberTemp = -1; //make last page
 
     }
