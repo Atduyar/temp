@@ -40,6 +40,15 @@
     .blog-item {
         width: calc(100% / 1)!important;
     }
+    .nav-bar-title{
+        width: 50%!important;
+    }
+    .nav-bar-search{
+        display: none!important;
+    }
+    .nav-bar-menu{
+        width: 50%!important;
+    }
 }
 
 .div-image img {
