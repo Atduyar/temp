@@ -81,7 +81,6 @@
     width: var(--navbar-h);
     padding: 15px;
     display: inline-block;
-    cursor: pointer;
 }
 
 .a-nav {
