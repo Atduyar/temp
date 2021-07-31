@@ -1,5 +1,6 @@
 var apiBlogs = new ApiAuth();
 let pageNumber = 1;
+let pageBlogCounter = 50;
 
 function setBlogs(b) {
     var blogsHtml = "";
@@ -30,7 +31,7 @@ function setBlogs(b) {
         </div>`;
     }
     fakeNavBar(false); //sahte nav barı kapat
-    if (b.length < (pageNumber==1)? 49 : 50) {
+    if (b.length < (pageNumber == 1) ? pageBlogCounter - 1 : pageBlogCounter) {
         pageNumberTemp = -1; //make last page
 
     }
@@ -50,7 +51,7 @@ function getBlogs(pageNumber = 1) {
             setBlogs(b);
         }
         apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
-        apiBlogs.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: 50 });
+        apiBlogs.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: pageBlogCounter });
     }
     apiBlogs.resultErrFunction = (t) => {
         if (t instanceof TypeError) {
@@ -66,7 +67,7 @@ function getBlogs(pageNumber = 1) {
             setBlogs(b);
         }
         apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
-        apiBlogs.Post("blogs/getbypageGuest", { PageNumber: pageNumber, PageSize: 50 });
+        apiBlogs.Post("blogs/getbypageGuest", { PageNumber: pageNumber, PageSize: pageBlogCounter });
     }
     ApiAuth.GetToken(apiBlogs)
 }
