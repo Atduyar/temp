@@ -5,7 +5,7 @@ const capitalizeFirstLetter = ([first, ...rest], locale = navigator.language) =>
     first.toLocaleUpperCase(locale) + rest.join('')
 
 function openNav() {
-    mySidenav.style.backgroundColor = "rgba(17,17,17,1)";
+    mySidenav.style = "rgba(17,17,17,1)";
     myMask.style.backgroundColor = "rgba(0,0,0,0.4)";
     mySidenav.style += " display:block!important;";
     myMask.style += " display:block!important;";
