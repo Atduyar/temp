@@ -1,6 +1,6 @@
 var apiBlogs = new ApiAuth();
 let pageNumber = 1;
-let pageBlogCounter = 48;
+let pageBlogCounter = 39;
 
 function setBlogs(b) {
     var blogsHtml = "";
@@ -20,7 +20,7 @@ function setBlogs(b) {
     }
     for (var i = 0; i < b.length; i++) {
         blogsHtml +=
-            `<div class="blog-item">
+            `<div class="blog-item ${((i+1)%13 == 0)?"blog-list-long":""} ">
             <p class="p-publish-title only-long">
                 ${b[i].blogDate} <a class="c-p td-u">${b[i].authorName}</a> tarafından yazıldı.
             </p>
