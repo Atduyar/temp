@@ -1,4 +1,4 @@
-makeall: mblogs mblogView login signup github
+makeall: mblogs mblogView login signup tasarim github 
 
 mblogs:
 	htmlCreator/main.exe blogs blogs 
@@ -8,6 +8,8 @@ login:
 	htmlCreator/main.exe login login nulll
 signup:
 	htmlCreator/main.exe signup login nulllsignup
+tasarim:
+	htmlCreator/main.exe tasarim tasarim
 
 
 
