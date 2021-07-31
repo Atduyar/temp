@@ -7,15 +7,15 @@ const capitalizeFirstLetter = ([first, ...rest], locale = navigator.language) =>
 function openNav() {
     
     mySidenav.style = "display: block!important; background-color:rgba(17,17,17,1)";
-    myMask.style = "backgroundColor: rgba(0,0,0,0.4) display:block!important;";
+    myMask.style = "background-color: rgba(0,0,0,0.4); display:block!important;";
 }
 
 function closeNav() {
     mySidenav.style.backgroundColor = "rgba(17,17,17,0)";
     mySidenav.style.display = "";
     myMask.style.backgroundColor = "rgba(0,0,0,0)";
-    // setTimeout(() => { document.getElementById("mySidenav").style = ""; }, 500);
-    setTimeout(() => { document.getElementById("myMask").style = ""; }, 500);
+    setTimeout(() => { document.getElementById("mySidenav").style.display = ""; }, 500);
+    setTimeout(() => { document.getElementById("myMask").style.display = ""; }, 500);
 
 }
 
