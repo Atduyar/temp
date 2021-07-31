@@ -128,11 +128,17 @@
     width: var(--icerik-w);
     margin: 150px auto 0px auto;
 }
+.only-long{
+    display: none;
+}
 .blog-list-long{
     width: calc(100% / 3 *2)!important;
     margin-right: 10px;
     position: relative;
     padding: 0!important;
+}
+.blog-list-long .only-long{
+    display: block!important;
 }
 .blog-list-long .blog-item{
     width: 70%!important;

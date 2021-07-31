@@ -21,6 +21,9 @@ function setBlogs(b) {
     for (var i = 0; i < b.length; i++) {
         blogsHtml +=
             `<div class="blog-item">
+            <p class="p-publish-title only-long">
+                ${b.blogDate} <a class="c-p td-u">${b.authorName}</a> tarafından yazıldı.
+            </p>
             <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy">
             <div class="kategori-bar-blog-item">
                 <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
