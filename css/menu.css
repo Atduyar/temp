@@ -76,6 +76,10 @@
     display: block;
 }
 
+.sidenav a:hover {
+    font-size: 36px;
+}
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
