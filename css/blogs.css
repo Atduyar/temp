@@ -130,6 +130,8 @@
     flex-wrap: wrap;
     width: var(--icerik-w);
     margin: 150px auto 0px auto;
+}
+.blog-list-long .blog-item{
     width: 70%!important;
     padding: 0;
     position: relative;
