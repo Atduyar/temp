@@ -16,7 +16,7 @@ function setBlogs(b) {
         </div>`;
     }
     if (b.length < 50) {
-        pageNumberTemp = -1;
+        pageNumberTemp = -1; //make last page
     }
 
     if (pageNumber == 1) {
@@ -41,7 +41,7 @@ function getBlogs(pageNumber = 1) {
     }
     apiBlogs.resultErrFunction = (t) => {
         if (t instanceof TypeError) {
-            pageNumberTemp = -1;
+            pageNumberTemp = -1; // make last page
             console.log("Sanslı zaman ;D");
         } 
         else{
