@@ -43,10 +43,10 @@
     top: 0;
     left: 0;
     padding-top: 60px;
-    opacity: 0;/* değistirersen navbar.js den de değistir */
+    opacity: 0; /* değistirersen navbar.js da openNav() ve closeNav() de değistir */
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.2s;
+    transition: 0.2s; /* değistirersen navbar.js da openNav() ve closeNav() de değistir */
 }
 
 #myMask {

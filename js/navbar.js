@@ -7,16 +7,16 @@ const capitalizeFirstLetter = ([first, ...rest], locale = navigator.language) =>
 function openNav() {
     mySidenav.style.display = "block";
     myMask.style.display = "block";
-    setTimeout(() => { mySidenav.style.opacity = "1"; }, 100);
-    setTimeout(() => { myMask.style.backgroundColor = "rgba(0,0,0,0.4)"; }, 100);
+    setTimeout(() => { mySidenav.style.opacity = "1"; }, 100);/* sadece opacity dokun  */
+    setTimeout(() => { myMask.style.backgroundColor = "rgba(0,0,0,0.4)"; }, 100);/* sadece rgb ye dokun */
     
 }
 
 function closeNav() {
-    mySidenav.style.opacity = "0";
-    myMask.style.backgroundColor = "rgba(0,0,0,0)";
-    setTimeout(() => { document.getElementById("mySidenav").style.display = "none"; }, 500);
-    setTimeout(() => { document.getElementById("myMask").style.display = "none"; }, 500);
+    mySidenav.style.opacity = "0";/* sadece opacity dokun */
+    myMask.style.backgroundColor = "rgba(0,0,0,0)";/* sadece rgb ye dokun */
+    setTimeout(() => { document.getElementById("mySidenav").style.display = "none"; }, 500);/* sadece sondaki sayıya dokun -transition: 0.3s*/
+    setTimeout(() => { document.getElementById("myMask").style.display = "none"; }, 500);/* sadece sondaki sayıya dokun -transition: 0.3s*/
 
 }
 
