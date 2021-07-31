@@ -35,27 +35,7 @@ r: run
 
 
 github:
-	git add .\index.html
-	git add .\blogView.html
-	git add .\blogs.html
-	git add .\login.html
-	git add .\signup.html
-	git add .\tasarim.html
-
-	git add .\css\const-parameter.css
-	git add .\css\blogView.css
-	git add .\css\blogs.css
-	git add .\css\login.css
-	git add .\css\menu.css
-	git add .\css\tasarim.css
-
-	git add .\js\navbar.js
-	git add .\js\login.js
-	git add .\js\api.js
-	git add .\js\blogs.js
-
-	git add .\makefile
-
+	git add --all
 
 	git commit -m "tamam"
 	git push -u origin master
