@@ -132,7 +132,7 @@
     width: calc(100% / 3 *2)!important;
     margin-right: 10px;
     position: relative;
-    padding: 0;
+    padding: 0!important;
 }
 .blog-list-long .blog-item{
     width: 70%!important;
