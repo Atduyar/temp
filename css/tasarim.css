@@ -9,14 +9,14 @@
 
 .left-bar {
     display: inline-block;
-    width: 70%;
+    width: auto;
     background-color: red;
-    height: 200px;
 }
 
 .right-bar {
     display: inline-block;
-    width: 30%;
+    height: 100%;
+    width: calc(var(--icerik-w) / 3);
     background-color: blue;
 }
 
