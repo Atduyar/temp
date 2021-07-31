@@ -9,7 +9,8 @@
 
 .left-bar {
     display: inline-block;
-    width: auto;
+    width: inherit;
+    height: 100%;
     background-color: red;
 }
 
