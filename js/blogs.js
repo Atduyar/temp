@@ -3,6 +3,11 @@ let pageNumber = 1;
 
 function setBlogs(b) {
     var blogsHtml = "";
+    if (pageNumber == 1) {
+        var firstBlog = b.shift();
+        var divBlog = document.getElementsByClassName("div-blog")[0];
+        divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0].src = b.blogTitlePhotoUrl;
+    }
     for (var i = 0; i < b.length; i++) {
         blogsHtml +=
             `<div class="blog-item">
@@ -15,14 +20,14 @@ function setBlogs(b) {
             <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
         </div>`;
     }
-    fakeNavBar(false);//sahte nav barı kapat
+    fakeNavBar(false); //sahte nav barı kapat
     if (b.length < 50) {
         pageNumberTemp = -1; //make last page
-        
+
     }
 
     document.getElementById("blog-list").innerHTML += blogsHtml;
-    
+
     pageNumber++;
 }
 
@@ -42,8 +47,7 @@ function getBlogs(pageNumber = 1) {
         if (t instanceof TypeError) {
             pageNumberTemp = -1; // make last page
             console.log("Sanslı zaman ;D");
-        } 
-        else{
+        } else {
             console.log(t);
         }
     }
@@ -70,7 +74,7 @@ function anan() {
     currentScroll = window.scrollY + window.innerHeight;
     if (documentHeight < currentScroll + modifier && pageNumber == pageNumberTemp) {
         console.log("getBlog!!!!!: ", pageNumber);
-        fakeNavBar(true);//sahte nav barı aç
+        fakeNavBar(true); //sahte nav barı aç
         pageNumberTemp = pageNumber + 1;
         getBlogs(pageNumber);
     }
@@ -78,10 +82,10 @@ function anan() {
     setTimeout(anan, 250);
 }
 
-function fakeNavBar(bool){
-    if(!bool){
+function fakeNavBar(bool) {
+    if (!bool) {
         document.getElementById("blog-list-fake").style = "display: none;";
-    }else{
+    } else {
         document.getElementById("blog-list-fake").style = "";
     }
 }
