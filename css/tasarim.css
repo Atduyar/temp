@@ -2,6 +2,8 @@
     position: relative;
     left: 0px;
     top: var(--navbar-h);
+    margin: auto;
+    width: var(--icerik-w);
 }
 
 .left-bar {
