@@ -32,7 +32,7 @@ function setBlogs(b) {
     }
     fakeNavBar(false); //sahte nav barı kapat
     if (b.length < ((pageNumber == 1) ? (pageBlogCounter - 1) : pageBlogCounter)) {
-        pageNumberTemp = -1; //make last page
+        pageNumberTemp = -1; //make last page 
 
     }
 
