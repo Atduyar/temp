@@ -14,7 +14,7 @@ function closeNav() {
     mySidenav.style.backgroundColor = "rgba(17,17,17,0)";
     mySidenav.style.display = "";
     myMask.style.backgroundColor = "rgba(0,0,0,0)";
-    setTimeout(() => { document.getElementById("mySidenav").style = ""; }, 500);
+    // setTimeout(() => { document.getElementById("mySidenav").style = ""; }, 500);
     setTimeout(() => { document.getElementById("myMask").style = ""; }, 500);
 
 }
