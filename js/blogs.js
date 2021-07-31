@@ -20,11 +20,8 @@ function setBlogs(b) {
         pageNumberTemp = -1; //make last page
     }
 
-    if (pageNumber == 1) {
-        document.getElementById("blog-list").innerHTML + = blogsHtml;
-    } else {
-        document.getElementById("blog-list").innerHTML += blogsHtml;
-    }
+    document.getElementById("blog-list").innerHTML += blogsHtml;
+    
     pageNumber++;
 }
 
