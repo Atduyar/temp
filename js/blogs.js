@@ -72,7 +72,7 @@ function anan() {
     currentScroll = window.scrollY + window.innerHeight;
     if (documentHeight < currentScroll + modifier && pageNumber == pageNumberTemp) {
         console.log("getBlog!!!!!: ", pageNumber);
-        fakeNavBar(true);
+        fakeNavBar(true);//sahte nav barı aç
         pageNumberTemp = pageNumber + 1;
         getBlogs(pageNumber);
     }
