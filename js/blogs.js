@@ -28,13 +28,12 @@ function setBlogs(b) {
 }
 
 getBlogs()
-var aaa;
+
 function getBlogs(pageNumber = 1) {
     apiBlogs.resultFunction = (t) => {
         console.log(t);
         apiBlogs.resultFunction = (b) => {
             console.log(b);
-            aaa = h;
             setBlogs(b);
         }
         apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
