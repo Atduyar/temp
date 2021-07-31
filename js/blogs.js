@@ -28,7 +28,7 @@ function setBlogs(b) {
 }
 
 getBlogs()
-
+var aaa;
 function getBlogs(pageNumber = 1) {
     apiBlogs.resultFunction = (t) => {
         console.log(t);
@@ -41,6 +41,7 @@ function getBlogs(pageNumber = 1) {
     }
     apiBlogs.resultErrFunction = (t) => {
         console.log(t);
+        aaa = t;
     }
     apiBlogs.resultUnAuthFunction = (t) => { //guest giris yapılıyor
         apiBlogs.resultFunction = (b) => {
