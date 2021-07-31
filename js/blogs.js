@@ -6,7 +6,7 @@ function setBlogs(b) {
     for (var i = 0; i < b.length; i++) {
         blogsHtml +=
             `<div class="blog-item">
-            <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy>
+            <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy">
             <div class="kategori-bar-blog-item">
                 <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
                 <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
