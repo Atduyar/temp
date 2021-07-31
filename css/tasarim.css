@@ -1,0 +1,9 @@
+.tasarım-main {
+    position: relative;
+    left: 0px;
+    top: var(--navbar-h);
+}
+
+.item {
+    margin-top: 50px;
+}
