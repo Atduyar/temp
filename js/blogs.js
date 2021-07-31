@@ -22,7 +22,7 @@ function setBlogs(b) {
         blogsHtml +=
             `<div class="blog-item">
             <p class="p-publish-title only-long">
-                ${b.blogDate} <a class="c-p td-u">${b.authorName}</a> tarafından yazıldı.
+                ${b[i].blogDate} <a class="c-p td-u">${b[i].authorName}</a> tarafından yazıldı.
             </p>
             <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy">
             <div class="kategori-bar-blog-item">
