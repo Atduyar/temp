@@ -128,6 +128,12 @@
     width: var(--icerik-w);
     margin: 150px auto 0px auto;
 }
+.blog-list-long{
+    width: calc(100% / 3 *2)!important;
+    margin-right: 10px;
+    position: relative;
+    padding: 0;
+}
 .blog-list-long .blog-item{
     width: 70%!important;
     padding: 0;
@@ -141,8 +147,8 @@
 .blog-list-long .img-blog-item{
     z-index: 5;
     position: relative;
-    right: calc(-100%);
-    width: 43%;
+    right: calc(-100% - 25px);
+    width: 41.5%;
 }
 .blog-list-long .kategori-bar-blog-item{
     position: absolute;
