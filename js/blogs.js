@@ -7,7 +7,7 @@ function setBlogs(b) {
         var firstBlog = b.shift();
         var divBlog = document.getElementsByClassName("div-blog")[0];
         var blogImg = divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0];
-        blogImg.src = b.blogTitlePhotoUrl;
+        blogImg.src = firstBlog.blogTitlePhotoUrl;
     }
     for (var i = 0; i < b.length; i++) {
         blogsHtml +=
