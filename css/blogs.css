@@ -119,6 +119,9 @@
     text-align: left;
 }
 
+.not-first{
+    margin: 0px auto 0px auto!important;
+}
 .blog-list {
     display: flex;
     flex-wrap: wrap;
