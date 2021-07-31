@@ -18,6 +18,7 @@ function setBlogs(b) {
     fakeNavBar(false);//sahte nav barı kapat
     if (b.length < 50) {
         pageNumberTemp = -1; //make last page
+        
     }
 
     document.getElementById("blog-list").innerHTML += blogsHtml;
