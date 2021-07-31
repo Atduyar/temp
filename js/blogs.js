@@ -17,7 +17,7 @@ function setBlogs(b) {
     }
     // if (b.length < 50) {
     //     pageNumberTemp = -1;
-    // } //str.substring(1, 3)
+    // }
 
     if (pageNumber == 1) {
         document.getElementById("blog-list").innerHTML = blogsHtml;
@@ -28,7 +28,7 @@ function setBlogs(b) {
 }
 
 getBlogs()
-var aaa;
+
 function getBlogs(pageNumber = 1) {
     apiBlogs.resultFunction = (t) => {
         console.log(t);
@@ -40,8 +40,12 @@ function getBlogs(pageNumber = 1) {
         apiBlogs.PostAuth("blogs/getbypage", t.token, { PageNumber: pageNumber, PageSize: 50 });
     }
     apiBlogs.resultErrFunction = (t) => {
-        console.log(t);
-        aaa = t;
+        if (t instanceof TypeError) {
+            pageNumberTemp = -1;
+        } 
+        else{
+            console.log(t);
+        }
     }
     apiBlogs.resultUnAuthFunction = (t) => { //guest giris yapılıyor
         apiBlogs.resultFunction = (b) => {
