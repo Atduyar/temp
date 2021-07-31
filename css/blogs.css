@@ -152,6 +152,12 @@
     top: calc(1em);
     left: 0;
 }
+.blog-list-long .blog-des-group{
+    position: absolute;
+    top: calc(1.125em + 1em + 50px);
+    left: 0;
+    bottom: 0;
+}
 /* fake */
 #blog-list-fake {
 
