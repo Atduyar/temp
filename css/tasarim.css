@@ -11,6 +11,7 @@
     display: inline-block;
     width: 70%;
     background-color: red;
+    height: 200px;
 }
 
 .right-bar {
@@ -20,6 +21,7 @@
 }
 
 .item {
+    height: 200px;
     width: 100%;
     margin-top: 150px;
     display: flex;
