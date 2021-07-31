@@ -7,7 +7,15 @@ function setBlogs(b) {
         var firstBlog = b.shift();
         var divBlog = document.getElementsByClassName("div-blog")[0];
         var blogImg = divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0];
+        var blogTitle = divBlog.getElementsByClassName("div-blog-details")[0].getElementsByClassName("title")[0].getElementsByTagName("p")[0];
+        var blogDescriptionDiv = divBlog.getElementsByClassName("div-blog-details")[0].getElementsByClassName("description")[0].getElementsByTagName("p");
+        var blogAut = blogDescriptionDiv[0];
+        var blogDes = blogDescriptionDiv[1];
+
+        blogDes.innerHTML = firstBlog.blogSummary;
         blogImg.src = firstBlog.blogTitlePhotoUrl;
+        blogTitle.innerHTML = firstBlog.blogTitle;
+        blogAut.innerHTML = firstBlog.blogDate +" <a class='inactive-blackbg c-p td-u'>"+firstBlog.authorName+"</a> tarafından yazıldı.";
     }
     for (var i = 0; i < b.length; i++) {
         blogsHtml +=
