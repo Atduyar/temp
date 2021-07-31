@@ -12,6 +12,7 @@
     width: calc(100% - var(--icerik-w) / 3);
     height: 100%;
     background-color: red;
+    padding: 15px 25px;
 }
 
 .right-bar {
@@ -38,6 +39,7 @@
 
 .baslik {
     font-weight: bold;
+    margin-top: 25px;
 }
 
 p {
