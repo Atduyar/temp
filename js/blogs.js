@@ -1,6 +1,6 @@
 var apiBlogs = new ApiAuth();
 let pageNumber = 1;
-let pageBlogCounter = 50;
+let pageBlogCounter = 48;
 
 function setBlogs(b) {
     var blogsHtml = "";

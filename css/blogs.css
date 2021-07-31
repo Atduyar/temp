@@ -136,7 +136,7 @@
 .blog-list-long .p-publish-title {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 25px;
 }
 .blog-list-long .img-blog-item{
     z-index: 5;
@@ -147,12 +147,12 @@
 .blog-list-long .kategori-bar-blog-item{
     position: absolute;
     top: calc(1em);
-    left: 0;
+    left: 25px;
 }
 .blog-list-long .blog-des-group{
     position: absolute;
     top: calc(1.125em + 1em + 50px);
-    left: 0;
+    left: 25px;
     bottom: 0;
 }
 /* fake */
