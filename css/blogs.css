@@ -120,6 +120,9 @@
 #blog-list-fake {
 
 }
+#blog-list-fake .img-blog-item{
+    background: #777;
+}
 #blog-list-fake .p-kategori-black-blog-item{
     height: calc(1.125em + 20px);
     width: 30%;
