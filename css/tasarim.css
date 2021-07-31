@@ -1,8 +1,9 @@
 #tasarım-main {
-    position: relative;
-    left: 0px;
+    display: inline-block;
     top: var(--navbar-h);
-    margin: auto;
+    margin: 0px auto;
+    max-width: 100%;
+    height: 100%;
     width: var(--icerik-w);
 }
 
