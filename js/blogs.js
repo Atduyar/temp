@@ -15,6 +15,7 @@ function setBlogs(b) {
             <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
         </div>`;
     }
+    fakeNavBar(false);//sahte nav barı kapat
     if (b.length < 50) {
         pageNumberTemp = -1; //make last page
     }
@@ -71,9 +72,18 @@ function anan() {
     currentScroll = window.scrollY + window.innerHeight;
     if (documentHeight < currentScroll + modifier && pageNumber == pageNumberTemp) {
         console.log("getBlog!!!!!: ", pageNumber);
+        fakeNavBar(true);
         pageNumberTemp = pageNumber + 1;
         getBlogs(pageNumber);
     }
 
     setTimeout(anan, 250);
+}
+
+function fakeNavBar(bool){
+    if(!bool){
+        document.getElementById("blog-list-fake").style = "display: none;";
+    }else{
+        document.getElementById("blog-list-fake").style = "";
+    }
 }
