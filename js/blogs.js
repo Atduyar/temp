@@ -15,9 +15,9 @@ function setBlogs(b) {
             <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
         </div>`;
     }
-    if (b.length < 50) {
-        pageNumberTemp = -1;
-    } //str.substring(1, 3)
+    // if (b.length < 50) {
+    //     pageNumberTemp = -1;
+    // } //str.substring(1, 3)
 
     if (pageNumber == 1) {
         document.getElementById("blog-list").innerHTML = blogsHtml;
@@ -32,9 +32,8 @@ var aaa;
 function getBlogs(pageNumber = 1) {
     apiBlogs.resultFunction = (t) => {
         console.log(t);
-        apiBlogs.resultFunction = (b, h) => {
+        apiBlogs.resultFunction = (b) => {
             console.log(b);
-            console.log(h);
             aaa = h;
             setBlogs(b);
         }
@@ -45,7 +44,7 @@ function getBlogs(pageNumber = 1) {
         console.log(t);
     }
     apiBlogs.resultUnAuthFunction = (t) => { //guest giris yapılıyor
-        apiBlogs.resultFunction = (b, h) => {
+        apiBlogs.resultFunction = (b) => {
             console.log(b);
             setBlogs(b);
         }

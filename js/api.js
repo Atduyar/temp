@@ -63,11 +63,10 @@ class ApiAuth {
                 }
             });
             const r = await response.json();
-            const rh = await response.headers;
             if (r.success != undefined && t.success == false) {
-                this.resultErrFunction(r, rh);
+                this.resultErrFunction(r);
             } else {
-                this.resultFunction(r, rh);
+                this.resultFunction(r);
             }
         } catch (err) {
             this.resultErrFunction(err);
@@ -84,11 +83,10 @@ class ApiAuth {
                 }
             });
             const r = await response.json();
-            const rh = await response.headers;
             if (r.success != undefined && t.success == false) {
-                this.resultErrFunction(r, rh);
+                this.resultErrFunction(r);
             } else {
-                this.resultFunction(r, rh);
+                this.resultFunction(r);
             }
         } catch (err) {
             this.resultErrFunction(err);
