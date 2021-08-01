@@ -5,7 +5,7 @@ let pageBlogCounter = 37;
 function setBlogs(b) {
     var blogsHtml = "";
     if (pageNumber == 1) {
-        pageBlogCounter++;
+        pageBlogCounter--;
 
         var firstBlog = b.shift();
         var divBlog = document.getElementsByClassName("div-blog")[0];
