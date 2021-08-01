@@ -22,7 +22,7 @@ function setBlogs(b) {
     }
     for (var i = 0; i < b.length; i++) {//((i+((pageNumber == 1)?1:0))%13 == 0)
         blogsHtml +=
-            `<div class="blog-item ${((i%18 >= 12)?"blog-list-long":""} ">
+            `<div class="blog-item ${((i%18) >= 12)?"blog-list-long":""} ">
             <p class="p-publish-title only-long">
                 ${b[i].blogDate} <a class="c-p td-u">${b[i].authorName}</a> tarafından yazıldı.
             </p>
