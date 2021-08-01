@@ -6,7 +6,7 @@ function setBlogs(b) {
     var blogsHtml = "";
     if (pageNumber == 1) {
         pageBlogCounter++;
-        
+
         var firstBlog = b.shift();
         var divBlog = document.getElementsByClassName("div-blog")[0];
         var blogImg = divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0];
@@ -22,7 +22,7 @@ function setBlogs(b) {
     }
     for (var i = 0; i < b.length; i++) {//((i+((pageNumber == 1)?1:0))%13 == 0)
         blogsHtml +=
-            `<div class="blog-item ${((i+((pageNumber == 1)?1:0))%18 >= 12)?"blog-list-long":""} ">
+            `<div class="blog-item ${((i%18 >= 12)?"blog-list-long":""} ">
             <p class="p-publish-title only-long">
                 ${b[i].blogDate} <a class="c-p td-u">${b[i].authorName}</a> tarafından yazıldı.
             </p>
