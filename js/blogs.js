@@ -1,10 +1,12 @@
 var apiBlogs = new ApiAuth();
 let pageNumber = 1;
-let pageBlogCounter = 36;
+let pageBlogCounter = 37;
 
 function setBlogs(b) {
     var blogsHtml = "";
     if (pageNumber == 1) {
+        pageBlogCounter++;
+        
         var firstBlog = b.shift();
         var divBlog = document.getElementsByClassName("div-blog")[0];
         var blogImg = divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0];
