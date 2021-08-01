@@ -18,9 +18,9 @@ function setBlogs(b) {
         blogTitle.innerHTML = firstBlog.blogTitle;
         blogAut.innerHTML = firstBlog.blogDate + " <a class='inactive-blackbg c-p td-u'>" + firstBlog.authorName + "</a> tarafından yazıldı.";
     }
-    for (var i = 0; i < b.length; i++) {
+    for (var i = 0; i < b.length; i++) {//((i+((pageNumber == 1)?1:0))%13 == 0)
         blogsHtml +=
-            `<div class="blog-item ${((i+((pageNumber == 1)?1:0))%13 == 0)?"blog-list-long":""} ">
+            `<div class="blog-item ${((i+((pageNumber == 1)?1:0))%18 > 12)?"blog-list-long":""} ">
             <p class="p-publish-title only-long">
                 ${b[i].blogDate} <a class="c-p td-u">${b[i].authorName}</a> tarafından yazıldı.
             </p>
