@@ -6,8 +6,10 @@ function setBlogDetail(b){
     var title = document.getElementsByClassName("title-bar")[0];
     var titleAut = title.getElementsByClassName("p-publish-title")[0];
     var blogDate = new Date(b.blogDate).toDateString();
+    var blogTitle = title.getElementsByClassName("p-main-title")[0];
 
-    titleAut.innerHTML = blogDate +` <a class='inactive c-p td-u'>${b.authorSummary.authorName}</a> tarafından yazıldı.`;
+    blogTitle.innerHTML = b.blogTitle;
+    titleAut.innerHTML = blogDate +` tarihinde <a class='inactive c-p td-u'>${b.authorSummary.authorName}</a> tarafından yazıldı.`;
 }
 
 getBlogDetail(BlogId);
