@@ -1,4 +1,4 @@
-@media only screen and (max-height: 1285px) and (max-width: 1000px) {
+@media only screen and (max-height: 1285px) and (max-width: 1200px) {
     .share-buttons {
         display: none;
     }
@@ -81,7 +81,7 @@ img:hover {
     left: calc(((100vw - var(--icerik-w)) / -2) + 2.5em);
     height: 150px;
     width: 1.575em;
-    margin-left: 25px;
+    margin-left: -15px;
     margin-top: 300px;
 }
 
