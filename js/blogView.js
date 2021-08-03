@@ -13,7 +13,7 @@ function getBlogDetail(id){
         console.log(err);
     }
     apiBlogDetail.resultUnAuthFunction = (r)=>{
-        console.log(err);
+        console.log(r);
     }
-    ApiAuth.GetToken(apiBlogDetail)
+    ApiAuth.GetToken(apiBlogDetail);
 }
