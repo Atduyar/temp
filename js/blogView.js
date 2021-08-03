@@ -11,7 +11,7 @@ function getBlogDetail(id){
         apiBlogDetail.resultFunction = (b)=>{
             console.log(b);
         }
-        apiBlogDetail.GetAuth("getBlog?id="+id, t);
+        apiBlogDetail.GetAuth("getBlog?id="+id, t.token);
     }
     apiBlogDetail.resultErrFunction = (err)=>{
         console.log(err);
