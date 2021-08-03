@@ -1,7 +1,11 @@
+var apiBlogDetail = new ApiAuth();
+const urlParams = new URLSearchParams(window.location.search);
+const BlogId = urlParams.get('id');
+
 function setBlogDetail(){}
 
-var apiBlogDetail = new ApiAuth();
 
+getBlogDetail(BlogId);
 function getBlogDetail(id){
     apiBlogDetail.resultFunction = (t)=>{
         apiBlogDetail.resultFunction = (b)=>{
