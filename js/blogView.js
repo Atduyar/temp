@@ -9,7 +9,7 @@ function setBlogDetail(b){
     var blogTitle = title.getElementsByClassName("p-main-title")[0];
     var blogTitle = title.getElementsByClassName("p-main-title")[0];
     var tags = document.getElementsByClassName("kategori-bar")[0];
-    var img = document.getElementsByClassName("top-bar")[0].getElementsByClassName("img-div")[0].getElementsByTagName("img");
+    var img = document.getElementsByClassName("top-bar")[0].getElementsByClassName("img-div")[0].getElementsByTagName("img")[0];
     img.src = b.blogTitlePhotoUrl;
     tags.innerHTML = "";
     for(var i = 0;i<b.blogTags.length;i++){
