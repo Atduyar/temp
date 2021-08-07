@@ -21,7 +21,9 @@
     --color-red: #c62414;
     --color-inactiveColor: #bdbdbd;
 }
-
+body{
+    background-color: #0f0e15;
+}
 .td-n {
     text-decoration: none;
 }
