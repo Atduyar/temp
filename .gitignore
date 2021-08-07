@@ -64,3 +64,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+
+htmlCreator/oldDesign
+htmlCreator/src
