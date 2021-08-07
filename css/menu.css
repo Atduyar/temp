@@ -55,8 +55,16 @@
 
 #nav-bar-search {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     justify-content: flex-end;
+}
+#nav-bar-search svg{
+    height: 1.5em;
 }
 
 
