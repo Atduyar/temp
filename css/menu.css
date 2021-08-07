@@ -2,6 +2,9 @@
     #nav-bar-menu ul{   
         display: none!important;
     }
+    #nav-bar-menu-phone{
+        display: inline-block!important;
+    }
 }
 
 #nav-bar {
@@ -73,6 +76,9 @@
     height: 1.5em;
 }
 
+#nav-bar-menu-phone{
+    display: none;
+}
 
 /* newwwwwwwwwwwwwwwww */
 
