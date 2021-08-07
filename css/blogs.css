@@ -263,13 +263,19 @@
 }
 /* fake-end */
 .blog-des-group{
+}
+
+.blog-content{
     z-index: 1;
+    width: 100%;
+    margin-top: auto;
+    padding: 0 32px 32px;
+    pointer-events: none;
 }
 
 .kategori-bar-blog-item {
     margin-bottom: 15px;
     margin-top: 15px;
-    z-index: 1;
     text-align: left;
     display: flex;
     flex-wrap: wrap;

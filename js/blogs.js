@@ -24,20 +24,22 @@ function setBlogs(b) {
         blogsHtml +=
             `<div class="blog-item ${((i%18) >= 12)?"blog-list-long":""} ">
             <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" onclick="goto(${b[i].blogId})" loading="lazy">
-            <p class="p-publish-title only-long">
-                ${b[i].blogDate}
-            </p>
-            <div class="blog-des-group">
-                <p class="text-color p-baslik-blog-item c-p" onclick="goto(${b[i].blogId})">${b[i].blogTitle}</p>
-                <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
-            </div>
-            <div>
-                <div class="">
-                    <a class="c-p td-u">${b[i].authorName}</a>
+            <div class='blog-content'>
+                <p class="p-publish-title only-long">
+                    ${b[i].blogDate}
+                </p>
+                <div class="blog-des-group">
+                    <p class="text-color p-baslik-blog-item c-p" onclick="goto(${b[i].blogId})">${b[i].blogTitle}</p>
+                    <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
                 </div>
-                <div class="kategori-bar-blog-item">
-                    <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
-                    <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
+                <div>
+                    <div class="">
+                        <a class="c-p td-u">${b[i].authorName}</a>
+                    </div>
+                    <div class="kategori-bar-blog-item">
+                        <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
+                        <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
+                    </div>
                 </div>
             </div>
         </div>`;
