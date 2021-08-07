@@ -2,7 +2,8 @@
     height: var(--navbar-h);
     width: 100%;
     
-    margin: 50px 0px;
+    margin: 42px 0px;
+    padding: 16px 0;
     z-index: 5;
 
     position: absolute;
