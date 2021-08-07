@@ -1,22 +1,22 @@
-@media only screen and (max-width: 1110px) and (min-width: 910px) {
+@media only screen and (max-width: 1110px) and (min-width: 1010px) {
     * {
-        --icerik-w: 900px;
+        --icerik-w: 1000px;
     }
     .blog-item {
         width: calc(100% / 3)!important;
     }
 }
 
-@media only screen and (max-width: 910px) and (min-width: 735px) {
+@media only screen and (max-width: 1010px) and (min-width: 835px) {
     * {
-        --icerik-w: 725px;
+        --icerik-w: 825px;
     }
     .blog-item {
         width: calc(100% / 2)!important;
     }
 }
 
-@media only screen and (max-height: 1285px) and (max-width: 735px) {
+@media only screen and (max-height: 1285px) and (max-width: 835px) {
     .div-blog-details {
         position: relative!important;
     }
