@@ -3,7 +3,7 @@
         --icerik-w: 1000px;
     }
     .blog-item {
-        width: calc(100% / 3)!important;
+        width: calc((100% / 3) - 16px)!important;
     }
 }
 
@@ -12,7 +12,7 @@
         --icerik-w: 825px;
     }
     .blog-item {
-        width: calc(100% / 2)!important;
+        width: calc((100% / 2) - 16px)!important
     }
 }
 
@@ -38,7 +38,7 @@
         margin-top: 0px!important;
     }
     .blog-item {
-        width: calc(100% / 1)!important;
+        width: calc(100% - 16px)!important;
     }
     .nav-bar-title{
         width: 50%!important;
