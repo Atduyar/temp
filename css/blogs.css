@@ -306,7 +306,7 @@
     position: relative;
     min-height: 250px;
     border-radius: 16px;
-    padding: 0 16px;
+    margin: 0 16px;
     margin-bottom: 32px;
     transition: 0.3s;
 }
