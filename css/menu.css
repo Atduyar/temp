@@ -74,6 +74,7 @@
     align-items: center;
     justify-content: flex-end;
 }
+
 #nav-bar-search svg{
     height: 1.5em;
 }
@@ -86,22 +87,6 @@
     margin-right: 12px;
 }
 
-/* newwwwwwwwwwwwwwwww */
-
-
-.menu-items {
-    position: relative;
-    top: 50%;
-    transform: translateY(calc(-50% - var(--navbar-h)));
-}
-
-.menu-items a {
-    margin: 5px;
-}
-
-.fa-bars {
-    font-size: 30px;
-}
 
 .sidenav {
     display: none;
@@ -147,11 +132,26 @@
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
+    top: 25px;
+    right: 45px;
     font-size: 72px;
-    margin-left: 50px;
     color: #dddddd;
+}
+/* newwwwwwwwwwwwwwwww */
+
+
+.menu-items {
+    position: relative;
+    top: 50%;
+    transform: translateY(calc(-50% - var(--navbar-h)));
+}
+
+.menu-items a {
+    margin: 5px;
+}
+
+.fa-bars {
+    font-size: 30px;
 }
 
 .a-nav {
