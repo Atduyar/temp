@@ -133,15 +133,6 @@ p {
     margin-bottom: 40px;
 }
 
-.kategori-bar-blog-item {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    z-index: 1;
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .p-main-title {
     font-family: 'Bona Nova', serif;
     font-size: 2.25em;

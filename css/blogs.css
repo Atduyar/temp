@@ -266,6 +266,15 @@
     z-index: 1;
 }
 
+.kategori-bar-blog-item {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    z-index: 1;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .blog-item {
     width: calc(100% / 3);
     display: -webkit-box;
