@@ -44,6 +44,16 @@
     align-items: center;
 }
 
+#nav-bar-menu ul{   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav-bar-menu ul li{   
+    display: inline-block;
+    margin-right: 25px;
+}
+
 #nav-bar-search {
     height: 100%;
     width: 25%;
