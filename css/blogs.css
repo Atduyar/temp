@@ -138,12 +138,12 @@
 
 .title {
     display: inline-block;
-    width: 50%;
+    width: 100%;
 }
 
 .description {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     padding-left: 10px;
     text-align: left;
 }

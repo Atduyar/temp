@@ -23,6 +23,7 @@
 }
 body{
     background-color: #0f0e15;
+    color: white;
 }
 .td-n {
     text-decoration: none;
@@ -89,15 +90,10 @@ p {
 }
 
 .p-baslik-blog-item {
-    color: rgb(31, 31, 31);
     font-size: 1.5em;
     font-weight: bolder;
     margin-bottom: 15px;
     line-height: 25px;
-}
-
-.p-aciklama-blog-item {
-    color: rgb(32, 32, 32)
 }
 
 .p-kategori {
