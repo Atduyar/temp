@@ -215,6 +215,9 @@
 }
 #blog-list-fake .img-blog-item{
 }
+#blog-list-fake .blog-item{
+    margin-bottom: 50px;
+}
 #blog-list-fake .p-kategori-black-blog-item{
     height: calc(1.125em + 20px);
     width: 30%;
