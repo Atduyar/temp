@@ -32,7 +32,7 @@ function setBlogs(b) {
                     <p class="text-color p-baslik-blog-item c-p">${b[i].blogTitle}</p>
                     <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
                 </div>
-                <div>
+                <div class="blog-item-details">
                     <div class="">
                         <a class="c-p td-u">${b[i].authorName}</a>
                     </div>

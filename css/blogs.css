@@ -287,6 +287,9 @@
     background-color: rgba(15,14,21,.6);
     pointer-events: none;
 }
+.blog-item-details{
+    pointer-events: all;
+}
 .kategori-bar-blog-item {
     margin-bottom: 15px;
     margin-top: 15px;
