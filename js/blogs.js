@@ -23,13 +23,13 @@ function setBlogs(b) {
     for (var i = 0; i < b.length; i++) {//((i+((pageNumber == 1)?1:0))%13 == 0)
         blogsHtml +=
             `<div class="blog-item ${((i%18) >= 12)?"blog-list-long":""} ">
-            <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" onclick="goto(${b[i].blogId})" loading="lazy">
+            <a href="/blogView.html?id=${b[i].blogId}" class="a-img-blog-item" ><img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy"></a>
             <div class='blog-content'>
                 <p class="p-publish-title only-long">
                     ${b[i].blogDate}
                 </p>
                 <div class="blog-des-group">
-                    <p class="text-color p-baslik-blog-item c-p" onclick="goto(${b[i].blogId})">${b[i].blogTitle}</p>
+                    <p class="text-color p-baslik-blog-item c-p">${b[i].blogTitle}</p>
                     <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
                 </div>
                 <div>
