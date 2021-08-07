@@ -161,6 +161,10 @@
     text-align: center;
 }
 
+.blog-item .p-publish-title {
+    z-index: 1;
+}
+
 .description .p-text{
     text-align: center;
 }
@@ -260,7 +264,10 @@
 /* fake-end */
 .blog-item {
     width: calc(100% / 3);
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
     border-radius: 16px;
     padding: 0 16px;
     margin-bottom: 32px;
@@ -270,6 +277,8 @@
 .img-blog-item {
     width: 100%;
     /* height: 200px; */
+    position: absolute;
+    z-index: 0;
     height: 100%;
     border-radius: 16px;
     cursor: pointer;
