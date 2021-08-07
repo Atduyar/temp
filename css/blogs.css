@@ -127,7 +127,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(21, 25, 33);
+    /* background-color: rgb(21, 25, 33); */
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
