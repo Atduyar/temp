@@ -115,8 +115,8 @@
 .kategori-bar {
     margin-bottom: 20px;
     width: 100%;
-    text-align: left;
-    /* display: block; */
+    text-align: center;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
