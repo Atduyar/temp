@@ -272,6 +272,12 @@
     padding: 0 32px 32px;
     pointer-events: none;
 }
+.p-aciklama-blog-item{
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #aaa;
+}
 
 .kategori-bar-blog-item {
     margin-bottom: 15px;
