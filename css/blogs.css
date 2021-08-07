@@ -154,11 +154,15 @@
 }
 
 .p-main-title {
-    text-align: left;
+    text-align: center;
 }
 
 .p-publish-title {
-    text-align: left;
+    text-align: center;
+}
+
+.description .p-text{
+    text-align: center;
 }
 
 .not-first{
