@@ -103,13 +103,14 @@
     height: 100%;
     width: 100%;
     position: fixed;
+    text-align: center;
     z-index: 10;
     top: 0;
     left: 0;
     padding-top: 60px;
     opacity: 0;
     /* değistirersen navbar.js da openNav() ve closeNav() de değistir */
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.9);
     overflow-x: hidden;
     transition: 0.2s;
     /* değistirersen navbar.js da openNav() ve closeNav() de değistir */
@@ -132,13 +133,10 @@
     margin: 20px;
     height: 40px;
     text-decoration: none;
+    text-align: center;
     font-size: 32px;
     color: #dddddd;
     display: block;
-}
-
-.sidenav a:hover {
-    font-size: 38px;
 }
 
 .sidenav .closebtn {
