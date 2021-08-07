@@ -269,7 +269,8 @@
 
 .img-blog-item {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
+    height: 100%;
     border-radius: 16px;
     cursor: pointer;
     object-fit: cover;
