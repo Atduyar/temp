@@ -74,10 +74,13 @@
 }
 #nav-bar-search svg{
     height: 1.5em;
+    cursor: pointer;
 }
 
 #nav-bar-menu-phone{
     display: none;
+    margin-right: 12px;
+    cursor: pointer;
 }
 
 /* newwwwwwwwwwwwwwwww */
