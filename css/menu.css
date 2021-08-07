@@ -1,32 +1,28 @@
 #nav-bar {
     height: var(--navbar-h);
-    background-color: #fff;
-    position: fixed;
-    z-index: 4;
     width: 100%;
-    display: flex;
-    top: 0px;
+    
     margin: 50px 0px;
-}
+    z-index: 5;
 
-
-
-/* newwwwwwwwwwwwwwwww */
-
-@media only screen and (max-height: 1285px) and (max-width: 725px) {
-    /* .nav-bar-phone {
-        display: flex!important;
-    } */
-}
-
-.menu-items {
     position: relative;
-    top: 50%;
-    transform: translateY(calc(-50% - var(--navbar-h)));
-}
+    top: 0px;
 
-.menu-items a {
-    margin: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+
+    justify-content: space-between;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .nav-bar-menu {
@@ -47,6 +43,26 @@
     height: 100%;
     width: 25%;
     display: flex;
+}
+
+
+
+/* newwwwwwwwwwwwwwwww */
+
+@media only screen and (max-height: 1285px) and (max-width: 725px) {
+    /* .nav-bar-phone {
+        display: flex!important;
+    } */
+}
+
+.menu-items {
+    position: relative;
+    top: 50%;
+    transform: translateY(calc(-50% - var(--navbar-h)));
+}
+
+.menu-items a {
+    margin: 5px;
 }
 
 .fa-bars {
@@ -103,13 +119,6 @@
     font-size: 72px;
     margin-left: 50px;
     color: #dddddd;
-}
-
-.nav-bar-icon {
-    height: var(--navbar-h);
-    width: var(--navbar-h);
-    padding: 18.5px 15px;
-    display: inline-block;
 }
 
 .a-nav {
