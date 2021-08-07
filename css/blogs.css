@@ -80,10 +80,10 @@
 }
 
 .div-blog-details {
+    width: 100%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0px 20% 0 5%;
-    /* margin: 0px auto 0 5%;
-    width: calc(var(--icerik-w) - 10%); */
     background-color: rgb(21, 25, 33);
     padding: 20px;
     display: flex;
@@ -91,8 +91,6 @@
     border-radius: 5px;
     position: absolute;
     transition: 0.3s;
-    top: 50%;
-    left: 50%;
 }
 
 .title {
