@@ -111,6 +111,7 @@
     opacity: 0;
     /* değistirersen navbar.js da openNav() ve closeNav() de değistir */
     background-color: rgba(17, 17, 17, 0.9);
+    backdrop-filter: saturate(180%) blur(16px);
     overflow-x: hidden;
     transition: 0.2s;
     /* değistirersen navbar.js da openNav() ve closeNav() de değistir */
@@ -125,7 +126,6 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: saturate(180%) blur(16px);
     overflow-x: hidden;
     transition: 0.3s;
 }
