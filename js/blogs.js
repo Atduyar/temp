@@ -23,17 +23,22 @@ function setBlogs(b) {
     for (var i = 0; i < b.length; i++) {//((i+((pageNumber == 1)?1:0))%13 == 0)
         blogsHtml +=
             `<div class="blog-item ${((i%18) >= 12)?"blog-list-long":""} ">
-            <p class="p-publish-title only-long">
-                ${b[i].blogDate} <a class="c-p td-u">${b[i].authorName}</a> tarafından yazıldı.
-            </p>
             <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" onclick="goto(${b[i].blogId})" loading="lazy">
-            <div class="kategori-bar-blog-item">
-                <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
-                <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
-            </div>
+            <p class="p-publish-title only-long">
+                ${b[i].blogDate}
+            </p>
             <div class="blog-des-group">
                 <p class="text-color p-baslik-blog-item c-p" onclick="goto(${b[i].blogId})">${b[i].blogTitle}</p>
                 <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
+            </div>
+            <div>
+                <div class="">
+                    <a class="c-p td-u">${b[i].authorName}</a>
+                </div>
+                <div class="kategori-bar-blog-item">
+                    <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
+                    <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
+                </div>
             </div>
         </div>`;
     }
