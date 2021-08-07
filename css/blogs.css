@@ -90,6 +90,18 @@
     overflow: hidden;
 }
 
+.div-image::before {
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(15,14,21,0)),to(#0f0e15));
+    background: -o-linear-gradient(top,rgba(15,14,21,0) 0,#0f0e15 100%);
+    background: linear-gradient( 180deg ,rgba(15,14,21,0) 0,#0f0e15 100%);
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    left: 0;
+    height: 80vh;
+}
 .kategori-bar {
     margin-bottom: 20px;
     width: 100%;
