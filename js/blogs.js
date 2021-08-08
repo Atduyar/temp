@@ -12,7 +12,7 @@ function setBlogs(b) {
         pageBlogCounter--;
 
         var firstBlog = b.shift();
-        divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("a")[0].href = "/blogView.html?id=" + firstBlog.blogId;
+        divBlog.getElementsByTagName("a")[0].href = "/blogView.html?id=" + firstBlog.blogId;
         var blogImg = divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0];
         var blogTitle = blogDivDes.getElementsByClassName("title")[0].getElementsByTagName("p")[0];
         var blogDescriptionDiv = blogDivDes.getElementsByClassName("description")[0].getElementsByTagName("p");
