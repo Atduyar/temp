@@ -40,7 +40,7 @@ function setBlogs(b) {
                 </div>
                 <div class="blog-item-details">
                     <div class="">
-                        <a class="c-p td-u">${b[i].authorName}</a>
+                        <a class="c-p">${b[i].authorName}</a>
                     </div>
                     <div class="kategori-bar-blog-item">
                         <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
