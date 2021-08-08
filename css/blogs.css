@@ -23,19 +23,6 @@
 }
 
 @media only screen and (max-height: 1285px) and (max-width: 835px) {
-    .div-blog-details {
-        position: relative!important;
-    }
-    .title {
-        width: 100%!important;
-    }
-    .description {
-        width: 100%!important;
-    }
-    .div-blog-details {
-        margin: 0px!important;
-        transform: translateY(-5%)!important;
-    }
     .div-image {
         min-height: 30vh!important;
     }
