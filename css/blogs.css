@@ -210,7 +210,7 @@
 }
 
 .blog-list-long{
-    width: calc((100% / 2) - 32px)!important;
+    width: calc((100% / 2) - 32px);
 }
 
 #blog-list-fake .blog-item{
