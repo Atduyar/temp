@@ -12,6 +12,7 @@ function setBlogs(b) {
         pageBlogCounter--;
 
         var firstBlog = b.shift();
+        divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("a")[0].href = "/blogView.html?id=" + firstBlog.blogId;
         var blogImg = divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0];
         var blogTitle = blogDivDes.getElementsByClassName("title")[0].getElementsByTagName("p")[0];
         var blogDescriptionDiv = blogDivDes.getElementsByClassName("description")[0].getElementsByTagName("p");
@@ -29,7 +30,9 @@ function setBlogs(b) {
     for (var i = 0; i < b.length; i++) {//((i+((pageNumber == 1)?1:0))%13 == 0)
         blogsHtml +=
             `<div class="blog-item ${((i%18) >= 12)?"blog-list-long":""}">
-            <a href="/blogView.html?id=${b[i].blogId}" class="a-img-blog-item" ><img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy"></a>
+            <a href="/blogView.html?id=${b[i].blogId}" class="a-img-blog-item" >
+                <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy">
+            </a>
             <div class='blog-content'>
                 <p class="p-publish-title only-long">
                     ${b[i].blogDate}
