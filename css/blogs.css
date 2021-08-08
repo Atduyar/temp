@@ -25,7 +25,7 @@
     }
 }
 
-@media only screen and (max-height: 1285px) and (max-width: 835px) {
+@media only screen and (max-width: 835px) {
     * {
         --icerik-w: 500px;
     }
