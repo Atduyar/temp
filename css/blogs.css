@@ -126,8 +126,8 @@
     width: 100%;
     top: 50%;
     left: 0;
-    transform: translate(0, -50%);
     opacity: 0;
+    /* transform: translate(0, -50%); */
     /* left: 50%;
     transform: translate(-50%, -50%); */
     /* background-color: rgb(21, 25, 33); */
@@ -140,6 +140,7 @@
 }
 
 .show{
+    transform: translate(0, -50%);
     opacity: 1;
 }
 
