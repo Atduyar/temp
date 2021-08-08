@@ -140,6 +140,13 @@
 
 .div-blog-details-transition{
     transition: 0.5s;
+    
+}
+
+.blog-item-author-info{
+    align-items: center;
+    display: flex;
+    margin-right: 5px;
 }
 
 .show{

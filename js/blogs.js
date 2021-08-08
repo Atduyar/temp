@@ -39,7 +39,7 @@ function setBlogs(b) {
                     <p class="p-aciklama-blog-item">${(b[i].blogSummary.length > 250) ? b[i].blogSummary.substring(0, 225) + "...":b[i].blogSummary }</p>
                 </div>
                 <div class="blog-item-details">
-                    <div class="">
+                    <div class="blog-item-author-info">
                         <a class="c-p">${b[i].authorName}</a>
                     </div>
                     <div class="kategori-bar-blog-item">
