@@ -199,43 +199,20 @@
 .only-long{
     display: none;
 }
+
+/* fake */
+
 .blog-list-long{
-    width: calc(100% / 3 *2)!important;
-    margin-right: 10px;
-    position: relative;
-    padding: 0!important;
+    width: calc(100% / 2)!important;
 }
+
 .blog-list-long .only-long{
     display: block!important;
 }
-.blog-list-long .blog-item{
-    width: 70%!important;
-    padding: 0;
-    position: relative;
-}
-.blog-list-long .p-publish-title {
-    position: absolute;
-    top: 0;
-    left: 25px;
-}
-.blog-list-long .img-blog-item{
-    z-index: 5;
-    position: relative;
-    right: calc(-100% - 25px);
-    width: 42.9%;
-}
-.blog-list-long .kategori-bar-blog-item{
-    position: absolute;
-    top: calc(1em);
-    left: 25px;
-}
-.blog-list-long .blog-des-group{
-    position: absolute;
-    top: calc(1.125em + 1em + 50px);
-    left: 25px;
-    bottom: 0;
-}
+
 /* fake */
+
+
 #blog-list-fake {
 
 }
