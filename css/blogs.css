@@ -213,11 +213,6 @@
     width: calc((100% / 2) - 32px)!important;
 }
 
-#blog-list-fake {
-
-}
-#blog-list-fake .img-blog-item{
-}
 #blog-list-fake .blog-item{
     margin-bottom: 50px;
 }
@@ -257,8 +252,6 @@
     }
 }
 /* fake-end */
-.blog-des-group{
-}
 
 .blog-content{
     z-index: 1;
