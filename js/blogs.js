@@ -1,6 +1,6 @@
 var apiBlogs = new ApiAuth();
 let pageNumber = 1;
-let pageBlogCounter = 37;
+let pageBlogCounter = 43;
 
 
 var divBlog = document.getElementsByClassName("div-blog")[0];
