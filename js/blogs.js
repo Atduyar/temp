@@ -41,7 +41,7 @@ function setBlogs(b) {
                 <div class="blog-item-details">
                     <div class="kategori-bar-blog-item">
                         <div class="blog-item-author-info">
-                            <a class="c-p">${b[i].authorName}</a>
+                            <a href="/author/${b[i].authorName}" class="c-p">${b[i].authorName}</a>
                         </div>
                         <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
                         <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
