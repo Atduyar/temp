@@ -13,7 +13,6 @@ function setBlogs(b) {
 
         var firstBlog = b.shift();
         divBlog.getElementsByTagName("a")[0].href = "/blogView.html?id=" + firstBlog.blogId;
-        divBlog.getElementsByTagName("a")[0].style = "";
         var blogImg = divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0];
         var blogTitle = blogDivDes.getElementsByClassName("title")[0].getElementsByTagName("p")[0];
         var blogDescriptionDiv = blogDivDes.getElementsByClassName("description")[0].getElementsByTagName("p");
@@ -23,6 +22,7 @@ function setBlogs(b) {
         blogDivDes.classList.add("show");
         blogDes.innerHTML = firstBlog.blogSummary;
         blogImg.src = firstBlog.blogTitlePhotoUrl;
+        blogImg.style = "";
         blogTitle.innerHTML = firstBlog.blogTitle;
         blogAut.innerHTML = firstBlog.blogDate + " <a class='inactive-blackbg c-p td-u'>" + firstBlog.authorName + "</a> tarafından yazıldı.";
 
