@@ -215,10 +215,6 @@
     width: calc((100% / 2) - 32px)!important;
 }
 
-.blog-list-long .only-long{
-    display: block!important;
-}
-
 /* fake */
 
 
