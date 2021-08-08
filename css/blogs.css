@@ -312,4 +312,7 @@
     border-radius: 16px;
     cursor: pointer;
     object-fit: cover;
+    -webkit-box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
+    background-color: #09080f;
 }
