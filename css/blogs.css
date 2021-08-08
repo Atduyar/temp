@@ -209,10 +209,6 @@
     display: none;
 }
 
-.blog-list-long{
-    width: calc((100% / 2) - 32px);
-}
-
 #blog-list-fake .blog-item{
     margin-bottom: 50px;
 }
@@ -304,6 +300,10 @@
 
 .blog-item:hover{
     transform: translateY(-5px);
+}
+
+.blog-list-long{
+    width: calc((100% / 2) - 32px);
 }
 
 .img-blog-item {
