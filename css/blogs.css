@@ -23,6 +23,9 @@
 }
 
 @media only screen and (max-height: 1285px) and (max-width: 835px) {
+    .div-blog-details {
+        position: relative!important;
+    }
     .div-image {
         min-height: 30vh!important;
     }
