@@ -5,6 +5,9 @@
     .blog-item {
         width: calc((100% / 3) - 32px)!important;
     }
+    .blog-list-long{
+        width: calc((100% / 2) - 32px)!important;
+    }
 }
 
 @media only screen and (max-width: 1010px) and (min-width: 835px) {
@@ -13,6 +16,9 @@
     }
     .blog-item {
         width: calc((100% / 2) - 32px)!important
+    }
+    .blog-list-long{
+        width: calc(100%)!important;
     }
 }
 
@@ -39,6 +45,9 @@
     }
     .blog-item {
         width: calc(100% - 32px)!important;
+    }
+    .blog-list-long{
+        width: calc(100%)!important;
     }
     .nav-bar-title{
         width: 50%!important;
