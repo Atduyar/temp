@@ -297,6 +297,9 @@
     margin: 0 16px;
     margin-bottom: 32px;
     transition: 0.3s;
+    -webkit-box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
+    background-color: #09080f;
 }
 
 .blog-item:hover{
@@ -312,7 +315,4 @@
     border-radius: 16px;
     cursor: pointer;
     object-fit: cover;
-    -webkit-box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
-    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
-    background-color: #09080f;
 }
