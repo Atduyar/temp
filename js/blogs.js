@@ -32,7 +32,7 @@ function setBlogs(b) {
         blogsHtml +=
             `<div class="${((i%18) >= 12)?"blog-list-long ":""}blog-item">
             <a href="/blogView.html?id=${b[i].blogId}" class="a-img-blog-item" >
-                <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy">
+                <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy" alt="${b[i].blogTitle}">
             </a>
             <div class='blog-content'>
                 <p class="p-publish-title only-long">
