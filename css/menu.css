@@ -64,6 +64,10 @@
     margin-right: 25px;
 }
 
+#nav-bar-menu ul li:last-child {
+    margin-right: 0;
+}
+
 #nav-bar-search {
     height: 100%;
     display: -webkit-box;
