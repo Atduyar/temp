@@ -2,15 +2,17 @@ var apiBlogs = new ApiAuth();
 let pageNumber = 1;
 let pageBlogCounter = 37;
 
+
+var divBlog = document.getElementsByClassName("div-blog")[0];
+var blogDivDes = divBlog.getElementsByClassName("div-blog-details")[0];
+blogDivDes.classList.add("div-blog-details-transition");
 function setBlogs(b) {
     var blogsHtml = "";
     if (pageNumber == 1) {
         pageBlogCounter--;
 
         var firstBlog = b.shift();
-        var divBlog = document.getElementsByClassName("div-blog")[0];
         var blogImg = divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0];
-        var blogDivDes = divBlog.getElementsByClassName("div-blog-details")[0];
         var blogTitle = blogDivDes.getElementsByClassName("title")[0].getElementsByTagName("p")[0];
         var blogDescriptionDiv = blogDivDes.getElementsByClassName("description")[0].getElementsByTagName("p");
         var blogAut = blogDescriptionDiv[0];
