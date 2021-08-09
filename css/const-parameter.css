@@ -109,8 +109,8 @@ p {
     margin-bottom: 10px;
     font-size: 1.125em;
     padding: 10px;
+    background-color: rgb(45, 49, 58);
     border-radius: 5px;
-    color: #aaa;
 }
 
 .p-kategori-black-blog-item {
