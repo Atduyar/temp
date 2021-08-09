@@ -164,7 +164,8 @@
 }
 
 .title a{
-    -webkit-text-decoration-color: red; /* Safari */ text-decoration-color: red;
+    -webkit-text-decoration-color:  rgb(85, 26, 139); /* Safari */ 
+    text-decoration-color:  rgb(85, 26, 139);
 }
 
 .description {
