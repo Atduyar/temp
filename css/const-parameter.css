@@ -105,12 +105,18 @@ p {
 .p-kategori-black {
     text-align: left;
     display: inline;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-size: 1.125em;
-    padding: 10px;
-    background-color: rgb(45, 49, 58);
-    border-radius: 5px;
+    border: 2px solid;
+    border-radius: 2em;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 10px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    margin: auto 0;
+    margin-right: 3px;
+}
+.p-kategori-black:last-child {
+    margin-right: 0px;
 }
 
 .p-kategori-black-blog-item {
