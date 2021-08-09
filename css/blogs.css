@@ -282,6 +282,10 @@
     flex-wrap: wrap;
 }
 
+.kategori-bar-blog-item:last-child {
+    margin-right: 0px!important;
+}
+
 .blog-item {
     width: calc((100% / 3) - 32px);
     display: -webkit-box;
