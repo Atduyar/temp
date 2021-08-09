@@ -163,6 +163,10 @@
     width: 100%;
 }
 
+.title a{
+    -webkit-text-decoration-color: red; /* Safari */ text-decoration-color: red;
+}
+
 .description {
     display: inline-block;
     width: 100%;
