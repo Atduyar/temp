@@ -7,7 +7,7 @@
     --icerik-w: 1100px;
     --navbar-h: 65px;
     --scrollbar-w: 10px;
-    --color-purple_200: #FFBB86FC;
+    /* --color-purple_200: #FFBB86FC;
     --color-purple_500: #FF6200EE;
     --color-purple_700: #FF3700B3;
     --color-teal_200: #FF03DAC5;
@@ -19,7 +19,7 @@
     --color-thirdColor: #171717;
     --color-textColor: #ededed;
     --color-red: #c62414;
-    --color-inactiveColor: #bdbdbd;
+    --color-inactiveColor: #bdbdbd; */
 }
 body{
     background-color: #0f0e15;
