@@ -41,7 +41,12 @@ function addBlogContent(content, blogContent){
             break;
         case "h":
             console.log("h");
-            // text = `<p class='p-text'>${content.data}</p>`;
+            text =
+            `<h1 style="
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        ">Dil Postürü, Sağlığınızı Doğrudan Etkiler!</h1>`;
             break;
         case "hr":
             console.log("hr");
