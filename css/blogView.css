@@ -11,6 +11,11 @@
     overflow-x: clip;
 }
 
+.quote{
+    padding-left: 34px;
+    border-left: 4px solid white;
+}
+
 .div-icerik {
     max-width: var(--icerik-w);
     margin: 0px auto 0px auto;
