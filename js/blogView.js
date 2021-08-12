@@ -42,11 +42,7 @@ function addBlogContent(content, blogContent){
         case "h":
             console.log("h");
             text =
-            `<h1 style="
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        ">${content.data}</h1>`;
+            `<h1>${content.data}</h1>`;
             break;
         case "hr":
             console.log("hr");
