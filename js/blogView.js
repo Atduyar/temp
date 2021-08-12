@@ -28,6 +28,7 @@ function addBlogContent(content, blogContent){
     switch(content.type){
         case "p":
             console.log("p");
+            text = `<p class='p-text'>${content.data}</p>`;
             break;
         case "img":
             console.log("img");
