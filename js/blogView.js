@@ -42,7 +42,7 @@ function addBlogContent(content, blogContent){
         case "h":
             console.log("h");
             text =
-            `<h1>${content.data}</h1>`;
+            `<h1 class="p-main-title">${content.data}</h1>`;
             break;
         case "hr":
             console.log("hr");
