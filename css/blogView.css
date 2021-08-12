@@ -67,6 +67,10 @@ img:hover {
     margin: 20px 20px 0px 20px;
 }
 
+.div-makale hr{
+    background-color: white;
+}
+
 .seperator {
     font-size: 3.625em;
     display: inline-block;

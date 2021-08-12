@@ -45,6 +45,7 @@ function addBlogContent(content, blogContent){
             break;
         case "hr":
             console.log("hr");
+            text = "<hr>";
             break;
         case "quote":
             console.log("quote");
