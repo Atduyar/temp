@@ -19,6 +19,7 @@ function setBlogDetail(b){
     blogTitle.innerHTML = b.blogTitle;
     titleAut.innerHTML = blogDate +` tarihinde <a class='inactive c-p td-u'>${b.authorSummary.authorName}</a> tarafından yazıldı.`;
 
+    blogContent.innerHTML = "";
     for(var i = 0; i < b.blogContent.length; ++i){
         addBlogContent(b.blogContent[i], blogContent);
     }
@@ -35,6 +36,7 @@ function addBlogContent(content, blogContent){
             break;
         case "h":
             console.log("h");
+            text = `<p class='p-text'>${content.data}</p>`;
             break;
         case "hr":
             console.log("hr");
