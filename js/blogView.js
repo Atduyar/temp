@@ -20,10 +20,11 @@ function setBlogDetail(b){
     titleAut.innerHTML = blogDate +` tarihinde <a class='inactive c-p td-u'>${b.authorSummary.authorName}</a> tarafından yazıldı.`;
 
     for(var i = 0; i < b.blogContent.length; ++i){
-        addBlogContent(b.blogContent[i]);
+        addBlogContent(b.blogContent[i], blogContent);
     }
 }
-function addBlogContent(content){
+function addBlogContent(content, blogContent){
+    var text = "";
     switch(content.type){
         case "p":
             console.log("p");
@@ -43,6 +44,8 @@ function addBlogContent(content){
         default:
             console.log("aaaaaaaaaaaaaaaaa");
     }
+    blogContent.innerHTML += text;
+
 }
 getBlogDetail(BlogId);
 function getBlogDetail(id){
