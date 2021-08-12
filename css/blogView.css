@@ -72,8 +72,8 @@ img:hover {
     height: 1px;
     width: 10%;
     position: relative;
-    /* background: #39D1B4; */
-    background:rgb(85, 26, 139);
+    background: #39D1B4;
+    /* background:rgb(85, 26, 139); */
     overflow: visible;
     margin: 2em auto;
 }
@@ -82,10 +82,10 @@ img:hover {
     content: "";
     width: 6px;
     height: 6px;
-    /* background: #39D1B4;
-    border: 2px solid #39D1B4; */
-    background: rgb(85, 26, 139);
-    border: 2px solid rgb(85, 26, 139);
+    background: #39D1B4;
+    border: 2px solid #39D1B4;
+    /* background: rgb(85, 26, 139);
+    border: 2px solid rgb(85, 26, 139); */
     display: inline-block;
     position: absolute;
     top: -5px;
