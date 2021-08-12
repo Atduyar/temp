@@ -33,16 +33,30 @@ function addBlogContent(content, blogContent){
             break;
         case "img":
             console.log("img");
+            text = 
+            `<div class="img-div">
+                <img src="${content.data}" alt="foto">
+                <p class="img-subtitle inactive">${content.description}</p>
+            </div>`
             break;
         case "h":
             console.log("h");
-            text = `<p class='p-text'>${content.data}</p>`;
+            // text = `<p class='p-text'>${content.data}</p>`;
             break;
         case "hr":
             console.log("hr");
             break;
         case "quote":
             console.log("quote");
+            break;
+        case "sep":
+            console.log("sep");
+            text = 
+            `<div class="div-seperator">
+                <p class="seperator inactive">•</p>
+                <p class="seperator inactive">•</p>
+                <p class="seperator inactive">•</p>
+            </div>`
             break;
         default:
             console.log("aaaaaaaaaaaaaaaaa");
