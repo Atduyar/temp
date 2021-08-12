@@ -25,8 +25,6 @@ function setBlogs(b) {
         blogImg.style = "";
         blogTitle.innerHTML = firstBlog.blogTitle;
         blogAut.innerHTML = firstBlog.blogDate + " <a class='inactive-blackbg c-p td-u'>" + firstBlog.authorName + "</a> tarafından yazıldı.";
-
-        
     }
     for (var i = 0; i < b.length; i++) {//((i+((pageNumber == 1)?1:0))%13 == 0)
         blogsHtml +=
