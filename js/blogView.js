@@ -46,7 +46,7 @@ function addBlogContent(content, blogContent){
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             font-style: normal;
-        ">Dil Postürü, Sağlığınızı Doğrudan Etkiler!</h1>`;
+        ">${content.data}</h1>`;
             break;
         case "hr":
             console.log("hr");
