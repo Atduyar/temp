@@ -66,6 +66,11 @@
     margin-right: 25px;
 }
 
+#nav-bar-menu ul li a{   
+    text-decoration: none;
+    color: inherit;
+}
+
 #nav-bar-menu ul li:last-child {
     margin-right: 0;
 }
