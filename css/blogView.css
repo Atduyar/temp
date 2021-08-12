@@ -68,7 +68,27 @@ img:hover {
 }
 
 .div-makale hr{
-    background-color: white;
+    border: 0;
+    height: 1px;
+    width: 10%;
+    position: relative;
+    background: #39D1B4;
+}
+
+.div-makale hr:before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #39D1B4;
+    display: inline-block;
+    border: 2px solid #39D1B4;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .seperator {
