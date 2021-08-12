@@ -17,6 +17,10 @@
     .container {
         width: calc(768px / 2)!important;
         box-shadow: none!important;
+
+        top: 0!important;
+        transform: translateY(0)!important;
+        margin-top: calc(42px * 2 + var(--navbar-h))!important;
     }
     .container.right-panel-active .sign-in-container {
         transform: translateX(0%)!important;
@@ -61,6 +65,7 @@
 .block-div {
     width: 100vw;
     height: 100vh;
+    position: absolute;
 }
 
 .block {
