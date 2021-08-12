@@ -2,7 +2,7 @@ var apiBlogDetail = new ApiAuth();
 const urlParams = new URLSearchParams(window.location.search);
 const BlogId = urlParams.get('id');
 function setBlogDetail(b){
-    var blogContent = document.getElementsById("div-makale");
+    var blogContent = document.getElementById("div-makale");
 
     var title = document.getElementsByClassName("title-bar")[0];
     var titleAut = title.getElementsByClassName("p-publish-title")[0];
@@ -10,7 +10,7 @@ function setBlogDetail(b){
     var blogTitle = title.getElementsByClassName("p-main-title")[0];
     var blogTitle = title.getElementsByClassName("p-main-title")[0];
     var tags = document.getElementsByClassName("kategori-bar")[0];
-    var img = document.getElementsById("top-bar").getElementsByClassName("img-div")[0].getElementsByTagName("img")[0];
+    var img = document.getElementById("top-bar").getElementsByClassName("img-div")[0].getElementsByTagName("img")[0];
     img.src = b.blogTitlePhotoUrl;
     tags.innerHTML = "";
     for(var i = 0;i<b.blogTags.length;i++){
