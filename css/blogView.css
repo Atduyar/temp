@@ -74,6 +74,7 @@ img:hover {
     position: relative;
     background: #39D1B4;
     overflow: visible;
+    margin: auto;
 }
 
 .div-makale hr:before{
