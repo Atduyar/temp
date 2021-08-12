@@ -28,19 +28,14 @@ function addBlogContent(content){
     switch(content.type){
         case "p":
             console.log("p");
-            break;
         case "img":
             console.log("img");
-            break;
         case "h":
             console.log("h");
-            break;
         case "hr":
             console.log("hr");
-            break;
         case "quote":
             console.log("quote");
-            break;
         default:
             haveMatched = false;
     }
