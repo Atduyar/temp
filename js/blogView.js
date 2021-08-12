@@ -24,23 +24,24 @@ function setBlogDetail(b){
     }
 }
 function addBlogContent(content){
-    var haveMatched=true;
     switch(content.type){
         case "p":
             console.log("p");
+            break;
         case "img":
             console.log("img");
+            break;
         case "h":
             console.log("h");
+            break;
         case "hr":
             console.log("hr");
+            break;
         case "quote":
             console.log("quote");
+            break;
         default:
-            haveMatched = false;
-    }
-    if (haveMatched){
-        console.log("aaaaaaaaaaaaaaaaa");
+            console.log("aaaaaaaaaaaaaaaaa");
     }
 }
 getBlogDetail(BlogId);
