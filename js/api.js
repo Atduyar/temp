@@ -139,6 +139,10 @@ class ApiAuth {
     static GetUser() {
         return JSON.parse(localStorage.getItem("Evrimolog-User"));
     }
+    static SingOut(){
+        sessionStorage.removeItem("Evrimolog-Token");
+        localStorage.removeItem("Evrimolog-User");
+    }
     static GetToken(x) {
         var r = JSON.parse(sessionStorage.getItem("Evrimolog-Token"));
         if (r != null) {
