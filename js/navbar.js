@@ -1,4 +1,4 @@
-window.location = "twitter://mentions"
+window.location = "Evrimolog://"
 
 var mySidenav = document.getElementById("mySidenav");
 var myMask = document.getElementById("myMask");
