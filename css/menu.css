@@ -13,11 +13,14 @@
     display: none!important;
 }
 
-.auth .auth-a{
-    display: inline-block!important;
-}
 .auth .unauth-a{
     display: none!important;
+}
+#nav-bar .auth .auth-a{
+    display: inline-block!important;
+}
+#mySidenav .auth .auth-a{
+    display: block!important;
 }
 
 #nav-bar {
