@@ -101,6 +101,16 @@
     margin-right: 12px;
 }
 
+.auth-a{
+    display: none;
+}
+
+.auth .auth-a{
+    display: inline-block!important;
+}
+.auth .unauth-a{
+    display: none!important;
+}
 
 .sidenav {
     display: none;
