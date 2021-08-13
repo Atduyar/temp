@@ -1,4 +1,4 @@
-window.location = "Evrimolog://"
+window.location = "evrimolog://menu"
 
 var mySidenav = document.getElementById("mySidenav");
 var myMask = document.getElementById("myMask");
