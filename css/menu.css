@@ -9,6 +9,17 @@
     }
 }
 
+.auth-a{
+    display: none;
+}
+
+.auth .auth-a{
+    display: inline-block!important;
+}
+.auth .unauth-a{
+    display: none!important;
+}
+
 #nav-bar {
     height: var(--navbar-h);
     width: 100%;
@@ -99,17 +110,6 @@
     -ms-flex-align: center;
     align-items: center;
     margin-right: 12px;
-}
-
-.auth-a{
-    display: none;
-}
-
-.auth .auth-a{
-    display: inline-block!important;
-}
-.auth .unauth-a{
-    display: none!important;
 }
 
 .sidenav {
