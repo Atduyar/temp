@@ -7,12 +7,12 @@
     if ($count($x) > 2){
         $y = __DIR__ . '/' . $x[1] . '.html';
         require $y;
-    }else {
-        $y = __DIR__ . '/' . $x[1] . '.html';
-        require $y;
         echo '<script type="text/javascript">',
              'setParam("' . $x[2] . '");',
              '</script>';
+    }else {
+        $y = __DIR__ . '/' . $x[1] . '.html';
+        require $y;
     }
     // echo count($x);
 ?>
