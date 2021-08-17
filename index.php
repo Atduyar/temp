@@ -3,5 +3,4 @@
     
     $params = explode( "/", $_GET['url'] );
     echo $params
-    echo $_GET['url']
 ?>
