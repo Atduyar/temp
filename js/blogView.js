@@ -1,6 +1,14 @@
 var apiBlogDetail = new ApiAuth();
-const urlParams = new URLSearchParams(window.location.search);
-const BlogId = urlParams.get('id');
+// const urlParams = new URLSearchParams(window.location.search);
+// const BlogId = urlParams.get('id');
+
+var BlogId = 0;
+function setParam(param){
+    BlogId = param;
+    getBlogDetail(BlogId);
+}
+// getBlogDetail(BlogId);
+
 function setBlogDetail(b){
     var blogContent = document.getElementById("div-makale");
 
@@ -67,7 +75,6 @@ function addBlogContent(content, blogContent){
     blogContent.innerHTML += text;
 
 }
-getBlogDetail(BlogId);
 function getBlogDetail(id){
     apiBlogDetail.resultFunction = (t)=>{
         apiBlogDetail.resultFunction = (b)=>{
