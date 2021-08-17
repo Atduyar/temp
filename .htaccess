@@ -2,7 +2,6 @@ RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule !\.(js|txt|gif|jpg|png)$ index.php?url=$1 [L,QSA]
 RewriteRule js/(.*) js/$1
 RewriteRule ^([^/]+)/([^/]+)$ $1.html?id=$2 [NC]
 RewriteRule ^([^/]+)$ $1.html [NC]
