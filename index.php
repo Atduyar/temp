@@ -4,6 +4,6 @@
     $x = explode("/", $_SERVER["REQUEST_URI"]);
     // print_r($x);
     $y = __DIR__ . '/' . $x[1] . '.html?id=' . (count($arr) > 2 ? $x[2] : '') ;
-    echo $y;
+    print($y);
     // require __DIR__ . '/' . $x[1] . '.html?id=' . (count($arr) > 2 ? $x[2] : '') ;
 ?>
