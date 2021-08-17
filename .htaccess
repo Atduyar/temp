@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(dir1)/?(path2)? $1.html?id=$2
