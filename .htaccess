@@ -1,6 +1,5 @@
 RewriteEngine On
 
-RewriteCond %{REQUEST_FILENAME} !/(admin|css|fonts|ico|include|js)/
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)$ $1.html [NC]
