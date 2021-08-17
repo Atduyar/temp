@@ -5,5 +5,4 @@
     print_r($x);
     $y = __DIR__ . '/' . $x[1] . '.html?id=' . (count($arr) > 2 ? $x[2] : '') ;
     echo $y;
-    require __DIR__ . '/' . $x[1] . '.html?id=' . (count($arr) > 2 ? $x[2] : '') ;
 ?>
