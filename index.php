@@ -3,7 +3,7 @@
     // print_r($x);
     // $y = __DIR__ . '/' . $x[1] . '.html?id=' . (count($arr) > 2 ? $x[2] : '') ;
 
-    $y = __DIR__ . '/' . $x[1] . '.html' . (count($x) > 2 ? ('?id=' . $x[2]) : '');
-    // echo $y;
+    $y = __DIR__ . '/' . $x[1] . '.html' ;//. (count($x) > 2 ? ('?id=' . $x[2]) : '');
+    echo count($x);
     require $y;
 ?>
