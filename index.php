@@ -6,5 +6,5 @@
     // $y = __DIR__ . '/' . $x[1] . '.html?id=' . (count($arr) > 2 ? $x[2] : '') ;
     $y = __DIR__ . '/' . $x[1] . '.html?id=';
     echo $y;
-    require $y;
+    // require $y;
 ?>
