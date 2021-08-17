@@ -6,3 +6,12 @@ RewriteRule !\.(js|txt|gif|jpg|png)$ index.php?url=$1 [L,QSA]
 
 
 RewriteRule ^([^/]+)$ $1.html [NC]
+
+
+
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/([^/]+)$ $1.html?id=$2 [NC]
