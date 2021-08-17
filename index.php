@@ -2,5 +2,5 @@
     echo "Hello World";
     
     $params = explode( "/", $_GET['url'] );
-    echo $params
+    print_r ($params); 
 ?>
