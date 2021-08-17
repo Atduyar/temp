@@ -1,6 +1,6 @@
 <?php
     echo "Hello World";
     
-    $x = pathinfo($url);
-    echo $_SERVER["REQUEST_URI"]
+    $x = explode("/", $_SERVER["REQUEST_URI"]);
+    print_r($x);
 ?>
