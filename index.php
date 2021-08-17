@@ -2,6 +2,5 @@
     echo "Hello World";
     
     $x = pathinfo($url);
-    echo $x['path'] 
-    echo $x['query']
+    echo $_SERVER["REQUEST_URI"]
 ?>
