@@ -2,7 +2,5 @@ RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^css/(.*) css/$1 [QSA,L]
-RewriteRule ^js/(.*) js/$1 [QSA,L]
-RewriteRule ^([^/]+)$ $1.html [NC]
 RewriteRule ^([^/]+)/([^/]+)$ $1.html?id=$2 [NC]
+RewriteRule ^([^/]+)$ $1.html [NC]
