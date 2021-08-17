@@ -1,6 +1,7 @@
 <?php
     echo "Hello World";
     
-    $params = explode( "/", $_GET['url'] );
-    print_r ($params); 
+    $x = pathinfo($url);
+    echo $x['path'] 
+    echo $x['query']
 ?>
