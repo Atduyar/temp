@@ -2,6 +2,6 @@ RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^/]+)/([^/]+)$ $1.html?id=$2 [NC]
 RewriteRule ^([^/]+)$ $1.html [NC]
+RewriteRule ^([^/]+)/([^/]+)$ $1.html?id=$2 [NC]
 RewriteRule ^js/(.*)$ js/$1 [NC]
