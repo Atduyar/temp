@@ -1,10 +1,6 @@
 RewriteEngine On
 
-RewriteCond %{REQUEST_URI} !\.png$ [NC]
-RewriteCond %{REQUEST_URI} !\.html$ [NC]
-RewriteCond %{REQUEST_URI} !\.php$ [NC]
-RewriteCond %{REQUEST_URI} !\.css$ [NC]
-RewriteCond %{REQUEST_URI} !\.jpg$ [NC]
+RewriteCond %{REQUEST_FILENAME} !/(admin|css|fonts|ico|include|js)/
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)$ $1.html [NC]
