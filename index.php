@@ -4,9 +4,4 @@
     $params = explode( "/", $_GET['url'] );
     echo $params
     echo $_GET['url']
-    for($i = 0; $i < count($params); $i+=2) {
-
-      echo $params[$i] ." has value: ". $params[$i+1] ."<br />";
-
-    }
 ?>
