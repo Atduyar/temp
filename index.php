@@ -13,5 +13,6 @@
         require $y;
     }else {
         $y = __DIR__ . '/blogs.html';
+        require $y;
     }
 ?>
