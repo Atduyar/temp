@@ -26,6 +26,6 @@
     top: calc(var(--navbar-h) + 42px + 21px);
     width: var(--icerik-w);
     margin: auto;
-    padding: 0px;
+    padding: 0px 15px;
     background-color: red;
 }
