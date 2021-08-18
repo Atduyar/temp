@@ -95,3 +95,9 @@ function getBlogDetail(id){
     }
     ApiAuth.GetToken(apiBlogDetail);
 }
+
+var xxidTemp = urlParams.get('id');
+console.log(xxidTemp);
+if(xxidTemp != null){
+    getBlogDetail(xxidTemp);
+}
