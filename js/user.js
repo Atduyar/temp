@@ -3,7 +3,6 @@ var user;
 // getUser(1)
 
 function setUser(u){
-    user = u;
     document.getElementById("user-name").children[0].innerHTML = u.nickname;
     document.getElementById("user-des").children[0].innerHTML = u.description || "";
     document.getElementById("user-pp").children[0].src = "https://api.atduyar.com/Images/" + u.avatarUrl;
@@ -14,6 +13,7 @@ function getUser(userId) {
         console.log(t);
         apiUser.resultFunction = (b) => {
             console.log(b);
+            user = u;
             setUser(b);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
@@ -36,6 +36,6 @@ if(xxidTemp != null){
 }
 function setParam(param){
     var x = param.split("-");
-    history.pushState({}, null, "/user/" + user.nickname + "-" + xxidTemp);
     getUser(x[x.length - 1]);
+    history.pushState({}, null, "/user/" + user.nickname + "-" + xxidTemp);
 }
