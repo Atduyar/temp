@@ -1,21 +1,21 @@
+var apiUsers = new ApiAuth();
+getUsers(1)
 
-getBlogs(1)
-
-function getBlogs(userId) {
-    apiBlogs.resultFunction = (t) => {
+function getUsers(userId) {
+    apiUsers.resultFunction = (t) => {
         console.log(t);
-        apiBlogs.resultFunction = (b) => {
+        apiUsers.resultFunction = (b) => {
             console.log(b);
-            setBlogs(b);
+            setUser(b);
         }
-        apiBlogs.resultErrFunction = apiBlogs.resultErrFunction;
-        apiBlogs.PostAuth("users/getbypage", t.token, { PageNumber: pageNumber, PageSize: pageBlogCounter });
+        apiUsers.resultErrFunction = apiUsers.resultErrFunction;
+        apiUsers.GetAuth("users/getmyprofil", t.token);
     }
-    apiBlogs.resultErrFunction = (t) => {
+    apiUsers.resultErrFunction = (t) => {
         console.log(t);
     }
-    apiBlogs.resultUnAuthFunction = (t) => {
+    apiUsers.resultUnAuthFunction = (t) => {
         console.log(t);
     }
-    ApiAuth.GetToken(apiBlogs)
+    ApiAuth.GetToken(apiUsers)
 }
