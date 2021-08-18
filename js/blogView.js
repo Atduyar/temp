@@ -17,6 +17,12 @@ function setBlogDetail(b){
     img.src = b.blogTitlePhotoUrl;
     img.style = "";
     tags.innerHTML = "";
+    document.body.innerHTML += `<meta name="description" content="${b.blogSummary}">
+
+    <meta property="og:description" content="${b.blogSummary}">
+    
+    <meta name="twitter:description" content="${b.blogSummary}">`;
+
     for(var i = 0;i<b.blogTags.length;i++){
         tags.innerHTML += `<a href="/category/${b.blogTags[i].id}" class="p-kategori inactive c-p td-n">${b.blogTags[i].name}</a>`;
     }
