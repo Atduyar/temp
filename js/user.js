@@ -15,7 +15,7 @@ function getUser(userId) {
             setUser(b);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
-        apiUser.GetAuth("users/getmyprofil", t.token);
+        apiUser.GetAuth("users/getUser?id="+userId, t.token);
     }
     apiUser.resultErrFunction = (t) => {
         console.log(t);
