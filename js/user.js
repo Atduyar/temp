@@ -1,21 +1,26 @@
-var apiUsers = new ApiAuth();
-getUsers(1)
+var apiUser = new ApiAuth();
+getUser(1)
 
-function getUsers(userId) {
-    apiUsers.resultFunction = (t) => {
+function setUser(u){
+    document.getElementById("user-name").children[0].innerHTML = u.nickname;
+    document.getElementById("user-des").children[0].innerHTML = u.description | "";
+}
+
+function getUser(userId) {
+    apiUser.resultFunction = (t) => {
         console.log(t);
-        apiUsers.resultFunction = (b) => {
+        apiUser.resultFunction = (b) => {
             console.log(b);
             setUser(b);
         }
-        apiUsers.resultErrFunction = apiUsers.resultErrFunction;
-        apiUsers.GetAuth("users/getmyprofil", t.token);
+        apiUser.resultErrFunction = apiUser.resultErrFunction;
+        apiUser.GetAuth("users/getmyprofil", t.token);
     }
-    apiUsers.resultErrFunction = (t) => {
+    apiUser.resultErrFunction = (t) => {
         console.log(t);
     }
-    apiUsers.resultUnAuthFunction = (t) => {
+    apiUser.resultUnAuthFunction = (t) => {
         console.log(t);
     }
-    ApiAuth.GetToken(apiUsers)
+    ApiAuth.GetToken(apiUser)
 }
