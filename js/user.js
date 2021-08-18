@@ -36,6 +36,6 @@ if(xxidTemp != null){
 }
 function setParam(param){
     var x = param.split("-");
-    getUser(x[x.length - 1], (userNickname)=>{history.pushState({}, null, "/user/" + userNickname + "-" + x)});
+    getUser(x[x.length - 1], (userNickname)=>{history.pushState({}, null, "/user/" + userNickname + "-" + x[x.length - 1])});
     
 }
