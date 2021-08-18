@@ -26,6 +26,15 @@
     top: calc(var(--navbar-h) + 42px + 21px);
     width: var(--icerik-w);
     margin: auto;
-    padding: 0px 15px;
+    padding: 0px 20px;
     background-color: red;
+    display: flex;
+}
+
+#user-pp{
+    width: 33%;
+}
+#user-info{
+    width: 67%;
+    
 }
