@@ -43,6 +43,8 @@
 #user-pp img{
     height: 150px;
     width: 150px;
+    border-radius: 50%;
+    margin: 25%;
 }
 #user-info{
     width: 67%;
