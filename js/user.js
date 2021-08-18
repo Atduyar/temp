@@ -3,7 +3,7 @@ getUser(1)
 
 function setUser(u){
     document.getElementById("user-name").children[0].innerHTML = u.nickname;
-    document.getElementById("user-des").children[0].innerHTML = u.description | "";
+    document.getElementById("user-des").children[0].innerHTML = u.description || "";
 }
 
 function getUser(userId) {
