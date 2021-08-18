@@ -1,6 +1,32 @@
+@media only screen and (max-width: 1110px) and (min-width: 1010px) {
+    * {
+        --icerik-w: 1000px;
+    }
+    .blog-item {
+        width: calc((100% / 3) - 32px)!important;
+    }
+}
+
+@media only screen and (max-width: 1010px) and (min-width: 835px) {
+    * {
+        --icerik-w: 825px;
+    }
+    .blog-item {
+        width: calc((100% / 2) - 32px)!important
+    }
+}
+/* telefon */
+@media only screen and (max-width: 835px) {
+    .blog-item {
+        width: calc(100% - 32px)!important;
+    }
+}
+
+
 #user-div{
     position: relative;
     top: calc(var(--navbar-h) + 42px + 21px);
-    margin: 0px;
+    width: var(--icerik-w);
+    margin: auto;
     padding: 0px;
 }
