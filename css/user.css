@@ -40,6 +40,10 @@
 #user-pp{
     width: 33%;
 }
+#user-pp img{
+    height: 150px;
+    width: 150px;
+}
 #user-info{
     width: 67%;
     
