@@ -39,7 +39,6 @@
     width: var(--icerik-w);
     margin: auto;
     padding: 0px 20px;
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
 }
@@ -57,7 +56,7 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin: 15%;
+    margin: 42px;
 }
 #user-info{
     width: 67%;
