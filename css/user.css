@@ -19,10 +19,10 @@
         --icerik-w: 100%;
     }
     #user-pp{
-        width: clac(100%)!important;
+        width: calc(100% - 1px)!important;
     }
     #user-info{
-        width: clac(100%)!important;
+        width: calc(100% - 1px)!important;
     }
 }
 
