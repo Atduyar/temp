@@ -31,6 +31,10 @@
     display: flex;
 }
 
+#user-head{
+    width: 100%;
+    
+}
 #user-pp{
     width: 33%;
 }
