@@ -1,4 +1,5 @@
 #user-div{
+    position: relative;
     top: calc(var(--navbar-h) + 42px + 21px);
     margin: 0px;
     padding: 0px;
