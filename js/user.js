@@ -1,5 +1,5 @@
 var apiUser = new ApiAuth();
-getUser(1)
+// getUser(1)
 
 function setUser(u){
     document.getElementById("user-name").children[0].innerHTML = u.nickname;
@@ -24,4 +24,11 @@ function getUser(userId) {
         console.log(t);
     }
     ApiAuth.GetToken(apiUser)
+}
+
+
+var xxidTemp = new URLSearchParams(window.location.search).get('id');
+console.log(xxidTemp);
+if(xxidTemp != null){
+    getUser(xxidTemp);
 }
