@@ -8,7 +8,7 @@ function setUser(u){
     document.getElementById("user-pp").children[0].src = "https://api.atduyar.com/Images/" + u.avatarUrl;
 }
 
-function getUser(userId) {
+function getUser(userId, fixUrl=()=>{}) {
     apiUser.resultFunction = (t) => {
         console.log(t);
         apiUser.resultFunction = (b) => {
@@ -36,6 +36,6 @@ if(xxidTemp != null){
 }
 function setParam(param){
     var x = param.split("-");
-    getUser(x[x.length - 1]);
-    history.pushState({}, null, "/user/" + user.nickname + "-" + xxidTemp);
+    getUser(x[x.length - 1], ()=>{history.pushState({}, null, "/user/" + user.nickname + "-" + xxidTemp);});
+    
 }
