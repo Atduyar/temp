@@ -24,6 +24,12 @@
     #user-info{
         width: calc(100% - 1px)!important;
     }
+    #user-pp img{
+        max-width: 200px!important;
+        position: relative!important;
+        left: 50%!important;
+        transform: translateX(-50%)!important;
+    }
 }
 
 
