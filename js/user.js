@@ -14,7 +14,7 @@ function getUser(userId, fixUrl=()=>{}) {
         apiUser.resultFunction = (b) => {
             console.log(b);
             user = b;
-            fixUrl(b);
+            fixUrl(b.nickname);
             setUser(b);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
