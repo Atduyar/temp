@@ -13,7 +13,7 @@ function getUser(userId, fixUrl=()=>{}) {
         console.log(t);
         apiUser.resultFunction = (b) => {
             console.log(b);
-            user = u;
+            user = b;
             setUser(b);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
