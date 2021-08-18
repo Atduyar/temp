@@ -32,3 +32,6 @@ console.log(xxidTemp);
 if(xxidTemp != null){
     getUser(xxidTemp);
 }
+function setParam(id){
+    getUser(id);
+}
