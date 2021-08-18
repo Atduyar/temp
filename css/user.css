@@ -29,11 +29,13 @@
     padding: 0px 20px;
     background-color: red;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #user-head{
     width: 100%;
-    
+    display: flex;
+    position: relative;
 }
 #user-pp{
     width: 33%;
