@@ -82,6 +82,7 @@ function getBlogDetail(id, fixUrl = ()=>{}){
     apiBlogDetail.resultUnAuthFunction = (r)=>{
         apiBlogDetail.resultFunction = (b)=>{
             console.log(b);
+            fixUrl(b.blogTitle.split(" ").join("-"));
             setBlogDetail(b);
         }
         apiBlogDetail.GetAuth("blogs/getBlogGuest?id="+id);
