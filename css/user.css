@@ -48,10 +48,11 @@
 }
 #user-info{
     width: 67%;
-    
 }
 #user-name{
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 42px;
+}
 }
 #user-des{
 }
