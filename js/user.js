@@ -14,6 +14,7 @@ function getUser(userId, fixUrl=()=>{}) {
         apiUser.resultFunction = (b) => {
             console.log(b);
             user = b;
+            fixUrl(b);
             setUser(b);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
@@ -35,6 +36,6 @@ if(xxidTemp != null){
 }
 function setParam(param){
     var x = param.split("-");
-    getUser(x[x.length - 1], ()=>{history.pushState({}, null, "/user/" + user.nickname + "-" + xxidTemp)});
+    getUser(x[x.length - 1], (userNickname)=>{history.pushState({}, null, "/user/" + user.nickname + "-" + xxidTemp)});
     
 }
