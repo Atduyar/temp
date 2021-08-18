@@ -70,10 +70,11 @@ function addBlogContent(content, blogContent){
     blogContent.innerHTML += text;
 
 }
-function getBlogDetail(id){
+function getBlogDetail(id, fixUrl = ()=>{}){
     apiBlogDetail.resultFunction = (t)=>{
         apiBlogDetail.resultFunction = (b)=>{
             console.log(b);
+            fixUrl(b.blogTitle.split(" ").join("-"));
             setBlogDetail(b);
         }
         apiBlogDetail.GetAuth("blogs/getBlog?id="+id, t.token);
@@ -93,12 +94,12 @@ function getBlogDetail(id){
 
 var xxidTemp = new URLSearchParams(window.location.search).get('id');
 if(xxidTemp != null){
-    getBlogDetail(xxidTemp);
+    getBlogDetail(xxidTemp, (BlogTitle)=>{history.pushState({}, null, "/blogView.html?name=" + BlogTitle + "&id=" + BlogId)});
 }
 
 var BlogId = 0;
 function setParam(param){
     var x = param.split("-");
     BlogId = x[x.length - 1];
-    getBlogDetail(BlogId);
+    getBlogDetail(BlogId, (BlogTitle)=>{history.pushState({}, null, "/blogView/" + BlogTitle + "-" + BlogId)});
 }
