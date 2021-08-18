@@ -2,11 +2,6 @@ var apiBlogDetail = new ApiAuth();
 // const urlParams = new URLSearchParams(window.location.search);
 // const BlogId = urlParams.get('id');
 
-var BlogId = 0;
-function setParam(param){
-    BlogId = param;
-    getBlogDetail(BlogId);
-}
 // getBlogDetail(BlogId);
 
 function setBlogDetail(b){
@@ -100,4 +95,11 @@ var xxidTemp = new URLSearchParams(window.location.search).get('id');
 console.log(xxidTemp);
 if(xxidTemp != null){
     getBlogDetail(xxidTemp);
+}
+
+var BlogId = 0;
+function setParam(param){
+    var x = param.split("-");
+    BlogId = x[x.length - 1];
+    getBlogDetail(BlogId);
 }

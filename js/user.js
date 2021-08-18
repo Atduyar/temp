@@ -32,6 +32,7 @@ console.log(xxidTemp);
 if(xxidTemp != null){
     getUser(xxidTemp);
 }
-function setParam(id){
-    getUser(id);
+function setParam(param){
+    var x = param.split("-");
+    getUser(x[x.length - 1]);
 }
