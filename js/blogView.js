@@ -102,7 +102,7 @@ function getBlogDetail(id, fixUrl = ()=>{}){
 
 var xxidTemp = new URLSearchParams(window.location.search).get('id');
 if(xxidTemp != null){
-    getBlogDetail(xxidTemp, (BlogTitle)=>{history.pushState({}, null, "/blogView.html?name=" + BlogTitle + "&id=" + BlogId)});
+    getBlogDetail(xxidTemp, (BlogTitle)=>{history.pushState({}, null, "/blogView.html?name=" + BlogTitle + "&id=" + xxidTemp)});
 }
 
 var BlogId = 0;
