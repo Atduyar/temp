@@ -92,7 +92,6 @@ function getBlogDetail(id){
 }
 
 var xxidTemp = new URLSearchParams(window.location.search).get('id');
-console.log(xxidTemp);
 if(xxidTemp != null){
     getBlogDetail(xxidTemp);
 }

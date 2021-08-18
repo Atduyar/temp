@@ -1,6 +1,7 @@
 var apiUser = new ApiAuth();
-// getUser(1)
 var user;
+// getUser(1)
+
 function setUser(u){
     user = u;
     document.getElementById("user-name").children[0].innerHTML = u.nickname;
@@ -29,7 +30,6 @@ function getUser(userId) {
 
 
 var xxidTemp = new URLSearchParams(window.location.search).get('id');
-console.log(xxidTemp);
 if(xxidTemp != null){
     getUser(xxidTemp);
     history.pushState({}, null, "/user.html?name=" + user.nickname + "&id=" + xxidTemp);
