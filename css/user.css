@@ -18,6 +18,9 @@
     * {
         --icerik-w: 100%;
     }
+    #user-pp{
+        width: 100%!important;
+    }
 }
 
 
