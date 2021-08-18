@@ -27,4 +27,5 @@
     width: var(--icerik-w);
     margin: auto;
     padding: 0px;
+    background-color: red;
 }
