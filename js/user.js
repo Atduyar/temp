@@ -4,6 +4,7 @@ getUser(1)
 function setUser(u){
     document.getElementById("user-name").children[0].innerHTML = u.nickname;
     document.getElementById("user-des").children[0].innerHTML = u.description || "";
+    document.getElementById("user-pp").children[0].src = "https://api.atduyar.com/Images/" + u.avatarUrl;
 }
 
 function getUser(userId) {
