@@ -32,10 +32,10 @@ function getUser(userId, fixUrl=()=>{}) {
 
 var xxidTemp = new URLSearchParams(window.location.search).get('id');
 if(xxidTemp != null){
-    getUser(xxidTemp, ()=>{history.pushState({}, null, "/user.html?name=" + user.nickname + "&id=" + xxidTemp)});
+    getUser(xxidTemp, (userNickname)=>{history.pushState({}, null, "/user.html?name=" + userNickname + "&id=" + xxidTemp)});
 }
 function setParam(param){
     var x = param.split("-");
-    getUser(x[x.length - 1], (userNickname)=>{history.pushState({}, null, "/user/" + user.nickname + "-" + xxidTemp)});
+    getUser(x[x.length - 1], (userNickname)=>{history.pushState({}, null, "/user/" + userNickname + "-" + xxidTemp)});
     
 }
