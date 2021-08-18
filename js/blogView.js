@@ -17,7 +17,7 @@ function setBlogDetail(b){
     img.src = b.blogTitlePhotoUrl;
     img.style = "";
     tags.innerHTML = "";
-    document.body.innerHTML += `<meta name="description" content="${b.blogSummary}">
+    document.head.innerHTML += `<meta name="description" content="${b.blogSummary}">
 
     <meta property="og:description" content="${b.blogSummary}">
     
