@@ -121,7 +121,7 @@
 
 #user-body-nav-line{
     height: 5px;
-    padding: 0 20vw 0 20vw;
+    padding: 0 var(--aaa) 0 var(--aaa);
     /* padding: 0 20vw 0 20vw;
     padding: 0 00vw 0 40vw; */
     margin: 0 auto;
@@ -129,7 +129,7 @@
 }
 #user-body-nav-line div{
     border-top: 5px solid white;
-    width: 20vw;
+    width: var(--aaa);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
