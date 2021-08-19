@@ -29,7 +29,7 @@ function setBlogs(b) {
     for (var i = 0; i < b.length; i++) {//((i+((pageNumber == 1)?1:0))%13 == 0)
         blogsHtml +=
             `<div class="${((i%18) >= 12)?"blog-list-long ":""}blog-item">
-            <a href="/blogView.html?id=${b[i].blogId}" class="a-img-blog-item" >
+            <a href="/blogView/${b[i].blogId}" class="a-img-blog-item" >
                 <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy" alt="${b[i].blogTitle}">
             </a>
             <div class='blog-content'>
@@ -63,7 +63,7 @@ function setBlogs(b) {
     pageNumber++;
 }
 function goto(id){
-    window.location.href = window.location.origin + "/blogView.html?id=" + id;
+    window.location.href = window.location.origin + "/blogView/" + id;
 }
 getBlogs()
 
