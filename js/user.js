@@ -29,6 +29,11 @@ function getUser(userName, fixUrl=()=>{}) {
     ApiAuth.GetToken(apiUser)
 }
 
+var userPage = document.getElementById("user-body-page");
+
+function changeUBPage(x){
+    userPage.style = "transform: translateX(calc( (100% / 3) * "+x+" ));";
+}
 
 var xxTemp = new URLSearchParams(window.location.search).get('name');
 if(xxTemp != null){

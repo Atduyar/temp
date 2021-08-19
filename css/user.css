@@ -108,6 +108,7 @@
     flex-wrap: wrap;
     width: 300%;
     display: flex;
+    transition: 0.5s;
 }
 
 #user-body-page div{
