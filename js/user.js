@@ -33,11 +33,9 @@ function getUser(userName, fixUrl=()=>{}) {
 var xxTemp = new URLSearchParams(window.location.search).get('name');
 if(xxTemp != null){
     getUser(xxTemp, (userNickname)=>{history.pushState({}, null, "/user.html?name=" + xxTemp)});
-    // getUser(xxidTemp, (userNickname)=>{history.pushState({}, null, "/user.html?name=" + userNickname + "&id=" + xxidTemp)});
 }
 function setParam(param){
     var x = param.split("-");
     getUser(x[0], (userNickname)=>{history.pushState({}, null, "/user/" + x[0])});
-    // getUser(x[x.length - 1], (userNickname)=>{history.pushState({}, null, "/user/" + userNickname + "-" + x[x.length - 1])});
     
 }
