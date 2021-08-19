@@ -33,8 +33,8 @@ var userPage = document.getElementById("user-body-page");
 var userPageLine = document.getElementById("user-body-nav-line");
 function changeUBPage(x){
     userPage.style = "transform: translateX(calc( (-100% / 3) * "+x+" ));";
-    userPageLine.style = "padding: 0 calc("+(2-x)+" * var(--aaa)) 0 calc("+(x)+" * var(--aaa));!important"
-    console.log("padding: 0 calc("+(2-x)+" * var(--aaa)) 0 calc("+(x)+" * var(--aaa));!important");
+    userPageLine.style = "padding: 0 calc("+(2-x)+" * var(--nav-size)) 0 calc("+(x)+" * var(--nav-size));!important"
+    console.log("padding: 0 calc("+(2-x)+" * var(--nav-size)) 0 calc("+(x)+" * var(--nav-size));!important");
 }
 
 var xxTemp = new URLSearchParams(window.location.search).get('name');
