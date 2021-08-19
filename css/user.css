@@ -2,6 +2,7 @@
 @media only screen and (max-width: 1110px) and (min-width: 1010px) {
     * {
         --icerik-w: 1000px;
+        --aaa: 10vw;
     }
     .blog-item {
         width: calc((100% / 3) - 32px)!important;
@@ -11,12 +12,14 @@
 @media only screen and (max-width: 1010px) and (min-width: 835px) {
     * {
         --icerik-w: 825px;
+        --aaa: 20vw;
     }
 }
 /* telefon */
 @media only screen and (max-width: 835px) {
     * {
         --icerik-w: 100%;
+        --aaa: 20vw;
     }
     #user-pp{
         width: calc(100% - 1px)!important;
