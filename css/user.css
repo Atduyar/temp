@@ -103,14 +103,13 @@
 #user-body-nav ul li{
     display: inline-block;;
     cursor: pointer;
-    /* padding: 0.6em 5vw; */
-    padding: 0 5vw;
+    padding: 0.6em 5vw;
     width: 20vw;
     text-align: center;
 }
 
 #user-body-nav ul li svg{
-    height: 2.2em;
+    height: 1.2em;
     fill: white;
 }
 
