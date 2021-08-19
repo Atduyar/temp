@@ -95,3 +95,19 @@
 #user-body-nav ul li:last-child {
     margin-right: 0;
 }
+
+#user-body-mask{
+    width: 100vw;
+}
+
+#user-body-page{
+    flex-wrap: wrap;
+    width: 300vw;
+    display: flex;
+    overflow-y: hidden;
+}
+
+#user-body-page div{
+    display: inline-block;
+    width: 100vw;
+}
