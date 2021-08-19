@@ -80,6 +80,7 @@
     align-items: center;
     border-top: solid 1px white;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 #user-body-nav ul{
@@ -93,6 +94,8 @@
     display: inline-block;;
     cursor: pointer;
     padding: 0.6em 5vw;
+    width: 20vw;
+    text-align: center;
 }
 
 #user-body-mask{
@@ -110,4 +113,14 @@
 #user-body-page div{
     display: inline-block;
     width: calc(100% / 3);
+}
+
+#user-body-nav-line{
+    height: 5px;
+    padding: 0 20vw 0 20vw;
+    margin: auto;
+}
+#user-body-nav-line div{
+    border-top: 5px solid white;
+    width: 20vw;
 }
