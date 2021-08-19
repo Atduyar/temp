@@ -12,7 +12,7 @@ function setBlogs(b) {
         pageBlogCounter--;
 
         var firstBlog = b.shift();
-        blogDivDes.getElementsByClassName("title")[0].getElementsByTagName("a")[0].href = "/blogView.html?id=" + firstBlog.blogId;
+        blogDivDes.getElementsByClassName("title")[0].getElementsByTagName("a")[0].href = "/blogView/" + firstBlog.blogId;
         var blogImg = divBlog.getElementsByClassName("div-image")[0].getElementsByTagName("img")[0];
         var blogTitle = blogDivDes.getElementsByClassName("title")[0].getElementsByTagName("p")[0];
         var blogDescriptionDiv = blogDivDes.getElementsByClassName("description")[0].getElementsByTagName("p");
@@ -24,7 +24,7 @@ function setBlogs(b) {
         blogImg.src = firstBlog.blogTitlePhotoUrl;
         blogImg.style = "";
         blogTitle.innerHTML = firstBlog.blogTitle;
-        blogAut.innerHTML = firstBlog.blogDate + " <a class='inactive-blackbg c-p td-u'>" + firstBlog.authorName + "</a> tarafından yazıldı.";
+        blogAut.innerHTML = firstBlog.blogDate + " <a class='inactive-blackbg c-p td-u' href=/user/" + b[i].authorName + ">" + firstBlog.authorName + "</a> tarafından yazıldı.";
     }
     for (var i = 0; i < b.length; i++) {//((i+((pageNumber == 1)?1:0))%13 == 0)
         blogsHtml +=
@@ -43,7 +43,7 @@ function setBlogs(b) {
                 <div class="blog-item-details">
                     <div class="kategori-bar-blog-item">
                         <div class="blog-item-author-info">
-                            <a href="/author/${b[i].authorName}" class="inactive-blackbg c-p td-n">${b[i].authorName}</a>
+                            <a href="/user/${b[i].authorName}" class="inactive-blackbg c-p td-n">${b[i].authorName}</a>
                         </div>
                         <a href="/category/Politika" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Politika</a>
                         <a href="/category/Elestiri" class="p-kategori-black-blog-item inactive-blackbg c-p td-n">Eleştiri</a>
