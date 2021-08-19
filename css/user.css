@@ -89,6 +89,7 @@
 #user-body-nav ul li{
     display: inline-block;;
     margin-right: 10vw;
+    cursor: pointer;
 }
 
 #user-body-nav ul li:last-child {
