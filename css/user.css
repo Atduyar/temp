@@ -126,4 +126,6 @@
 #user-body-nav-line div{
     border-top: 5px solid white;
     width: 20vw;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
