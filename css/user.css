@@ -1,6 +1,7 @@
 /* 3 */
 *{
-    --nav-size: 5vw;
+    --nav-size: 10vw;
+    --nav-line-fix: 5vw;
 }
 @media only screen and (max-width: 1110px) and (min-width: 1010px) {
     * {
@@ -14,14 +15,16 @@
 @media only screen and (max-width: 1010px) and (min-width: 835px) {
     * {
         --icerik-w: 825px;
-        --nav-size: 0vw;
+        --nav-size: 20vw;
+        --nav-line-fix: 0vw;
     }
 }
 /* telefon */
 @media only screen and (max-width: 835px) {
     * {
         --icerik-w: 100%;
-        --nav-size: 0vw;
+        --nav-size: 20vw;
+        --nav-line-fix: 0vw;
     }
     #user-pp{
         width: calc(100% - 1px)!important;
