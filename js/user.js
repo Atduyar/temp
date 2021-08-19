@@ -32,7 +32,7 @@ function getUser(userName, fixUrl=()=>{}) {
 var userPage = document.getElementById("user-body-page");
 
 function changeUBPage(x){
-    userPage.style = "transform: translateX(calc( (100% / 3) * "+x+" ));";
+    userPage.style = "transform: translateX(calc( (-100% / 3) * "+x+" ));";
 }
 
 var xxTemp = new URLSearchParams(window.location.search).get('name');
