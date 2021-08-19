@@ -72,11 +72,12 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin: auto;
 }
 
 #user-body-nav ul li{
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 50px;
 }
 
 #user-body-nav ul li:last-child {
