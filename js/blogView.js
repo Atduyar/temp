@@ -58,19 +58,20 @@ function addBlogContent(content, blogContent){
             console.log("hr");
             text = "<hr>";
             break;
+        case "sep":
         case "quote":
             console.log("quote");
             text = `<p class='p-text quote'>${content.data}</p>`;
             break;
-        case "sep":
-            console.log("sep");
-            text = 
-            `<div class="div-seperator">
-                <p class="seperator inactive">•</p>
-                <p class="seperator inactive">•</p>
-                <p class="seperator inactive">•</p>
-            </div>`
-            break;
+        // case "sep":
+        //     console.log("sep");
+        //     text = 
+        //     `<div class="div-seperator">
+        //         <p class="seperator inactive">•</p>
+        //         <p class="seperator inactive">•</p>
+        //         <p class="seperator inactive">•</p>
+        //     </div>`
+        //     break;
         default:
             console.log("aaaaaaaaaaaaaaaaa");
     }
