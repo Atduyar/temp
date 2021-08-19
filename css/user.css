@@ -67,3 +67,18 @@
 }
 /* #user-des{
 } */
+
+#user-body-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#user-body-nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#user-body-nav ul li:last-child {
+    margin-right: 0;
+}
