@@ -28,6 +28,9 @@ function getUser() {
                 console.log(u);
                 document.getElementById("mySidenav").getElementsByClassName("menu-items")[0].classList.add("auth");
                 document.getElementById("nav-bar-menu").classList.add("auth");
+
+                document.getElementById("mySidenav").getElementsByClassName("menu-items")[0].classList.add("auth");
+                document.getElementById("nav-bar-menu").getElementsByClassName("profil")[0].getElementsByClassName("profil")[0].href = "/user/" + u.nickname;
                 // document.getElementsByClassName("nav-bar")[0].getElementsByClassName("nav-bar-pc")[0].children[0].innerText = capitalizeFirstLetter(u.nickname);
             }
         apiNav.GetMyProfil(t.token);
