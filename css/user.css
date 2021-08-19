@@ -121,6 +121,7 @@
     /* padding: 0 20vw 0 20vw;
     padding: 0 00vw 0 40vw; */
     margin: 0 auto;
+    transition: 0.5s;
 }
 #user-body-nav-line div{
     border-top: 5px solid white;
