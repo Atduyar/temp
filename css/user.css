@@ -75,6 +75,8 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    border-top: solid 1px white;
+    margin-top: 10px;
 }
 
 #user-body-nav ul{
