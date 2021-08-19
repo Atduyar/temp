@@ -98,13 +98,13 @@
 
 #user-body-mask{
     width: 100vw;
+    overflow-y: hidden;
 }
 
 #user-body-page{
     flex-wrap: wrap;
     width: 300vw;
     display: flex;
-    overflow-y: hidden;
 }
 
 #user-body-page div{
