@@ -85,8 +85,8 @@
 }
 
 #user-body-nav ul li{
-    display: inline-block;
-    margin-right: 50px;
+    display: inline-block;;
+    margin-right: 10vw;
 }
 
 #user-body-nav ul li:last-child {
