@@ -67,6 +67,15 @@
 }
 /* #user-des{
 } */
+#user-body-nav{
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
 
 #user-body-nav ul{
     list-style-type: none;
