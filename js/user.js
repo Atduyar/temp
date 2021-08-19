@@ -33,7 +33,7 @@ var userPage = document.getElementById("user-body-page");
 var userPageLine = document.getElementById("user-body-nav-line");
 function changeUBPage(x){
     userPage.style = "transform: translateX(calc( (-100% / 3) * "+x+" ));";
-    userPageLine.style = "padding: 0 "+4-x*2+"0vw 0 "+x*2+"0vw;!important"
+    userPageLine.style = "padding: 0 "+(4-x*2)+"0vw 0 "+x*2+"0vw;!important"
     console.log("padding: 0 "+(4-x*2)+"0vw 0 "+x*2+"0vw;!important");
 }
 
