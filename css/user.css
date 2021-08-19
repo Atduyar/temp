@@ -91,12 +91,8 @@
 
 #user-body-nav ul li{
     display: inline-block;;
-    margin-right: 10vw;
     cursor: pointer;
-}
-
-#user-body-nav ul li:last-child {
-    margin-right: 0;
+    padding: 0.6em 5vw;
 }
 
 #user-body-mask{
