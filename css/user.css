@@ -32,7 +32,6 @@
     }
 }
 
-
 #user-div{
     position: relative;
     top: calc(var(--navbar-h) + 42px + 21px);
@@ -41,6 +40,10 @@
     padding: 0px 20px;
     display: flex;
     flex-wrap: wrap;
+}
+
+#user-body{
+    width: 100%;
 }
 
 #user-head{
@@ -103,11 +106,11 @@
 
 #user-body-page{
     flex-wrap: wrap;
-    width: 300vw;
+    width: 300%;
     display: flex;
 }
 
 #user-body-page div{
     display: inline-block;
-    width: 100vw;
+    width: calc(100% / 3);
 }
