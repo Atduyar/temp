@@ -59,6 +59,8 @@ function addBlogContent(content, blogContent){
             text = "<hr>";
             break;
         case "sep":
+            console.log("sep(quote)");
+            text = `<p class='p-text quote'>${content.data}</p>`;
         case "quote":
             console.log("quote");
             text = `<p class='p-text quote'>${content.data}</p>`;
