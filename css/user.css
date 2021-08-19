@@ -126,6 +126,7 @@
     padding: 0 var(--nav-size) 0 var(--nav-size);
     /* padding: 0 20vw 0 20vw;
     padding: 0 00vw 0 40vw; */
+    width: 100%;
     margin: 0 calc(( 100% - 60vw ) / 2);
     transition: 0.5s;
 }
