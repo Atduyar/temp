@@ -51,6 +51,9 @@ function setParam(param){
 }
 
 
+////////////////////////////////////////////////////////////////////
+
+
 function setUserReaded(b){
     console.log(b);
     var readedPage = document.getElementById("user-body-page").children[0].children[0];
@@ -106,6 +109,7 @@ function getUserReaded(userId) {
 }//https://api.atduyar.com/api/users/getUserReaded?id=1&pageId=1&pageSize=3
 
 
+////////////////////////////////////////////////////////////////////
 
 
 function setUserBlogs(b){
@@ -148,7 +152,7 @@ function getUserBlogs(userId) {
     apiUser.resultFunction = (t) => {
         console.log(t);
         apiUser.resultFunction = (b) => {
-            setUserReaded(b);
+            setUserBlogs(b);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
         apiUser.GetAuth("users/getUserBlog?id="+userId+"&pageId="+userBlogsPageId+"&pageSize=42", t.token);
