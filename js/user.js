@@ -114,13 +114,13 @@ function getUserReaded(userId) {
 
 function setUserBlogs(b){
     console.log(b);
-    var readedPage = document.getElementById("user-body-page").children[2].children[0];
+    var BlogsPage = document.getElementById("user-body-page").children[2].children[0];
     if(userBlogsPageId == 1){
-        readedPage.innerHTML = "";
+        BlogsPage.innerHTML = "";
     } 
     userBlogsPageId++;
     for(var i = 0; i< b.length;i++){
-        readedPage.innerHTML += 
+        BlogsPage.innerHTML += 
         `<div class="${((i%18) >= 12)?"blog-list-long ":""}blog-item">
             <a href="/blogView/${b[i].blogId}" class="a-img-blog-item" >
                 <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy" alt="${b[i].blogTitle}">
