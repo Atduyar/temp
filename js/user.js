@@ -17,6 +17,7 @@ function getUser(userName, fixUrl=()=>{}) {
             fixUrl(b.nickname);
             setUser(b);
             getUserReaded(b.id);
+            getUserBlogs(b.id);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
         apiUser.GetAuth("users/getUserByName?name="+userName, t.token);
@@ -107,13 +108,13 @@ function getUserReaded(userId) {
 
 
 
-function setUserReaded(b){
+function setUserBlogs(b){
     console.log(b);
     var readedPage = document.getElementById("user-body-page").children[2].children[0];
-    if(userReadedPageId == 1){
+    if(userBlogsPageId == 1){
         readedPage.innerHTML = "";
     } 
-    userReadedPageId++;
+    userBlogsPageId++;
     for(var i = 0; i< b.length;i++){
         readedPage.innerHTML += 
         `<div class="${((i%18) >= 12)?"blog-list-long ":""}blog-item">
@@ -142,15 +143,15 @@ function setUserReaded(b){
     }
 }
 
-var userBlogPageId = 1;
-function getUserReaded(userId) {
+var userBlogsPageId = 1;
+function getUserBlogs(userId) {
     apiUser.resultFunction = (t) => {
         console.log(t);
         apiUser.resultFunction = (b) => {
             setUserReaded(b);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
-        apiUser.GetAuth("users/getUserBlog?id="+userId+"&pageId="+userBlogPageId+"&pageSize=42", t.token);
+        apiUser.GetAuth("users/getUserBlog?id="+userId+"&pageId="+userBlogsPageId+"&pageSize=42", t.token);
     }
     apiUser.resultErrFunction = (t) => {
         console.log(t);
