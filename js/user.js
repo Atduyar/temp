@@ -1,6 +1,7 @@
 var apiUser = new ApiAuth();
+var apiUser2 = new ApiAuth();
+var apiUser3 = new ApiAuth();
 var user;
-
 // getUser(1)
 
 function setUser(u){
@@ -57,7 +58,7 @@ function setParam(param){
 
 function setUserReaded(b){
     console.log(b);
-    var readedPage = document.getElementById("user-body-page").getElementsByClassName("user-body-page-item")[0].children[0];
+    var readedPage = document.getElementById("  e").getElementsByClassName("user-body-page-item")[0].children[0];
     if(userReadedPageId == 1){
         readedPage.innerHTML = "";
     } 
@@ -150,19 +151,19 @@ function setUserBlogs(b){
 
 var userBlogsPageId = 1;
 function getUserBlogs(userId) {
-    apiUser.resultFunction = (t) => {
+    apiUser2.resultFunction = (t) => {
         console.log(t);
-        apiUser.resultFunction = (b) => {
+        apiUser2.resultFunction = (b) => {
             setUserBlogs(b);
         }
-        apiUser.resultErrFunction = apiUser.resultErrFunction;
-        apiUser.GetAuth("users/getUserBlog?id="+userId+"&pageId="+userBlogsPageId+"&pageSize=42", t.token);
+        apiUser2.resultErrFunction = apiUser2.resultErrFunction;
+        apiUser2.GetAuth("users/getUserBlog?id="+userId+"&pageId="+userBlogsPageId+"&pageSize=42", t.token);
     }
-    apiUser.resultErrFunction = (t) => {
+    apiUser2.resultErrFunction = (t) => {
         console.log(t);
     }
-    apiUser.resultUnAuthFunction = (t) => {
+    apiUser2.resultUnAuthFunction = (t) => {
         console.log(t);
     }
-    ApiAuth.GetToken(apiUser)
+    ApiAuth.GetToken(apiUser2)
 }//https://api.atduyar.com/api/users/getUserBlog?id=1&pageId=1&pageSize=3
