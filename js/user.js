@@ -52,7 +52,7 @@ function setParam(param){
 
 function setUserReaded(b){
     console.log(b);
-    var readedPage = document.getElementById("user-body-page").children[0];
+    var readedPage = document.getElementById("user-body-page").children[0].children[0];
     if(userReadedPageId == 1){
         readedPage.innerHTML = "";
     } 
