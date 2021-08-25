@@ -19,7 +19,7 @@
         --nav-line-fix: 0vw;
     }
     .blog-item {
-        width: calc((100% / 2) - 32px);
+        width: calc((100% / 2) - 32px)!important;
     }
 }
 /* telefon */
@@ -30,7 +30,7 @@
         --nav-line-fix: 0vw;
     }
     .blog-item {
-        width: calc(100% - 32px);
+        width: calc(100% - 32px)!important;
     }
     #user-pp{
         width: calc(100% - 1px)!important;
