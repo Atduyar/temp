@@ -18,6 +18,8 @@
         --nav-size: 20vw;
         --nav-line-fix: 0vw;
     }
+    .blog-item {
+        width: calc((100% / 2) - 32px);
 }
 /* telefon */
 @media only screen and (max-width: 835px) {
@@ -26,6 +28,8 @@
         --nav-size: 20vw;
         --nav-line-fix: 0vw;
     }
+    .blog-item {
+        width: calc(100% - 32px);
     #user-pp{
         width: calc(100% - 1px)!important;
     }
@@ -156,7 +160,7 @@
 .blog-list {
     display: flex;
     flex-wrap: wrap;
-    width: var(--icerik-w);
+    width: 100%;
     margin: 75px auto 0px auto;
 }
 .blog-item-author-info{
