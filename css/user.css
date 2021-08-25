@@ -136,6 +136,10 @@
     width: calc(100% / 3);
 }
 
+.user-body-page-item .blog-list{
+    display: none;
+}
+
 #user-body-nav-line{
     height: 5px;
     padding: 0 0 0 calc(0 * 20vw + var(--nav-line-fix));;
