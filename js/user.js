@@ -62,7 +62,7 @@ function getUserReaded(userId) {
             setUserReaded(b);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
-        apiUser.GetAuth("users/getUserReaded?id="+userId+"pageId="+userReadedPageId+"&pageSize=42", t.token);
+        apiUser.GetAuth("users/getUserReaded?id="+userId+"&pageId="+userReadedPageId+"&pageSize=42", t.token);
     }
     apiUser.resultErrFunction = (t) => {
         console.log(t);
