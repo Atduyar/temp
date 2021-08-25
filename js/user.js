@@ -35,9 +35,14 @@ function getUser(userName, fixUrl=()=>{}) {
 
 var userPage = document.getElementById("user-body-page");
 var userPageLine = document.getElementById("user-body-nav-line");
+var oldUBPage = 0;
 function changeUBPage(x){
     userPage.style = "transform: translateX(calc( (-100% / 3) * "+x+" ));";
     userPageLine.style = "padding-left: calc("+(x)+" * 20vw + var(--nav-line-fix    ));!important";
+    //active
+    userPage.children[old].classList.remove("active");
+    old = x;
+    userPage.children[x].classList.add("active");
     // userPageLine.style = "padding: 0 calc("+(2-x)+" var(--nav-size)) 0 calc("+(x)+" * var(--nav-size));!important";
     // console.log("padding: 0 "+(4-x*2)+"0vw 0 "+x*2+"0vw;!important");
 }

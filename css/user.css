@@ -259,3 +259,7 @@
 .only-long{
     display: none;
 }
+
+.active .blog-list {
+    display: flex!important;
+}
