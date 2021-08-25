@@ -20,6 +20,7 @@
     }
     .blog-item {
         width: calc((100% / 2) - 32px);
+    }
 }
 /* telefon */
 @media only screen and (max-width: 835px) {
