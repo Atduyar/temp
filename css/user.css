@@ -125,7 +125,7 @@
     transition: 0.5s;
 }
 
-#user-body-page div{
+#user-body-page .user-body-page-item{
     display: inline-block;
     width: calc(100% / 3);
 }
