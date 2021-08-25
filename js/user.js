@@ -16,7 +16,7 @@ function getUser(userName, fixUrl=()=>{}) {
             user = b;
             fixUrl(b.nickname);
             setUser(b);
-            getUserReaded(userReadedPageId);
+            getUserReaded(b.Id);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
         apiUser.GetAuth("users/getUserByName?name="+userName, t.token);
