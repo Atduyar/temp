@@ -56,7 +56,7 @@ function setParam(param){
 
 function setUserReaded(b){
     console.log(b);
-    var readedPage = document.getElementById("user-body-page").children[0].children[0];
+    var readedPage = document.getElementById("user-body-page").getElementsByClassName("user-body-page-item")[0].children[0];
     if(userReadedPageId == 1){
         readedPage.innerHTML = "";
     } 
@@ -114,7 +114,7 @@ function getUserReaded(userId) {
 
 function setUserBlogs(b){
     console.log(b);
-    var BlogsPage = document.getElementById("user-body-page").children[2].children[0];
+    var BlogsPage = document.getElementById("user-body-page").getElementsByClassName("user-body-page-item")[2].children[0];
     if(userBlogsPageId == 1){
         BlogsPage.innerHTML = "";
     } 
