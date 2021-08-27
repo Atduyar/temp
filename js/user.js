@@ -20,6 +20,7 @@ function getUser(userName, fixUrl=()=>{}) {
             setUser(b);
             getUserReaded(b.id);
             getUserBlogs(b.id);
+            getUserComment(b.id);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
         apiUser.GetAuth("users/getUserByName?name="+userName, t.token);
@@ -99,7 +100,6 @@ function setUserReaded(b){
 var userReadedPageId = 1;
 function getUserReaded(userId) {
     apiUser.resultFunction = (t) => {
-        console.log(t);
         apiUser.resultFunction = (b) => {
             setUserReaded(b);
         }
@@ -157,7 +157,6 @@ function setUserBlogs(b){
 var userBlogsPageId = 1;
 function getUserBlogs(userId) {
     apiUser2.resultFunction = (t) => {
-        console.log(t);
         apiUser2.resultFunction = (b) => {
             setUserBlogs(b);
         }
@@ -171,4 +170,32 @@ function getUserBlogs(userId) {
         console.log(t);
     }
     ApiAuth.GetToken(apiUser2)
+}//https://api.atduyar.com/api/users/getUserBlog?id=1&pageId=1&pageSize=3
+
+
+
+//////////////////////////////////
+
+
+
+function setUserComments(b){
+    console.log(b);
+}
+
+var userCommentsPageId = 1;
+function getUserComments(userId) {
+    apiUser3.resultFunction = (t) => {
+        apiUser3.resultFunction = (b) => {
+            setUserComments(b);
+        }
+        apiUser3.resultErrFunction = apiUser3.resultErrFunction;
+        apiUser3.GetAuth("users/getUserBlog?id="+userId+"&pageId="+userCommentsPageId+"&pageSize=42", t.token);
+    }
+    apiUser3.resultErrFunction = (t) => {
+        console.log(t);
+    }
+    apiUser3.resultUnAuthFunction = (t) => {
+        console.log(t);
+    }
+    ApiAuth.GetToken(apiUser3)
 }//https://api.atduyar.com/api/users/getUserBlog?id=1&pageId=1&pageSize=3
