@@ -20,7 +20,7 @@ function getUser(userName, fixUrl=()=>{}) {
             setUser(b);
             getUserReaded(b.id);
             getUserBlogs(b.id);
-            getUserComment(b.id);
+            getUserComments(b.id);
         }
         apiUser.resultErrFunction = apiUser.resultErrFunction;
         apiUser.GetAuth("users/getUserByName?name="+userName, t.token);
