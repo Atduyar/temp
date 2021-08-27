@@ -189,7 +189,7 @@ function getUserComments(userId) {
             setUserComments(b);
         }
         apiUser3.resultErrFunction = apiUser3.resultErrFunction;
-        apiUser3.GetAuth("users/getUserBlog?id="+userId+"&pageId="+userCommentsPageId+"&pageSize=42", t.token);
+        apiUser3.GetAuth("blogs/getUserComment?id="+userId+"&pageId="+userCommentsPageId+"&pageSize=42", t.token);
     }
     apiUser3.resultErrFunction = (t) => {
         console.log(t);
