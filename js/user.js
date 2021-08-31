@@ -71,7 +71,7 @@ function setUserReaded(b){
     userReadedPageId++;
     for(var i = 0; i< b.length;i++){
         readedPage.innerHTML += 
-        `<div class="${((i%18) >= 12)?"blog-list-long ":""}blog-item">
+        `<div class="${((i%14) >= 12)?"blog-list-long ":""}blog-item">
             <a href="/blogView/${b[i].blogId}" class="a-img-blog-item" >
                 <img class="img-blog-item" src="${b[i].blogTitlePhotoUrl}" loading="lazy" alt="${b[i].blogTitle}">
             </a>
