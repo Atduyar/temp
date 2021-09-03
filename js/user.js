@@ -198,4 +198,4 @@ function getUserComments(userId) {
         console.log(t);
     }
     ApiAuth.GetToken(apiUser3)
-}//https://api.atduyar.com/api/users/getUserBlog?id=1&pageId=1&pageSize=3
+}//https://api.atduyar.com/api/blogs/getUserBlog?id=1&pageId=1&pageSize=3
