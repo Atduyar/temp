@@ -22,6 +22,11 @@
     position: absolute;
     height: 1.7em;
 }
+.item-plus .fake-menu {
+    display: none;
+    height: 1.7em;
+}
+
 .item-body{
     width: 90%;
 }
