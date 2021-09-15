@@ -1,4 +1,4 @@
-makeall: mblogs mblogView login signup user github 
+makeall: mblogs mblogView login signup user write github 
 
 mblogs:
 	htmlCreator/main.exe blogs blogs 
@@ -10,6 +10,8 @@ signup:
 	htmlCreator/main.exe signup login nulllsignup
 user:
 	htmlCreator/main.exe user user
+write:
+	htmlCreator/main.exe write write
 
 
 
