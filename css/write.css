@@ -36,3 +36,6 @@
 .item-body{
     width: 90%;
 }
+.item-body div[contenteditable] {
+    border: 1px solid black;
+}
