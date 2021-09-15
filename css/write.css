@@ -17,7 +17,7 @@
     width: 10%;
     text-align: center;
 }
-.item-plus menu {
+.item-plus .menu {
     display: none;
     position: absolute;
 }
