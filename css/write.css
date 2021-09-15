@@ -20,6 +20,7 @@
 .item-plus .menu {
     display: none;
     position: absolute;
+    height: 1.7em;
 }
 .item-body{
     width: 90%;
