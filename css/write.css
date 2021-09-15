@@ -9,14 +9,18 @@
     width: 100%;
     padding: 0 5%;
     display: flex;
-    font-size: 2em;
+    font-size: 1.7em;
+    margin-top: 10px;
 }
 
-.item-plus{
+.item-plus {
     width: 10%;
     text-align: center;
 }
-
+.item-plus menu {
+    display: none;
+    position: absolute;
+}
 .item-body{
     width: 90%;
 }
