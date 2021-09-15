@@ -26,6 +26,12 @@
     display: none;
     height: 1.7em;
 }
+.open .menu{
+    display: inline-block!important;
+}
+.open .fake-menu{
+    display: inline-block!important;
+}
 
 .item-body{
     width: 90%;
