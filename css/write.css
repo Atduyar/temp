@@ -9,11 +9,12 @@
     width: 100%;
     padding: 0 5%;
     display: flex;
-    text-align: center;
+    font-size: 2em;
 }
 
 .item-plus{
     width: 10%;
+    text-align: center;
 }
 
 .item-body{
