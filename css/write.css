@@ -1,7 +1,18 @@
 #div-icerik{
     max-width: var(--icerik-w);
     margin: 0px auto 0px auto;
-    text-align: center;
     position: relative;
     top: calc(var(--navbar-h) + 42px + 21px);
+}
+
+.item{
+
+}
+
+.item-plus{
+
+}
+
+.item-body{
+
 }
