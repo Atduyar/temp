@@ -13,7 +13,7 @@ function addEvent(x){
 
             console.log(max);
             document.getElementById(max).focus();
-            document.getElementById(max).innerHTML = "";
+            // document.getElementById(max).innerHTML = "";
             
             evt.preventDefault();
         }
