@@ -19,7 +19,7 @@ function fixEvents(){
             textboxs[i].addEventListener('keydown', (evt) => {
                 if (evt.keyCode === 13) {
 
-                    console.log(evt);
+                    console.log(evt.target.parentElement.parentElement);
                     fixEvents();
                     evt.preventDefault();
                 }
