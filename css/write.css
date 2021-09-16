@@ -37,7 +37,7 @@
     width: 90%;
 }
 .item-body div[contenteditable] {
-    border: 1px solid black;
+    border-left: 1px solid white;
 }
 .item-body div[contenteditable] p{
     min-height: 1.7em;
