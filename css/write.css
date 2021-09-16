@@ -20,7 +20,6 @@
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    opacity: 0;
 }
 .item-plus .menu {
     position: absolute;
@@ -37,10 +36,6 @@
     height: 0;
     width: 100%;
     transition: 0.5s;
-}
-.item-plus{
-    transition: 1s;
-    opacity: 1;
 }
 .open .menu{
     height: 1.7em;
