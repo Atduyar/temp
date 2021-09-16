@@ -6,7 +6,7 @@ function addEvent(x){
         if (evt.keyCode === 13) {
 
             evt.target.parentElement.parentElement.outerHTML = 
-            evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
+            evt.target.parentElement.parentElement.outerHTML + addNextElement(evt.target.tagName.toLocaleLowerCase());
             addEvent(document.getElementById(evt.target.id));
             
             fixEvents();
@@ -43,6 +43,16 @@ function fixEvents(){
     }
 }
 
+function addNextElement(tagName){
+    switch(tagName){
+        case "h1":
+            tagName = "p";
+            break;
+        case "p":
+            break;
+    }
+    return addElement(tagName);
+}
 function addElement(tagName){
     switch(tagName){
         case "p":
