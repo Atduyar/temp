@@ -10,15 +10,17 @@ function addEvent(x){
             console.log(document.getElementById(evt.target.id));
             addEvent(document.getElementById(evt.target.id));
             fixEvents();
+            document.getElementById(max).focus();
             // evt.preventDefault();
         }
     });
 }
 
 fixEvents();
+var max = -1;
 function fixEvents(){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
-    var max = -1;
+    max = -1;
     for(var i = 0; i < textboxs.length; i++) {
         if(textboxs[i].getAttribute("id") != null){
             if(max < textboxs[i].getAttribute("id")){
