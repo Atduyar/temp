@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    transform: 0.5s;
+    transition: 0.5s;
 }
 .item-plus .menu {
     display: none;
