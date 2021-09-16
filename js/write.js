@@ -1,6 +1,7 @@
 var textboxs = document.getElementsByClassName('textbox');
 var textboxId = 0;
 
+fixEvents();
 function fixEvents(){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
     for(var i = textboxId; i < textboxs.length; i++) {
