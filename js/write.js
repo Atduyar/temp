@@ -1,6 +1,6 @@
 var textboxs = document.getElementsByClassName('textbox');
 
-function fixEventse){
+function fixEventse(){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
     var max = -1;
     for(var i = 0; i < textboxs.length; i++) {
