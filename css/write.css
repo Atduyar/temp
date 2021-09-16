@@ -20,6 +20,7 @@
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
+    opacity: 0;
 }
 .item-plus .menu {
     position: absolute;
@@ -27,7 +28,7 @@
     padding: 0px 16px;
     top: 100%;
     z-index: 5;
-    opacity: 0!important;
+    opacity: 0;
     background-color: red;
     border-radius: 4px;
     transition: 0.5s;
@@ -36,6 +37,9 @@
     height: 0;
     width: 100%;
     transition: 0.5s;
+}
+.open .item-plus{
+    opacity: 1;
 }
 .open .menu{
     height: 1.7em;
