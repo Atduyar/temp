@@ -7,12 +7,12 @@ function fixEvents(){
         console.log(i);
         textboxs[i].addEventListener('keydown', (evt) => {
             if (evt.keyCode === 13) {
-                textboxId = textboxs.length-1;
+                textboxId = textboxs.length;
                 
 
                 evt.preventDefault();
             }
         });
     }
-    textboxId = textboxs.length-1;
+    textboxId = textboxs.length;
 }
