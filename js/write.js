@@ -1,6 +1,6 @@
 var textboxs = document.getElementsByClassName('textbox');
 
-function fixEventse(){
+function fixEvent(){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
     var max = -1;
     for(var i = 0; i < textboxs.length; i++) {
@@ -20,7 +20,7 @@ function fixEventse(){
                 if (evt.keyCode === 13) {
 
                     console.log(t);
-                    fixEvents();
+                    fixEvent();
                     evt.preventDefault();
                 }
             });
