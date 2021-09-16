@@ -5,7 +5,7 @@ function addEvent(x){
 
             evt.target.parentElement.parentElement.outerHTML = 
             evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
-            console.log(evt);
+            var aaa = evt;
             addEvent(evt.target);
             fixEvents();
             // evt.preventDefault();
