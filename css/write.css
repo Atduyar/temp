@@ -38,7 +38,8 @@
     width: 100%;
     transition: 0.5s;
 }
-.open .item-plus{
+.item-plus{
+    transition: 1s;
     opacity: 1;
 }
 .open .menu{
