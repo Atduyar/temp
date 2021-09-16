@@ -7,13 +7,15 @@ function addEvent(x){
 
             evt.target.parentElement.parentElement.outerHTML = 
             evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
-            console.log(document.getElementById(evt.target.id));
             addEvent(document.getElementById(evt.target.id));
+            
             fixEvents();
+
             console.log(max);
             document.getElementById(max).focus();
             document.getElementById(max).innerHTML = "";
-            // evt.preventDefault();
+            
+            evt.preventDefault();
         }
     });
 }
