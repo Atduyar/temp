@@ -50,8 +50,8 @@
     padding: 4px;
 }
 .open .cros svg{
-    -webkit-transform: rotate(45deg) scale(.5);
-    transform: rotate(45deg) scale(.5);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 .open .menu{
     display: inline-block!important;
