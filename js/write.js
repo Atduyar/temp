@@ -22,12 +22,11 @@ function fixEvents(){
                     evt.target.parentElement.parentElement.outerHTML = 
                     evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
                     fixEvents();
-                    evt.preventDefault();
+                    // evt.preventDefault();
                 }
             });
         }
     }
-    textboxId = max;
 }
 
 function addElement(tagName){
