@@ -1,11 +1,13 @@
 var textboxs = document.getElementsByClassName('textbox');
+var aaa;
+
 function addEvent(x){
     x.addEventListener('keydown', (evt) => {
         if (evt.keyCode === 13) {
 
             evt.target.parentElement.parentElement.outerHTML = 
             evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
-            var aaa = evt;
+            aaa = evt;
             addEvent(evt.target);
             fixEvents();
             // evt.preventDefault();
