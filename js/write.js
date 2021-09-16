@@ -26,7 +26,8 @@ function fixEvents(){
     for(var i = 0; i < textboxs.length; i++) {
         if(textboxs[i].getAttribute("atdId") == null){
             max++;
-            console.log(max);
+            console.table(max, textboxs[i]);
+
             textboxs[i].setAttribute("atdId", max);
             addEvent(textboxs[i]);
         }
