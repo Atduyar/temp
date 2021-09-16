@@ -38,4 +38,5 @@
 }
 .item-body div[contenteditable] {
     border: 1px solid black;
+    min-height: 1.7em;
 }
