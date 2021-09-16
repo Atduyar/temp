@@ -11,7 +11,6 @@ function addEvent(x){
             
             fixEvents();
 
-            console.log(max);
             document.getElementById(max).focus();
             // document.getElementById(max).innerHTML = "";
             
