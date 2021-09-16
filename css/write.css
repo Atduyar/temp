@@ -42,3 +42,12 @@
 .item-body div[contenteditable] p{
     min-height: 1.7em;
 }
+
+.placeholder[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555; 
+}
+
+.placeholder[placeholder]:empty:focus:before {
+    content: "";
+}
