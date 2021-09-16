@@ -15,6 +15,7 @@
 
 .item-plus {
     width: 10%;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -28,6 +29,7 @@
 .item-plus .fake-menu {
     display: none;
     height: 1.7em;
+    width: 100%;
 }
 .cros{
     border: 1px solid white;
