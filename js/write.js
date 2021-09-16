@@ -46,9 +46,14 @@ function fixEvents(){
 function addNextElement(tagName){
     switch(tagName){
         case "h1":
+        case "img":
             tagName = "p";
             break;
-        case "p":
+        case "sep":
+            tagName = "h1";
+            break;
+        case "ul":
+            tagName = "li";
             break;
     }
     return addElement(tagName);
