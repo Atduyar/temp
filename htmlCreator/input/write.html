@@ -24,14 +24,3 @@
         </div>
     </div>
 </div>
-<script>
-    // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
-    var textboxs = document.getElementsByClassName('textbox');
-    for(var i = 0; i < textboxs.length; i++) {
-        textboxs[i].addEventListener('keydown', (evt) => {
-            if (evt.keyCode === 13) {
-                evt.preventDefault();
-            }
-        });
-    }
-</script>
