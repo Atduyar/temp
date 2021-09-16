@@ -1,8 +1,8 @@
 var textboxs = document.getElementsByClassName('textbox');
-var textboxId = 0;
 
 function fixEvents(){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
+    var max = -1;
     for(var i = 0; i < textboxs.length; i++) {
         if(textboxs[i].getAttribute("atdId") == null){
             console.log(i);
@@ -17,7 +17,12 @@ function fixEvents(){
             });
 
         }
+        else{
+            if(max < textboxs[i].getAttribute("atdId")){
+                max = textboxs[i].getAttribute("atdId");
+            }
+        }
     }
     console.log(-1);
-    textboxId = textboxs.length;
+    textboxId = max;
 }
