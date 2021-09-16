@@ -27,7 +27,7 @@
     padding: 0px 16px;
     top: 100%;
     z-index: 5;
-    opacity: 0;
+    opacity: 0!important;
     background-color: red;
     border-radius: 4px;
     transition: 0.5s;
