@@ -26,5 +26,9 @@
 </div>
 <script>
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
-    document.execCommand('insertHTML',false,'<br>');
+    document.getElementsByClassName('textbox')[0].addEventListener('keydown', (evt) => {
+    if (evt.keyCode === 13) {
+        evt.preventDefault();
+    }
+});
 </script>
