@@ -6,6 +6,7 @@ function addEvent(x){
             evt.target.parentElement.parentElement.outerHTML = 
             evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
             addEvent(evt.target);
+            console.log(evt.target);
             fixEvents();
             // evt.preventDefault();
         }
