@@ -17,7 +17,7 @@ function fixEvents(){
             textboxs[i].setAttribute("atdId", i);
             textboxs[i].addEventListener('keydown', (evt) => {
                 if (evt.keyCode === 13) {
-                    textboxId = textboxs.length;
+                    textboxId = max;
 
 
                     evt.preventDefault();
