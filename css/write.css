@@ -25,6 +25,11 @@
     display: none;
     position: absolute;
     height: 1.7em;
+    padding: 0px 16px;
+    top: 50%;
+    z-index: 5;
+    background-color: red;
+    border-radius: 4px;
 }
 .item-plus .fake-menu {
     display: none;
