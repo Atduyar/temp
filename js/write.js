@@ -1,6 +1,6 @@
 var textboxs = document.getElementsByClassName('textbox');
 
-function fixEvents(){
+function fixEventse){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
     var max = -1;
     for(var i = 0; i < textboxs.length; i++) {
@@ -16,16 +16,15 @@ function fixEvents(){
             max++;
             console.log(max);
             textboxs[i].setAttribute("atdId", max);
-            textboxs[i].addEventListener('keydown', (evt) => {
+            textboxs[i].addEventListener('keydown', (evt,t) => {
                 if (evt.keyCode === 13) {
-                    textboxId = max;
 
-
+                    console.log(t);
+                    fixEvents();
                     evt.preventDefault();
                 }
             });
         }
     }
-    console.log(-1);
     textboxId = max;
 }
