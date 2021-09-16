@@ -41,11 +41,13 @@
     min-height: 1.7em;
 }
 
-.placeholder[placeholder]:empty:before {
+
+
+.textbox[placeholder]:empty:before {
     content: attr(placeholder);
     color: #555; 
+    padding-left: 1em;
 }
-
-.placeholder[placeholder]:empty:focus:before {
+.textbox[placeholder]:empty:focus:before {
     content: "";
 }
