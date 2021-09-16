@@ -4,16 +4,20 @@ var textboxId = 0;
 fixEvents();
 function fixEvents(){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
-    for(var i = textboxId; i < textboxs.length; i++) {
+    for(var i = 0; i < textboxs.length; i++) {
         console.log(i);
-        textboxs[i].addEventListener('keydown', (evt) => {
-            if (evt.keyCode === 13) {
-                textboxId = textboxs.length;
-                
+        if(textboxs[i].getAttribute("id") > textboxId){
+            textboxs[i].setAttribute("id", i);
+            textboxs[i].addEventListener('keydown', (evt) => {
+                if (evt.keyCode === 13) {
+                    textboxId = textboxs.length;
+                    
+    
+                    evt.preventDefault();
+                }
+            });
 
-                evt.preventDefault();
-            }
-        });
+        }
     }
     console.log(-1);
     textboxId = textboxs.length;
