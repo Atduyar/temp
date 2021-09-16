@@ -13,8 +13,8 @@ function fixEvents(){
 
     for(var i = 0; i < textboxs.length; i++) {
         if(textboxs[i].getAttribute("atdId") == null){
-            console.log(max);
             max++;
+            console.log(max);
             textboxs[i].setAttribute("atdId", max);
             textboxs[i].addEventListener('keydown', (evt) => {
                 if (evt.keyCode === 13) {
