@@ -30,6 +30,8 @@
     opacity: 0;
     background-color: red;
     border-radius: 4px;
+}
+.item-plus .menu {
     transition: 0.5s;
 }
 .item-plus .fake-menu {
