@@ -1,4 +1,16 @@
 var textboxs = document.getElementsByClassName('textbox');
+function addEvent(x){
+    x.addEventListener('keydown', (evt) => {
+        if (evt.keyCode === 13) {
+
+            evt.target.parentElement.parentElement.outerHTML = 
+            evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
+            addEvent(evt.target);
+            fixEvents();
+            // evt.preventDefault();
+        }
+    });
+}
 
 function fixEvents(){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
@@ -16,15 +28,7 @@ function fixEvents(){
             max++;
             console.log(max);
             textboxs[i].setAttribute("atdId", max);
-            textboxs[i].addEventListener('keydown', (evt) => {
-                if (evt.keyCode === 13) {
-
-                    evt.target.parentElement.parentElement.outerHTML = 
-                    evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
-                    fixEvents();
-                    // evt.preventDefault();
-                }
-            });
+            addEvent(textboxs[i]);
         }
     }
 }
