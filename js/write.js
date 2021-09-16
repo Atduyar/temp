@@ -19,7 +19,8 @@ function fixEvents(){
             textboxs[i].addEventListener('keydown', (evt) => {
                 if (evt.keyCode === 13) {
 
-                    console.log(evt.target.parentElement.parentElement);
+                    evt.target.parentElement.parentElement.outerHTML = 
+                    evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
                     fixEvents();
                     evt.preventDefault();
                 }
@@ -27,4 +28,50 @@ function fixEvents(){
         }
     }
     textboxId = max;
+}
+
+function addElement(tagName){
+    switch(tagName){
+        case "p":
+            return getDefualtElement(`<p contenteditable class="textbox" placeholder="Type something..."></p>`)
+            break;
+        case "h1":
+            return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something..."></h1>`)
+            break;
+        case "p":
+            break;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////
+
+function getDefualtElement(htl){
+    return `
+    <div class="item">
+        <div class="item-plus">
+            <div class="cors">+</div>
+            <div class="menu">a</div>
+            <div class="fake-menu"></div>
+        </div>
+        <div class="item-body">
+            ${htl}
+        </div>
+    </div>`
 }
