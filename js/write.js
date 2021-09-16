@@ -7,8 +7,8 @@ function addEvent(x){
 
             evt.target.parentElement.parentElement.outerHTML = 
             evt.target.parentElement.parentElement.outerHTML + addElement(evt.target.tagName.toLocaleLowerCase());
-            aaa = evt;
-            addEvent(evt.target);
+            console.log(document.getElementById(evt.target.id));
+            addEvent(document.getElementById(evt.target.id));
             fixEvents();
             // evt.preventDefault();
         }
@@ -20,19 +20,19 @@ function fixEvents(){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
     var max = -1;
     for(var i = 0; i < textboxs.length; i++) {
-        if(textboxs[i].getAttribute("atdId") != null){
-            if(max < textboxs[i].getAttribute("atdId")){
-                max = textboxs[i].getAttribute("atdId");
+        if(textboxs[i].getAttribute("id") != null){
+            if(max < textboxs[i].getAttribute("id")){
+                max = textboxs[i].getAttribute("id");
             }
         }
     }
 
     for(var i = 0; i < textboxs.length; i++) {
-        if(textboxs[i].getAttribute("atdId") == null){
+        if(textboxs[i].getAttribute("id") == null){
             max++;
             console.table(max, textboxs[i]);
 
-            textboxs[i].setAttribute("atdId", max);
+            textboxs[i].setAttribute("id", max);
             addEvent(textboxs[i]);
         }
     }
