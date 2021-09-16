@@ -22,7 +22,6 @@
     align-items: center;
 }
 .item-plus .menu {
-    display: none;
     position: absolute;
     height: 0;
     padding: 0px 16px;
@@ -34,7 +33,6 @@
     transition: 0.5s;
 }
 .item-plus .fake-menu {
-    display: none;
     height: 0;
     width: 100%;
     transition: 0.5s;
