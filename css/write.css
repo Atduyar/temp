@@ -24,17 +24,33 @@
 .item-plus .menu {
     display: none;
     position: absolute;
-    height: 1.7em;
+    height: 0;
     padding: 0px 16px;
     top: 50%;
     z-index: 5;
+    opacity: 0;
     background-color: red;
     border-radius: 4px;
+    transition: 0.5s;
 }
 .item-plus .fake-menu {
     display: none;
-    height: 1.7em;
+    height: 0;
     width: 100%;
+    transition: 0.5s;
+}
+.open .menu{
+    height: 1.7em;
+    opacity: 1;
+    display: inline-block!important;
+}
+.open .fake-menu{
+    height: 1.7em;
+    display: inline-block!important;
+}
+.open .cros div{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 .cros{
     border: 1px solid white;
@@ -51,16 +67,6 @@
 }
 .cros div{
     transition: 0.5s;
-}
-.open .cros div{
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.open .menu{
-    display: inline-block!important;
-}
-.open .fake-menu{
-    display: inline-block!important;
 }
 
 .item-body{
