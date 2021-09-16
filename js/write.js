@@ -12,17 +12,18 @@ function fixEvents(){
     }
 
     for(var i = 0; i < textboxs.length; i++) {
-        console.log(i);
-        textboxs[i].setAttribute("atdId", i);
-        textboxs[i].addEventListener('keydown', (evt) => {
-            if (evt.keyCode === 13) {
-                textboxId = textboxs.length;
-                
+        if(textboxs[i].getAttribute("atdId") == null){
+            console.log(i);
+            textboxs[i].setAttribute("atdId", i);
+            textboxs[i].addEventListener('keydown', (evt) => {
+                if (evt.keyCode === 13) {
+                    textboxId = textboxs.length;
 
-                evt.preventDefault();
-            }
-        });
 
+                    evt.preventDefault();
+                }
+            });
+        }
     }
     console.log(-1);
     textboxId = max;
