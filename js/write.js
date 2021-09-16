@@ -14,5 +14,6 @@ function fixEvents(){
             }
         });
     }
+    console.log(-1);
     textboxId = textboxs.length;
 }
