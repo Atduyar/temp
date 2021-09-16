@@ -16,6 +16,7 @@
 .item-plus {
     width: 10%;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
 }
