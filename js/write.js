@@ -12,6 +12,7 @@ function addEvent(x){
     });
 }
 
+fixEvents();
 function fixEvents(){
     // oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
     var max = -1;
