@@ -43,11 +43,9 @@
     height: 1.5em;
     width: 1.5em;
 }
-.open .cros{
-    -webkit-transform: rotate(
-45deg) scale(.5);
-    transform: rotate(
-45deg) scale(.5);
+.open .cros svg{
+    -webkit-transform: rotate(45deg) scale(.5);
+    transform: rotate(45deg) scale(.5);
 }
 .open .menu{
     display: inline-block!important;
