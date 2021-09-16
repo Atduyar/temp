@@ -29,6 +29,7 @@
 .cros{
     border: 1px solid white;
     border-radius: 50%;
+    margin: 0 auto;
     height: 1.5em;
     width: 1.5em;
 }
