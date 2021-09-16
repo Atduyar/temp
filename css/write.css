@@ -26,6 +26,11 @@
     display: none;
     height: 1.7em;
 }
+.cros{
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 100%;
+}
 .open .menu{
     display: inline-block!important;
 }
