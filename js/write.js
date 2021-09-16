@@ -11,7 +11,7 @@ function addEvent(x){
             addEvent(document.getElementById(evt.target.id));
             fixEvents();
             document.getElementById(max).focus();
-            document.getElementById(max).textContent = "";
+            document.getElementById(max).innerHTML = "";
             // evt.preventDefault();
         }
     });
