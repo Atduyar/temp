@@ -49,6 +49,7 @@
     height: 100%;
     fill: white;
     padding: 4px;
+    transition: 0.5s;
 }
 .open .cros svg{
     -webkit-transform: rotate(45deg);
