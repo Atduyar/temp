@@ -17,6 +17,11 @@ function addEvent(x){
             evt.preventDefault();
         }
     });
+    x.addEventListener('paste', function (evt) {
+        evt.preventDefault()
+        var text = e.clipboardData.getData('text/plain')
+        document.execCommand('insertText', false, text)
+    })
 }
 
 fixEvents();
