@@ -18,9 +18,15 @@ function addEvent(x){
         }
     });
     x.addEventListener('paste', function (evt) {
-        evt.preventDefault()
-        var text = e.clipboardData.getData('text/plain')
-        document.execCommand('insertText', false, text)
+        var pastedText = undefined;
+        if (window.clipboardData && window.clipboardData.getData) { // IE
+          pastedText = window.clipboardData.getData('Text');
+        } else if (evt.clipboardData && evt.clipboardData.getData) {
+          pastedText = evt.clipboardData.getData('text/plain');
+        }
+        evt.target.textContent = pastedText;
+        evt.preventDefault();
+        return false;
     })
 }
 
