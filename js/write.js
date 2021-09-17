@@ -1,5 +1,6 @@
 var textboxs = document.getElementsByClassName('textbox');
 var icerikDiv = document.getElementById("div-icerik");
+var aaa;
 
 function addEvent(x){
     x.addEventListener('keydown', (evt) => {
@@ -91,6 +92,7 @@ function addElementToNext(tag, target){
     document.getElementById(max).focus();
 }
 function addElementToNext(tag, tagName, thisId){
+    aaa = thisId;
     tag.outerHTML += addNextElement(tagName.toLocaleLowerCase());
     addEvent(document.getElementById(thisId));
     
