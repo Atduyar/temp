@@ -19,7 +19,7 @@ function addEvent(x){
     });
     x.addEventListener('paste', function (evt) {
         evt.preventDefault()
-        var text = evt.clipboardData.getData('text/plain')
+        var text = evt.clipboardData.getData('text/plain').replace(/\n/g,"")
         console.log(text);
         document.execCommand('insertText', false, text)
     })
