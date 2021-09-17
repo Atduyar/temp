@@ -6,7 +6,7 @@ function addEvent(x){
     x.addEventListener('keydown', (evt) => {
         if (evt.keyCode === 13) {
 
-            addElementToNext(evt.target.parentElement.parentElement, evt.target.tagName)
+            addElementToNext(evt.target.parentElement.parentElement, findNextElement(evt.target.tagName))
             // evt.target.parentElement.parentElement.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
             // addEvent(document.getElementById(evt.target.id));
             
@@ -52,8 +52,8 @@ function fixEvents(){
     }
 }
 
-function addNextElement(tagName){
-    switch(tagName){
+function findNextElement(tagName){
+    switch(tagName.toLocaleLowerCase()){
         case "h1":
         case "img":
             tagName = "p";
@@ -65,7 +65,7 @@ function addNextElement(tagName){
             tagName = "li";
             break;
     }
-    return addElement(tagName);
+    return tagName;
 }
 function addElement(tagName){
     switch(tagName){
