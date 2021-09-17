@@ -17,6 +17,11 @@ function addEvent(x){
             
             evt.preventDefault();
         }
+        else if (key === "Backspace" || key === "Delete") {
+            if(evt.target.textContent = ""){
+                deleteElement(evt.target.parentElement.parentElement);
+            }
+        }
     });
     x.addEventListener('paste', function (evt) {
         evt.preventDefault();
@@ -92,7 +97,9 @@ function addElementToNext(thisItem, tagName){
 
     document.getElementById(max).focus();
 }
-
+function deleteElement(item){
+    item.outerHTML = "";
+}
 
 
 
