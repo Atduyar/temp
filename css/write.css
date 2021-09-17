@@ -49,18 +49,26 @@
     height: 1.7em;
     display: inline-block!important;
 }
+
 .menu ul{
-    
+    display: flex;
+    height: 100%;
+    padding: 4px 0px;
 }
 .menu ul li{
     display: inline-block;
     height: 100%;
+    margin-left: 4px;
+}
+.menu ul li:last-child {
+    margin-left: 4px!important;
 }
 .menu ul li svg{
     width: 100%;
     height: 100%;
     fill: white;
 }
+
 .open .cros div{
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
