@@ -6,7 +6,7 @@ function addEvent(x){
     x.addEventListener('keydown', (evt) => {
         if (evt.keyCode === 13) {
 
-            addElementToNext(evt.target.parentElement.parentElement, evt.target)
+            addElementToNext(evt.target.parentElement.parentElement, evt.target.tagName)
             // evt.target.parentElement.parentElement.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
             // addEvent(document.getElementById(evt.target.id));
             
@@ -83,18 +83,10 @@ function addElement(tagName){
 function addElementToEnd(tagName){
     icerikDiv.innerHTML += addElement(tagName);
 }
-function addElementToNext(tag, target){
-    tag.outerHTML += addNextElement(target.tagName.toLocaleLowerCase());
-    addEvent(document.getElementById(target.id));
-    
-    fixEvents();
-
-    document.getElementById(max).focus();
-}
-function addElementToNext(tag, tagName, thisItem){
+function addElementToNext(thisItem, tagName){
     aaa = thisItem;
-    thisItem.outerHTML += addNextElement(tagName.toLocaleLowerCase());
-    addEvent(document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id));
+    thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
+    addEvent(document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id));//fix event
     
     fixEvents();
 
