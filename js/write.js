@@ -91,10 +91,10 @@ function addElementToNext(tag, target){
 
     document.getElementById(max).focus();
 }
-function addElementToNext(tag, tagName, thisId){
+function addElementToNext(tag, tagName, thisItem){
     aaa = thisId;
-    tag.outerHTML += addNextElement(tagName.toLocaleLowerCase());
-    addEvent(document.getElementById(thisId.getElementsByClassName("item-body")[0].children[0].id));
+    thisItem.outerHTML += addNextElement(tagName.toLocaleLowerCase());
+    addEvent(document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id));
     
     fixEvents();
 
