@@ -90,6 +90,14 @@ function addElementToNext(tag, target){
 
     document.getElementById(max).focus();
 }
+function addElementToNext(tag, tagName, thisId){
+    tag.outerHTML += addNextElement(tagName.toLocaleLowerCase());
+    addEvent(document.getElementById(thisId));
+    
+    fixEvents();
+
+    document.getElementById(max).focus();
+}
 
 
 
@@ -121,7 +129,7 @@ function getDefualtElement(htl){
             </div>
             <div class="menu">
                 <ul>
-                    <li onclick="">
+                    <li onclick="addElementToNext(this, "h1", this.id)">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 190 190" style="enable-background:new 0 0 190 190;" xml:space="preserve"><path id="XMLID_27_" d="M175,0H15C6.716,0,0,6.716,0,15v38.99c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15V30h50v130H56.836  c-8.284,0-15,6.716-15,15s6.716,15,15,15h76.328c8.284,0,15-6.716,15-15s-6.716-15-15-15H110V30h50v23.99c0,8.284,6.716,15,15,15  c8.284,0,15-6.716,15-15V15C190,6.716,183.284,0,175,0z"/>
                         </svg>
                     </li>
