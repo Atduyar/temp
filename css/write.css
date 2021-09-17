@@ -58,10 +58,10 @@
 .menu ul li{
     display: inline-block;
     height: 100%;
-    margin-left: 4px;
+    margin-right: 8px;
 }
 .menu ul li:last-child {
-    margin-left: 4px!important;
+    margin-right: 0px!important;
 }
 .menu ul li svg{
     width: 100%;
