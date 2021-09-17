@@ -49,6 +49,19 @@
     height: 1.7em;
     display: inline-block!important;
 }
+.menu ul{
+    
+}
+.menu ul li{
+    display: inline-block;
+    height: 100%;
+}
+.menu ul li svg{
+    
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
 .open .cros div{
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -86,7 +99,7 @@
 
 
 .textbox{
-    padding-left: 16px;
+    padding: 0px 16px;
 }
 .textbox[placeholder]:empty:before {
     content: attr(placeholder);
