@@ -4,8 +4,8 @@ var icerikDiv = document.getElementById("div-icerik");
 function addEvent(x){
     x.addEventListener('keydown', (evt) => {
         if (evt.keyCode === 13) {
-            
-            addElementToNext(evt.target.parentElement.parentElement)
+
+            addElementToNext(evt.target.parentElement.parentElement, evt.target)
             // evt.target.parentElement.parentElement.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
             // addEvent(document.getElementById(evt.target.id));
             
@@ -82,9 +82,9 @@ function addElement(tagName){
 function addElementToEnd(tagName){
     icerikDiv.innerHTML += addElement(tagName);
 }
-function addElementToNext(tag){
-    tag.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
-    addEvent(document.getElementById(evt.target.id));
+function addElementToNext(tag, target){
+    tag.outerHTML += addNextElement(target.tagName.toLocaleLowerCase());
+    addEvent(document.getElementById(target.id));
     
     fixEvents();
 
