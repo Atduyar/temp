@@ -4,14 +4,14 @@ var icerikDiv = document.getElementById("div-icerik");
 function addEvent(x){
     x.addEventListener('keydown', (evt) => {
         if (evt.keyCode === 13) {
-
-            evt.target.parentElement.parentElement.outerHTML = 
-            evt.target.parentElement.parentElement.outerHTML + addNextElement(evt.target.tagName.toLocaleLowerCase());
-            addEvent(document.getElementById(evt.target.id));
             
-            fixEvents();
+            addElementToNext(evt.target.parentElement.parentElement)
+            // evt.target.parentElement.parentElement.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
+            // addEvent(document.getElementById(evt.target.id));
+            
+            // fixEvents();
 
-            document.getElementById(max).focus();
+            // document.getElementById(max).focus();
             // document.getElementById(max).innerHTML = "";
             
             evt.preventDefault();
@@ -82,6 +82,14 @@ function addElement(tagName){
 function addElementToEnd(tagName){
     icerikDiv.innerHTML += addElement(tagName);
 }
+function addElementToNext(tag){
+    tag.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
+    addEvent(document.getElementById(evt.target.id));
+    
+    fixEvents();
+
+    document.getElementById(max).focus();
+}
 
 
 
@@ -113,7 +121,7 @@ function getDefualtElement(htl){
             </div>
             <div class="menu">
                 <ul>
-                    <li>
+                    <li onclick="">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 190 190" style="enable-background:new 0 0 190 190;" xml:space="preserve"><path id="XMLID_27_" d="M175,0H15C6.716,0,0,6.716,0,15v38.99c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15V30h50v130H56.836  c-8.284,0-15,6.716-15,15s6.716,15,15,15h76.328c8.284,0,15-6.716,15-15s-6.716-15-15-15H110V30h50v23.99c0,8.284,6.716,15,15,15  c8.284,0,15-6.716,15-15V15C190,6.716,183.284,0,175,0z"/>
                         </svg>
                     </li>
