@@ -117,14 +117,12 @@ function deleteElement(item){
 function openItemMenu(t){
     if(t.classList.contains("open")){//t.parentElement.classList.toggle('open')
         t.classList.remove("open");
-        t.style = "";
+        setTimeout(()=>{t.style = "";}, 500);
     }
     else{
         t.classList.add("open");
         t.style = "--thisItemHeight: "+ t.offsetHeight +"px;";
-    }
-
-    
+    }   
 }
 
 
