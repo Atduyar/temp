@@ -117,13 +117,13 @@ function deleteElement(item){
 
 
 function openItemMenu(t){
-    if(t.parentElement.classList.contains("open")){//t.parentElement.classList.toggle('open')
-        t.parentElement.classList.remove("open");
+    if(t.classList.contains("open")){//t.parentElement.classList.toggle('open')
+        t.classList.remove("open");
         setTimeout(()=>{t.style = "";}, 500);
     }
     else{
-        t.parentElement.classList.add("open");
-        t.parentElement.style = "--thisItemHeight: "+ t.offsetHeight +"px;";
+        t.classList.add("open");
+        t.style = "--thisItemHeight: "+ t.offsetHeight +"px;";
     }   
 }
 
@@ -133,7 +133,7 @@ function openItemMenu(t){
 function getDefualtElement(htl){
     return `
     <div class="item">
-        <div class="item-plus" onclick="openItemMenu(this)">
+        <div class="item-plus" onclick="openItemMenu(this.parentElement)">
             <div class="fake-top"></div>
             <div class="cros">
                 <div>
