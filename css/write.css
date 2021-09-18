@@ -74,7 +74,7 @@
 
 .open .cros{
     margin-bottom: 15px;
-    transition: margin-bottom .5s;
+    transition: margin-bottom 0.5s;
 }
 .open .cros div{
     -webkit-transform: rotate(45deg);
@@ -86,6 +86,7 @@
     margin: 0 auto;
     height: 1.7em;
     width: 1.7em;
+    margin-bottom: 0px;
 }
 .cros svg{
     width: 100%;
