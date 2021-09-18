@@ -115,8 +115,17 @@ function deleteElement(item){
 
 
 function openItemMenu(t){
-    t.style = "--thisItemHeight: "+ t.offsetHeight +"px;"
-    t.parentElement.classList.toggle('open')
+    if(t.classList.contains("open")){
+        t.classList.add("open");
+        console.log("1");
+    }
+    else{
+        t.classList.remove("open");
+        console.log("0");
+    }
+
+    // t.style = "--thisItemHeight: "+ t.offsetHeight +"px;"
+    // t.parentElement.classList.toggle('open')
 }
 
 

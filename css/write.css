@@ -1,7 +1,3 @@
-*{
-    --thisItemHeight: 0px;
-}
-
 #div-icerik{
     max-width: var(--icerik-w);
     margin: 0px auto 0px auto;
