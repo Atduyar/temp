@@ -115,17 +115,16 @@ function deleteElement(item){
 
 
 function openItemMenu(t){
-    if(t.classList.contains("open")){
+    if(t.classList.contains("open")){//t.parentElement.classList.toggle('open')
         t.classList.remove("open");
-        console.log("0");
+        t.style = "";
     }
     else{
         t.classList.add("open");
-        console.log("1");
+        t.style = "--thisItemHeight: "+ t.offsetHeight +"px;";
     }
 
-    // t.style = "--thisItemHeight: "+ t.offsetHeight +"px;"
-    // t.parentElement.classList.toggle('open')
+    
 }
 
 
