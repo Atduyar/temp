@@ -117,13 +117,13 @@ function deleteElement(item){
 
 
 function openItemMenu(t){
-    if(t.classList.contains("open")){//t.parentElement.classList.toggle('open')
-        t.classList.remove("open");
+    if(t.parentElement.classList.contains("open")){//t.parentElement.classList.toggle('open')
+        t.parentElement.classList.remove("open");
         setTimeout(()=>{t.style = "";}, 500);
     }
     else{
-        t.classList.add("open");
-        t.style = "--thisItemHeight: "+ t.offsetHeight +"px;";
+        t.parentElement.classList.add("open");
+        t.parentElement.style = "--thisItemHeight: "+ t.offsetHeight +"px;";
     }   
 }
 
