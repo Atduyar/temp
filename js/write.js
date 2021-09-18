@@ -90,13 +90,14 @@ function addElementToEnd(tagName){
 }
 function addElementToNext(thisItem, tagName){
     aaa = thisItem;
+    var idElement = document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id);
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
-    addEvent(document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id));//fix event
+    addEvent(idElement);//fix event
     
     fixEvents();
 
     // document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement.classList.remove("open");
-    var item = document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement;
+    var item = idElement.parentElement.parentElement;
     if(item.classList.contains("open")){
         openItemMenu(item);
     }
