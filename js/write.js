@@ -115,8 +115,8 @@ function deleteElement(item){
 
 
 function openItemMenu(t){
-    t.parentElement.classList.toggle('open')
     t.style = "--thisItemHeight: "+ t.offsetHeight +"px;"
+    t.parentElement.classList.toggle('open')
 }
 
 
