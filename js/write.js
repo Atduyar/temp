@@ -114,7 +114,10 @@ function deleteElement(item){
 
 
 
-
+function openItemMenu(t){
+    t.parentElement.classList.toggle('open')
+    t.style = "--thisItemHeight: "+ t.offsetHeight +"px;"
+}
 
 
 //////////////
@@ -122,7 +125,7 @@ function deleteElement(item){
 function getDefualtElement(htl){
     return `
     <div class="item">
-        <div class="item-plus" onclick="this.parentElement.classList.toggle('open')">
+        <div class="item-plus" onclick="openItemMenu(this)">
             <div class="fake-top"></div>
             <div class="cros">
                 <div>
