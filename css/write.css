@@ -1,3 +1,7 @@
+*{
+    --thisItemHeight: 0px;
+}
+
 #div-icerik{
     max-width: var(--icerik-w);
     margin: 0px auto 0px auto;
@@ -52,7 +56,14 @@
     height: 1.7em;
     display: inline-block!important;
 }
-
+.open .fake-top{
+    height: calc(var(--thisItemHeight) - 1.7em - 6px);
+    width: 100%;
+}
+.fake-top{
+    height: calc(var(--thisItemHeight) - 1.7em);
+    width: 100%;
+}
 .menu ul{
     display: flex;
     height: 100%;
