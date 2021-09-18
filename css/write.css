@@ -20,6 +20,8 @@
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 .item-plus .menu {
     position: absolute;
