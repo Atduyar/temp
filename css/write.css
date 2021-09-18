@@ -59,6 +59,7 @@
 .fake-top{
     height: calc(var(--thisItemHeight) - 1.7em);
     width: 100%;
+    transition: height 0.5s;
 }
 .menu ul{
     display: flex;
