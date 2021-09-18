@@ -73,11 +73,12 @@
 }
 
 .open .cros{
+    margin-bottom: 15px;
+    transition: margin-bottom .5s;
 }
 .open .cros div{
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    margin-bottom: 15px;
 }
 .cros{
     border: 1px solid white;
