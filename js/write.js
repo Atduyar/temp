@@ -95,7 +95,7 @@ function addElementToNext(thisItem, tagName){
     
     fixEvents();
 
-    thisItem.remove("open");
+    document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement.remove("open");
 
     document.getElementById(max).focus();
 }
