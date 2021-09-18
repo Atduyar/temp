@@ -47,7 +47,7 @@
     opacity: 1;
     top: 100%!important;
     display: inline-block!important;
-    transform: translateY(-100%);
+    transform: translateY(-90%);
 }
 .open .fake-menu{
     height: 1.7em;
