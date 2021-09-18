@@ -98,7 +98,7 @@ function addElementToNext(thisItem, tagName){
     // document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement.classList.remove("open");
     var item = document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement;
     if(item.classList.contains("open")){
-        openItemMenu();
+        openItemMenu(item);
     }
 
     document.getElementById(max).focus();
