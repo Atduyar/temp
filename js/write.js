@@ -116,12 +116,12 @@ function deleteElement(item){
 
 function openItemMenu(t){
     if(t.classList.contains("open")){
-        t.classList.add("open");
-        console.log("1");
-    }
-    else{
         t.classList.remove("open");
         console.log("0");
+    }
+    else{
+        t.classList.add("open");
+        console.log("1");
     }
 
     // t.style = "--thisItemHeight: "+ t.offsetHeight +"px;"
