@@ -95,7 +95,8 @@ function addElementToNext(thisItem, tagName){
     
     fixEvents();
 
-    document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement.classList.remove("open");
+    // document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement.classList.remove("open");
+    openItemMenu(document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement);
 
     document.getElementById(max).focus();
 }
