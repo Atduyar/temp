@@ -95,6 +95,8 @@ function addElementToNext(thisItem, tagName){
     
     fixEvents();
 
+    thisItem.remove("open");
+
     document.getElementById(max).focus();
 }
 function deleteElement(item){
