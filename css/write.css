@@ -145,4 +145,6 @@
 }
 .item-body a{
     display: block;
+    color: #81C14B;
+    text-decoration: underline;
 }
