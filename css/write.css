@@ -1,17 +1,17 @@
 
 @media only screen and (max-width: 1010px) and (min-width: 835px) {
     .item-body iframe{
+        height: 350px!important;
+    }
+}
+@media only screen and (max-width: 835px) {
+    .item-body iframe{
         height: 300px!important;
     }
 }
-@media only screen and (max-width: 835px) {
+@media only screen and (max-width: 425px) {
     .item-body iframe{
         height: 250px!important;
-    }
-}
-@media only screen and (max-width: 835px) {
-    .item-body iframe{
-        height: 200px!important;
     }
 }
 #div-icerik{
