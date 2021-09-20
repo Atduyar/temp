@@ -149,3 +149,29 @@
     color: #81C14B;
     text-decoration: underline;
 }
+
+.item-body hr {
+    border: 0;
+    height: 1px;
+    width: 10%;
+    position: relative;
+    background: #39D1B4;
+    /* background: rgb(85, 26, 139); */
+    overflow: visible;
+    margin: 2em auto;
+}
+
+.item-body hr:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #39D1B4;
+    border: 2px solid #39D1B4;
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 4px);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
