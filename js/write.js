@@ -113,7 +113,6 @@ function addElementToEnd(tagName){
     icerikDiv.innerHTML += addElement(tagName);
 }
 function addElementToNext(thisItem, tagName){
-    aaa = thisItem;
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
     var idElement = document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id);
     addEvent(idElement);//fix new event
@@ -132,6 +131,7 @@ function deleteElement(item){
     item.outerHTML = "";
 }
 function changeImgeUrl(t){
+    aaa = t;
     t.parentElement.getElementsByTagName("img")[0].src = t.src;
 }
 
