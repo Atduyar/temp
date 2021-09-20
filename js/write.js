@@ -175,15 +175,17 @@ function createblog(){
     }
 }
 function getItemJson(item){
-    var newItem = new AtdElement(item.getAttribute("atdtag"),"","");
-    
-    switch(item.getAttribute("atdtag")){
+    var newItemType = item.getAttribute("atdtag");
+    var newItemData = "";
+    var newItemDescription = "";
+
+    switch(newItemType){
         case "p":
         case "h1":
         case "quote":
         case "li":
         case "lı":
-            newItem.data = item.getElementsByClassName("textbox")[0].textContent;
+            newItemData = item.getElementsByClassName("textbox")[0].textContent;
             break;
         case "a":
             break;
@@ -195,6 +197,7 @@ function getItemJson(item){
         case "vıdeo":
             break;
     }
+    var newItem = new AtdElement(newItemType, newItemData, newItemDescription);
     return newItem;
 }
 // a
