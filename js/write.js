@@ -170,7 +170,7 @@ class AtdElement{
 
 function createblog(){
     console.log("aaa");
-    var blog;
+    var blog = [];
     for(var i = 0; icerikDiv.children.length > i; i++){
         blog.push(getItemJson(icerikDiv.children[i]));
     }
