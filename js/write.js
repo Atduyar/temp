@@ -64,6 +64,7 @@ function findNextElement(tagName){
         case "a":
         case "h1":
         case "img":
+        case "ımg":
         case "quote":
             tagName = "p";
             break;
@@ -100,6 +101,10 @@ function addElement(tagName){
             break;
         case "hr":
             return getDefualtElement(`<hr>`, "hr")
+            break;
+        case "img":
+        case "ımg":
+            return getDefualtElement(`<p contenteditable class="textbox" onclick="aaaa(this)" placeholder="Type some url..."></p>`, "img")
             break;
     }
 }
