@@ -3,6 +3,11 @@ var icerikDiv = document.getElementById("div-icerik");
 var aaa;
 
 function addEvent(x){
+    if(evt.target.classList.contains("img")){
+        x.addEventListener("input", (evt)=>{
+            changeImgeUrl(evt.target)
+        }, false);
+    }
     x.addEventListener('keydown', (evt) => {
         if (evt.keyCode === 13) {
 
@@ -21,9 +26,6 @@ function addEvent(x){
             if(evt.target.textContent == ""){
                 deleteElement(evt.target.parentElement.parentElement);
             }
-        }
-        if(evt.target.classList.contains("img")){
-            x.addEventListener("input", changeImgeUrl(x.target), false);
         }
     });
     x.addEventListener('paste', function (evt) {
