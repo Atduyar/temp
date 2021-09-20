@@ -121,7 +121,7 @@ function deleteElement(item){
 
 function aael(l){
     for(var i = 0;i<l.length;i++){
-        console.log(getEventListeners(l[i]));
+        console.table(i,getEventListeners(l[i]));
     }
 }
 
