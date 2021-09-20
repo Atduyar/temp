@@ -60,6 +60,7 @@ function findNextElement(tagName){
     switch(tagName.toLocaleLowerCase()){
         case "h1":
         case "img":
+        case "quote":
             tagName = "p";
             break;
         case "sep":
