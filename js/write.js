@@ -128,7 +128,8 @@ function addElementToEnd(tagName){
 }
 function addElementToNext(thisItem, tagName){
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
-    var idElement = document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id);
+    var temp = thisItem.getElementsByClassName("item-body")[0];
+    var idElement = document.getElementById(temp.children[temp.length-1].id);
     addEvent(idElement);//fix new event
     
     fixEvents();
