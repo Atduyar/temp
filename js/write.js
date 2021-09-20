@@ -58,6 +58,7 @@ function fixEvents(){
 
 function findNextElement(tagName){
     switch(tagName.toLocaleLowerCase()){
+        case "a":
         case "h1":
         case "img":
         case "quote":
@@ -68,6 +69,9 @@ function findNextElement(tagName){
             break;
         case "ul":
             tagName = "li";
+            break;
+        default:
+            tagName = "p";
             break;
     }
     return tagName;
