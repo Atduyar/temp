@@ -79,7 +79,8 @@ function addElement(tagName){
         case "h1":
             return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something..."></h1>`)
             break;
-        case "p":
+        case "quote":
+            return getDefualtElement(`<h1 contenteditable class="textbox quote" placeholder="Type something..."></h1>`)
             break;
     }
 }
