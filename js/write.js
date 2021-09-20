@@ -167,6 +167,9 @@ function createblog(){
 // a
 
 
+
+
+
 function aael(l){
     for(var i = 0;i<l.length;i++){
         console.table(i,getEventListeners(l[i]));
