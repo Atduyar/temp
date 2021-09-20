@@ -175,7 +175,7 @@ function createblog(){
     }
 }
 function getItemJson(item){
-    var newItem = new AtdElement(item.getAttribute(atdtag),"","");
+    var newItem = new AtdElement(item.getAttribute("atdtag"),"","");
     
     switch(item.getAttribute(atdtag)){
         case "p":
