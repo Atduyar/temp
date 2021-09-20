@@ -135,6 +135,7 @@ function deleteElement(item){
 }
 function changeImgeUrl(t){
     aaa = t;
+    console.log("asd");
     t.parentElement.getElementsByTagName("img")[0].src = t.textContent;
 }
 
