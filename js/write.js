@@ -175,6 +175,7 @@ function createblog(){
     }
     aaa = blog;
     console.table(blog);
+    console.log(JSON.stringify(blog));
 }
 function getItemJson(item){
     var newItemType = item.getAttribute("atdtag");
