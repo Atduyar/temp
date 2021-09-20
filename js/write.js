@@ -67,7 +67,7 @@ function findNextElement(tagName){
         case "sep":
             tagName = "h1";
             break;
-        case "ul":
+        case "li":
             tagName = "li";
             break;
         default:
@@ -89,6 +89,9 @@ function addElement(tagName){
             break;
         case "a":
             return getDefualtElement(`<a contenteditable class="textbox" spellcheck="false" placeholder="Type something..."></a>`, "a")
+            break;
+        case "li":
+            return getDefualtElement(`<li contenteditable class="textbox li" placeholder="Type something..."></li>`, "li")
             break;
     }
 }
