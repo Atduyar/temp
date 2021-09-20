@@ -119,6 +119,7 @@
     min-height: 1.7em;
 }
 .item-body p[contenteditable], 
+.item-body a[contenteditable], 
 .item-body h1[contenteditable] {
     border-left: 1px solid white;
 }
