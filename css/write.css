@@ -11,7 +11,7 @@
 }
 @media only screen and (max-width: 425px) {
     .item-body iframe{
-        height: 250px!important;
+        height: 200px!important;
     }
 }
 #div-icerik{
