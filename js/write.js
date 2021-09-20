@@ -159,8 +159,8 @@ function changeVideoUrl(t){
 // a
 
 function createblog(){
-    for(var i = 0;icerikDiv.length;i++){
-        console.log(icerikDiv[i]);
+    for(var i = 0;icerikDiv.children.length;i++){
+        console.log(icerikDiv.children[i]);
     }
 }
 
