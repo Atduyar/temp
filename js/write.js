@@ -185,13 +185,17 @@ function getItemJson(item){
     switch(newItemType){
         case "p":
         case "h1":
-        case "quote":
         case "li":
         case "lı":
             newItemData = item.getElementsByClassName("textbox")[0].textContent;
             break;
+        case "quote":
+            newItemData = item.getElementsByClassName("textbox")[0].textContent;
+            newItemDescription = "Yazar";
+            break;
         case "a":
             newItemData = item.getElementsByClassName("textbox")[0].textContent;
+            newItemDescription = "Url";
             break;
         case "hr":
             // newItemData = "";
