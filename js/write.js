@@ -109,7 +109,7 @@ function addElement(tagName){
             break;
         case "img":
         case "ımg":
-            return getDefualtElement(`<img  src="https://api.atduyar.com/BlogImages/manzara.jpg"><p contenteditable class="textbox img" placeholder="Type some url...">https://api.atduyar.com/BlogImages/manzara.jpg</p>`, "img")
+            return getDefualtElement(`<img onerror="this.src='https://api.atduyar.com/BlogImages/error.jpg';" src="https://api.atduyar.com/BlogImages/manzara.jpg"><p contenteditable class="textbox img" placeholder="Type some url...">https://api.atduyar.com/BlogImages/manzara.jpg</p>`, "img")
             break;
     }
 }
