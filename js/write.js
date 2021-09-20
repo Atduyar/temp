@@ -91,7 +91,7 @@ function addElementToNext(thisItem, tagName){
     aaa = thisItem;
     var idElement = document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id);
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
-    addEvent(document.getElementById(idElement));//fix new event
+    addEvent(idElement);//fix new event
     
     fixEvents();
 
