@@ -17,6 +17,7 @@ function addEvent(x){
             evt.preventDefault();
         }
         else if (evt.key === "Backspace" || evt.key === "Delete") {
+            console.log(evt.target.textContent);
             if(evt.target.textContent = ""){
                 deleteElement(evt.target.parentElement.parentElement);
             }
