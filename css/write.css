@@ -136,3 +136,8 @@
 .textbox[placeholder]:empty:focus:before {
     content: "";
 }
+
+.quote {
+    padding-left: 21px;
+    border-left: 4px solid rgb(85, 26, 139)!important;
+}
