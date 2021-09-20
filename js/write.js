@@ -157,14 +157,45 @@ function changeVideoUrl(t){
 
 
 // a
+class AtdElement{
+	constructor(type,data,description){
+    	this.type=type;
+        this.data=data;
+        this.description=description;
+    }
+  	displayInfo(){
+    	return this.name + "is " + this.age + " years old!";
+    }
+}
 
 function createblog(){
     console.log("aaa");
     for(var i = 0; icerikDiv.children.length > i; i++){
-        console.log(icerikDiv.children[i]);
+        console.table(getItemJson(icerikDiv.children[i]));
     }
 }
-
+function getItemJson(item){
+    var newItem = new AtdElement(item.getAttribute(atdtag),"","");
+    
+    switch(item.getAttribute(atdtag)){
+        case "p":
+        case "h1":
+        case "quote":
+        case "li":
+        case "lı":
+            newItem.data = item.getElementsByClassName("textbox")[0].textContent;
+            break;
+        case "a":
+            break;
+        case "hr":
+            break;
+        case "img":
+        case "ımg":
+        case "video":
+        case "vıdeo":
+            break;
+    }
+}
 // a
 
 
