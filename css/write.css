@@ -201,7 +201,7 @@
 /* ///////////// */
 
 #div-icerik-menu{
-    
+    display: flex;
 }
 #div-icerik-menu button{
     background-color: green;
