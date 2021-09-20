@@ -67,6 +67,10 @@ function addBlogContent(content, blogContent){
             console.log("li");
             text = `<li>${content.data}</li>`;
             break;
+        case "a":
+            console.log("a");
+            text = `<a href="${content.description}">${content.data}</a>`;
+            break;
         // case "sep":
         //     console.log("sep");
         //     text = 

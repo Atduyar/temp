@@ -114,6 +114,11 @@ img:hover {
     font-size: 1.250em;
     line-height: 28px;
 }
+.div-makale a{
+    text-align: left;
+    font-size: 1.250em;
+    line-height: 28px;
+}
 
 .seperator {
     font-size: 3.625em;
