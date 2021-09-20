@@ -72,6 +72,8 @@
     height: 100%;
     width: 1em;
     margin-right: 8px;
+    display: flex;
+    align-items: center;
 }
 .menu ul li:last-child {
     margin-right: 0px!important;
