@@ -125,7 +125,9 @@
 .item-body h1[contenteditable] {
     border-left: 1px solid white;
 }
-
+.item-body img{
+    width: 100%;
+}
 
 
 .textbox{
