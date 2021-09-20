@@ -103,12 +103,12 @@ function getBlogDetail(id, fixUrl = ()=>{}){
 
 var xxidTemp = new URLSearchParams(window.location.search).get('id');
 if(xxidTemp != null){
-    getBlogDetail(xxidTemp, (BlogTitle)=>{history.pushState({}, null, "/blogView.html?name=" + BlogTitle + "&id=" + xxidTemp)});
+    getBlogDetail(xxidTemp, (BlogTitle)=>{history.pushState({}, null, "/blogView.html?name=" + BlogTitle.replaceAll("'","") + "&id=" + xxidTemp)});
 }
 
 var BlogId = 0;
 function setParam(param){
     var x = param.split("-");
     BlogId = x[x.length - 1];
-    getBlogDetail(BlogId, (BlogTitle)=>{history.pushState({}, null, "/blogView/" + BlogTitle + "-" + BlogId)});
+    getBlogDetail(BlogId, (BlogTitle)=>{history.pushState({}, null, "/blogView/" + BlogTitle.replaceAll("'","") + "-" + BlogId)});
 }
