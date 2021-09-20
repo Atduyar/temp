@@ -10,7 +10,7 @@ function addEvent(x){
             // evt.target.parentElement.parentElement.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
             // addEvent(document.getElementById(evt.target.id));
             
-            // fixEvents();
+            fixEvents();
 
             // document.getElementById(max).focus();
             // document.getElementById(max).innerHTML = "";
