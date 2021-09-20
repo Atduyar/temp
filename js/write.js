@@ -11,7 +11,6 @@ function addEvent(x){
             // addEvent(document.getElementById(evt.target.id));
             
             fixEvents();
-            console.log(max);
             // document.getElementById(max).focus();
             // document.getElementById(max).innerHTML = "";
             
@@ -94,7 +93,7 @@ function addElementToNext(thisItem, tagName){
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
     addEvent(idElement);//fix event
     
-    // fixEvents();
+    fixEvents();
 
     // document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement.classList.remove("open");
     var item = idElement.parentElement.parentElement;
