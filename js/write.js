@@ -80,7 +80,10 @@ function addElement(tagName){
             return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something..."></h1>`)
             break;
         case "quote":
-            return getDefualtElement(`<h1 contenteditable class="textbox quote" placeholder="Type something..."></h1>`)
+            return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something..."></p>`)
+            break;
+        case "quote":
+            return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something..."></p>`)
             break;
     }
 }
