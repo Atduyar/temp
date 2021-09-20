@@ -10,7 +10,17 @@
         height: 100%;
         padding: 0;
         margin: 0;
-    }</style>
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #81C14B;
+        font-family: "Barlow", sans-serif;
+        text-decoration: underline;
+    }
+    </style>
     <script>
         function fun(x = "https://www.youtube.com/embed/iik25wqIuFo?autoplay=1"){
             document.body.innerHTML = '<iframe src="'+ x +'" ></iframe>';
