@@ -94,7 +94,7 @@ function addElementToNext(thisItem, tagName){
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
     addEvent(idElement);//fix event
     
-    fixEvents();
+    // fixEvents();
 
     // document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement.classList.remove("open");
     var item = idElement.parentElement.parentElement;
@@ -119,6 +119,11 @@ function deleteElement(item){
 
 
 
+function aael(l){
+    for(var i = 0;i<l.length;i++){
+        getEventListeners(l[i]);
+    }
+}
 
 
 function openItemMenu(t){
