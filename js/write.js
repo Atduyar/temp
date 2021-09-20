@@ -104,7 +104,7 @@ function addElement(tagName){
             break;
         case "img":
         case "ımg":
-            return getDefualtElement(`<p contenteditable class="textbox" onclick="aaaa(this)" placeholder="Type some url..."></p>`, "img")
+            return getDefualtElement(`<img  src="https://api.atduyar.com/BlogImages/manzara.jpg"><p contenteditable class="textbox" onclick="aaaa(this)" placeholder="Type some url...">https://api.atduyar.com/BlogImages/manzara.jpg</p>`, "img")
             break;
     }
 }
