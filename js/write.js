@@ -8,9 +8,9 @@ function addEvent(x){
 
             addElementToNext(evt.target.parentElement.parentElement, findNextElement(evt.target.tagName))
             // evt.target.parentElement.parentElement.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
-            addEvent(document.getElementById(evt.target.id));
+            // addEvent(document.getElementById(evt.target.id));//fix clicked element
             
-            fixEvents();
+            // fixEvents();
             // document.getElementById(max).focus();
             // document.getElementById(max).innerHTML = "";
             
@@ -91,7 +91,7 @@ function addElementToNext(thisItem, tagName){
     aaa = thisItem;
     var idElement = document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id);
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
-    addEvent(idElement);//fix event
+    addEvent(document.getElementById(idElement));//fix new event
     
     fixEvents();
 
