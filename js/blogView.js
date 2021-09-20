@@ -63,6 +63,10 @@ function addBlogContent(content, blogContent){
             console.log("quote");
             text = `<p class='p-text quote'>${content.data}</p>`;
             break;
+        case "li":
+            console.log("li");
+            text = `<li>${content.data}</li>`;
+            break;
         // case "sep":
         //     console.log("sep");
         //     text = 
