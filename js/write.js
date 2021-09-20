@@ -188,13 +188,16 @@ function getItemJson(item){
             newItemData = item.getElementsByClassName("textbox")[0].textContent;
             break;
         case "a":
+            newItemData = item.getElementsByClassName("textbox")[0].textContent;
             break;
         case "hr":
+            // newItemData = "";
             break;
         case "img":
         case "ımg":
         case "video":
         case "vıdeo":
+            newItemData = item.getElementsByClassName("textbox")[0].textContent;
             break;
     }
     var newItem = new AtdElement(newItemType, newItemData, newItemDescription);
