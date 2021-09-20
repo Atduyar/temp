@@ -23,7 +23,7 @@ function addEvent(x){
             }
         }
         if(evt.target.classList.contains("img")){
-            x.addEventListener("input", changeImgeUrl(), false);
+            x.addEventListener("input", changeImgeUrl(x.target), false);
         }
     });
     x.addEventListener('paste', function (evt) {
