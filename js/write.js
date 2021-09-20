@@ -195,6 +195,7 @@ function getItemJson(item){
         case "vıdeo":
             break;
     }
+    return newItem;
 }
 // a
 
