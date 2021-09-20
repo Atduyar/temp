@@ -100,6 +100,7 @@ p {
     font-size: 0.99em;
     padding: 10px;
     background-color: #0f0e15;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
