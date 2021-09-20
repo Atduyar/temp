@@ -31,6 +31,7 @@ function addEvent(x){
     })
 }
 
+addElementToEnd("img");
 addElementToEnd("h1");
 addElementToEnd("p");
 fixEvents();
@@ -58,7 +59,8 @@ function fixEvents(){
 }
 
 function findNextElement(tagName){
-    switch(tagName.toLocaleLowerCase()){
+    tagName = tagName.toLocaleLowerCase();
+    switch(tagName){
         case "a":
         case "h1":
         case "img":
