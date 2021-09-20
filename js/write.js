@@ -3,7 +3,7 @@ var icerikDiv = document.getElementById("div-icerik");
 var aaa;
 
 function addEvent(x){
-    if(x.target.classList.contains("img")){
+    if(x.classList.contains("img")){
         x.addEventListener("input", (evt)=>{
             changeImgeUrl(evt.target)
         }, false);
