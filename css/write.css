@@ -201,8 +201,18 @@
 /* ///////////// */
 
 #div-icerik-menu{
-    display: flex;
+    position: relative;
+    max-width: var(--icerik-w);
+    margin: 0px auto 0px auto;
+    margin-top: 21px;
+    padding: 0 5%;
+    text-align: center;
 }
 #div-icerik-menu button{
     background-color: green;
+    padding: 5px 5px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: .5em;
+    margin-right: 6px;
 }
