@@ -8,6 +8,11 @@ function addEvent(x){
             changeImgeUrl(evt.target)
         }, false);
     }
+    if(x.classList.contains("video")){
+        x.addEventListener("input", (evt)=>{
+            changeVideoUrl(evt.target)
+        }, false);
+    }
     x.addEventListener('keydown', (evt) => {
         if (evt.keyCode === 13) {
 
@@ -111,6 +116,10 @@ function addElement(tagName){
         case "ımg":
             return getDefualtElement(`<img onerror="this.src='https://api.atduyar.com/ConstImage/errorImg.jpg';" src="https://api.atduyar.com/BlogImages/manzara.jpg"><p contenteditable class="textbox img" placeholder="Type some url...">https://api.atduyar.com/BlogImages/manzara.jpg</p>`, "img")
             break;
+        case "video":
+        case "vıdeo":
+            return getDefualtElement(`<iframe onerror="this.src='https://www.youtube.com/embed/iik25wqIuFo';" src="https://www.youtube.com/embed/iik25wqIuFo"></iframe><p contenteditable class="textbox video" placeholder="Type some url...">https://www.youtube.com/embed/iik25wqIuFo</p>`, "img")
+            break;
     }
 }
 
@@ -137,6 +146,9 @@ function deleteElement(item){
 }
 function changeImgeUrl(t){
     t.parentElement.getElementsByTagName("img")[0].src = t.textContent;
+}
+function changeVideoUrl(t){
+    t.parentElement.getElementsByTagName("video")[0].src = t.textContent;
 }
 
 
