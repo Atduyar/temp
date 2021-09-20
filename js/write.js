@@ -75,16 +75,16 @@ function findNextElement(tagName){
 function addElement(tagName){
     switch(tagName){
         case "p":
-            return getDefualtElement(`<p contenteditable class="textbox" placeholder="Type something..."></p>`)
+            return getDefualtElement(`<p contenteditable class="textbox" placeholder="Type something..."></p>`, "p")
             break;
         case "h1":
-            return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something..."></h1>`)
+            return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something..."></h1>`, "h1")
             break;
         case "quote":
-            return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something..."></p>`)
+            return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something..."></p>`, "quote")
             break;
-        case "quote":
-            return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something..."></p>`)
+        case "a":
+            return getDefualtElement(`<a contenteditable class="textbox a" placeholder="Type something..."></a>`, "a")
             break;
     }
 }
@@ -144,9 +144,9 @@ function openItemMenu(t){
 
 //////////////
 
-function getDefualtElement(htl){
+function getDefualtElement(htl, itemTag){
     return `
-    <div class="item">
+    <div class="item" atdTag="${itemTag}">
         <div class="item-plus" onclick="openItemMenu(this.parentElement)">
             <div class="fake-top"></div>
             <div class="cros">
