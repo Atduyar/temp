@@ -169,11 +169,11 @@ class AtdElement{
 }
 
 function createblog(){
-    console.log("aaa");
     var blog = [];
     for(var i = 0; icerikDiv.children.length > i; i++){
         blog.push(getItemJson(icerikDiv.children[i]));
     }
+    aaa = blog;
     console.table(blog);
 }
 function getItemJson(item){
