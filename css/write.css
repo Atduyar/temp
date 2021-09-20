@@ -116,6 +116,7 @@
     width: 90%;
 }
 .item-body a[contenteditable], 
+.item-body li[contenteditable], 
 .item-body p[contenteditable] {
     min-height: 1.7em;
 }
