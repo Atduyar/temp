@@ -148,7 +148,7 @@ function changeImgeUrl(t){
     t.parentElement.getElementsByTagName("img")[0].src = t.textContent;
 }
 function changeVideoUrl(t){
-    t.parentElement.getElementsByTagName("video")[0].src = t.textContent;
+    t.parentElement.getElementsByTagName("iframe")[0].src = t.textContent;
 }
 
 
