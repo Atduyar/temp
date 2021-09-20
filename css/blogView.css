@@ -118,6 +118,8 @@ img:hover {
     text-align: left;
     font-size: 1.250em;
     line-height: 28px;
+    display: block;
+    cursor: pointer;
 }
 
 .seperator {
