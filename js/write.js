@@ -156,11 +156,15 @@ function changeVideoUrl(t){
 
 
 
+// a
 
+function createblog(){
+    for(var i = 0;icerikDiv.length;i++){
+        console.log(icerikDiv[i]);
+    }
+}
 
-
-
-
+// a
 
 
 function aael(l){
