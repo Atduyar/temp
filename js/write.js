@@ -23,7 +23,7 @@ function addEvent(x){
             }
         }
         if(evt.target.classList.contains("img")){
-            editable.addEventListener("input", changeImgeUrl(this), false);
+            x.addEventListener("input", changeImgeUrl(this), false);
         }
     });
     x.addEventListener('paste', function (evt) {
