@@ -136,8 +136,6 @@ function deleteElement(item){
     item.outerHTML = "";
 }
 function changeImgeUrl(t){
-    aaa = t;
-    console.log("asd");
     t.parentElement.getElementsByTagName("img")[0].src = t.textContent;
 }
 
