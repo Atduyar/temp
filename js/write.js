@@ -93,6 +93,9 @@ function addElement(tagName){
         case "li":
             return getDefualtElement(`<li contenteditable class="textbox li" placeholder="Type something..."></li>`, "li")
             break;
+        case "hr":
+            return getDefualtElement(`<hr>`, "hr")
+            break;
     }
 }
 
