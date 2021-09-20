@@ -200,8 +200,9 @@ function getItemJson(item){
         case "ımg":
         case "video":
         case "vıdeo":
-            newItemData = item.getElementsByClassName("textbox")[0].textContent;
-            break;
+            // newItemData = item.getElementsByClassName("textbox")[0].textContent;
+            newItemData = item.getElementsByClassName("item-body")[0].children[0].src;
+        break;
     }
     var newItem = new AtdElement(newItemType, newItemData, newItemDescription);
     return newItem;
