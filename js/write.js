@@ -92,7 +92,7 @@ function addElementToNext(thisItem, tagName){
     var idElement = document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id);
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
     addEvent(idElement);//fix new event
-    
+    console.log(idElement);
     fixEvents();
 
     // document.getElementById(thisItem.getElementsByClassName("item-body")[0].children[0].id).parentElement.parentElement.classList.remove("open");
