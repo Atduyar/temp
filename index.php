@@ -1,5 +1,6 @@
 <?php
     $x = explode("/", $_SERVER["REQUEST_URI"]);
+    print_r($x);
     
     if (count($x) > 2){
         $y = __DIR__ . '/' . $x[1] . '.html';
