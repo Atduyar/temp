@@ -124,6 +124,7 @@ function setParam(param){
     BlogId = x[x.length - 1];
     getBlogDetail(BlogId, (BlogTitle)=>{history.pushState({}, null, "/blogView/" + fixUrlChar(BlogTitle) + "-" + BlogId)});
 }
+
 String.prototype.turkishToUrl = function(){
 	var string = this;
 	var letters = { "İ": "I", "Ş": "S", "Ğ": "G", "Ü": "U", "Ö": "O", "Ç": "C", "ı": "i" , "ş": "s", "ğ": "g", "ü": "u", "ö": "o", "ç": "c"};
