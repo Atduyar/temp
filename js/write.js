@@ -200,9 +200,9 @@ function getItemJson(item){
         case "hr":
             // newItemData = "";
             break;
-        case "img":
+        case "img"://silme iselminde null hatası event hatası düzelt
         case "ımg":
-        case "video":
+        case "video"://https://www.youtube.com/embed?listType=playlist&list=PL2QY0xcsWhz6ghPUixeNQm47xapSKw4SM&index=4
         case "vıdeo":
             // newItemData = item.getElementsByClassName("textbox")[0].textContent;
             newItemData = item.getElementsByClassName("item-body")[0].children[0].src;
