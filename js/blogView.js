@@ -1,6 +1,6 @@
 String.prototype.turkishToUrl = function(){
 	var string = this;
-	var letters = { "İ": "I", "Ş": "S", "Ğ": "G", "Ü": "U", "Ö": "O", "Ç": "C", "ı": "i" , "ş": "s", "ğ": "g", "ü": "u", "ö": "o", "ç": "c"};
+	var letters = { "İ": "I", "I": "i", "Ş": "S", "Ğ": "G", "Ü": "U", "Ö": "O", "Ç": "C", "ı": "i", "i": "i", "ş": "s", "ğ": "g", "ü": "u", "ö": "o", "ç": "c"};
 	string = string.replace(/(([İIŞĞÜÇÖiışğüçö]))/g, function(letter){ return letters[letter]; })
 	return string;
 }	
