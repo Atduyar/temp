@@ -1,3 +1,10 @@
+String.prototype.turkishToUrl = function(){
+	var string = this;
+	var letters = { "İ": "I", "Ş": "S", "Ğ": "G", "Ü": "U", "Ö": "O", "Ç": "C", "ı": "i" , "ş": "s", "ğ": "g", "ü": "u", "ö": "o", "ç": "c"};
+	string = string.replace(/(([İIŞĞÜÇÖiışğüçö]))/g, function(letter){ return letters[letter]; })
+	return string;
+}	
+
 var apiBlogDetail = new ApiAuth();
 // const urlParams = new URLSearchParams(window.location.search);
 // const BlogId = urlParams.get('id');
@@ -125,12 +132,6 @@ function setParam(param){
     getBlogDetail(BlogId, (BlogTitle)=>{history.pushState({}, null, "/blogView/" + fixUrlChar(BlogTitle) + "-" + BlogId)});
 }
 
-String.prototype.turkishToUrl = function(){
-	var string = this;
-	var letters = { "İ": "I", "Ş": "S", "Ğ": "G", "Ü": "U", "Ö": "O", "Ç": "C", "ı": "i" , "ş": "s", "ğ": "g", "ü": "u", "ö": "o", "ç": "c"};
-	string = string.replace(/(([İIŞĞÜÇÖiışğüçö]))/g, function(letter){ return letters[letter]; })
-	return string;
-}	
 function fixUrlChar(text){
     text = text.replaceAll("'","");
     text = text.turkishToUrl();
