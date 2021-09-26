@@ -101,7 +101,7 @@ function getBlogDetail(id, fixUrl = ()=>{}){
     apiBlogDetail.resultFunction = (t)=>{
         apiBlogDetail.resultFunction = (b)=>{
             console.log(b);
-            fixUrl(b.blogTitle.split(" ").join("-"));
+            fixUrl(b.blogTitle);
             setBlogDetail(b);
         }
         apiBlogDetail.GetAuth("blogs/getBlog?id="+id, t.token);
@@ -109,7 +109,7 @@ function getBlogDetail(id, fixUrl = ()=>{}){
     apiBlogDetail.resultUnAuthFunction = (r)=>{
         apiBlogDetail.resultFunction = (b)=>{
             console.log(b);
-            fixUrl(b.blogTitle.split(" ").join("-"));
+            fixUrl(b.blogTitle);
             setBlogDetail(b);
         }
         apiBlogDetail.GetAuth("blogs/getBlogGuest?id="+id);
@@ -133,6 +133,8 @@ function setParam(param){
 }
 
 function fixUrlChar(text){
+    text = text.split(" ").join("-");
     text = text.replaceAll("'","");
     text = text.turkishToUrl();
+    return text;
 }
