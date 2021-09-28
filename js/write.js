@@ -236,9 +236,13 @@ function openItemMenu(t){
     }   
 }
 
-function openMenu(){
-    document.getElementById("div-edit-menu").classList.add("div-edit-menu-open");
-    console.log("s");
+function openMenu(b){
+    if(b){
+        document.getElementById("div-edit-menu").classList.add("div-edit-menu-open");
+    }
+    else{
+        document.getElementById("div-edit-menu").classList.remove("div-edit-menu-open");
+    }
 }
 
 //////////////
