@@ -236,6 +236,6 @@ body{
     background-color: red;
     transition: right .5s;
 }
-#div-edit-menu .open{
+.div-edit-menu-open{
     right: 0!important;
 }
