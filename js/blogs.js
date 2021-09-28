@@ -102,7 +102,6 @@ let modifier = 750;
 var pageNumberTemp = 2; //1.sayfa cekildiyse
 
 anan();
-
 function anan() {
     documentHeight = document.body.scrollHeight;
     currentScroll = window.scrollY + window.innerHeight;
