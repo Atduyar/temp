@@ -217,12 +217,13 @@ function getItemJson(item){
 
 
 
+
+
 function aael(l){
     for(var i = 0;i<l.length;i++){
         console.table(i,getEventListeners(l[i]));
     }
 }
-
 
 function openItemMenu(t){
     if(t.classList.contains("open")){//t.parentElement.classList.toggle('open')
@@ -235,6 +236,9 @@ function openItemMenu(t){
     }   
 }
 
+function openMenu(){
+    console.log("s");
+}
 
 //////////////
 

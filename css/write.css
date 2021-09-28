@@ -221,3 +221,9 @@
     border-radius: .5em;
     margin-right: 6px; */
 }
+#div-edit-menu{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: red;
+}
