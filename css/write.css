@@ -215,12 +215,6 @@
     margin-left: auto;
     background-color: white;
     border-top-left-radius: 48px;
-    /* background-color: green;
-    padding: 5px 5px;
-    text-align: center;
-    border: 1px solid white;
-    border-radius: .5em;
-    margin-right: 6px; */
 }
 
 body{
@@ -252,4 +246,12 @@ body{
     display: inline-block;
     width: 100%;
     padding: 0 25px;
+}
+#div-edit-menu button{
+    background-color: green;
+    padding: 5px 5px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: .5em;
+    margin-right: 6px;
 }
