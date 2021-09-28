@@ -99,7 +99,7 @@ function getBlogs(pageNumber = 1) {
 let documentHeight;
 let currentScroll;
 let modifier = 750;
-var pageNumberTemp = 2; //1.sayfa cekildiyse
+var pageNumberTemp = 2; //1.sayfa cekildiyse 
 
 anan();
 function anan() {
