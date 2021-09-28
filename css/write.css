@@ -221,6 +221,10 @@
     border-radius: .5em;
     margin-right: 6px; */
 }
+
+body{
+    overflow: hidden;
+}
 #div-edit-menu{
     position: absolute;
     top: 0;
