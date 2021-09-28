@@ -232,7 +232,7 @@ body{
     z-index: 10;
     right: -100%;
     height: 100vh;
-    width: 50vw;
+    width: 414px;
     background-color: red;
     transition: right .5s;
 }
