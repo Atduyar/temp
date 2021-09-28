@@ -176,6 +176,7 @@ function createblog(){
     aaa = blog;
     console.table(blog);
     console.log(JSON.stringify(blog));
+    return blog;
 }
 function getItemJson(item){
     var newItemType = item.getAttribute("atdtag");
@@ -239,6 +240,7 @@ function openItemMenu(t){
 function openMenu(b=true){
     if(b){
         document.getElementById("div-edit-menu").classList.add("div-edit-menu-open");
+        createblog();
     }
     else{
         document.getElementById("div-edit-menu").classList.remove("div-edit-menu-open");
