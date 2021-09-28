@@ -243,9 +243,8 @@ body{
 }
 
 .div-edit-menu p{
-    position: absolute;
-    top: 25px;
-    right: 45px;
+    display: block;
+    padding-left: calc(100% - 75px);
     font-size: 72px;
     color: #dddddd;
 }
