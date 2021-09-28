@@ -246,11 +246,11 @@ body{
     display: flex;
     width: 100%;
     padding: 0 25px;
+    justify-content: space-evenly;
 }
 #div-edit-menu button{
     text-align: left;
     display: inline-block;
-    margin-right: 10px;
     font-size: 0.99em;
     padding: 10px;
     background-color: #0f0e15;
