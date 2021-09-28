@@ -237,6 +237,7 @@ function openItemMenu(t){
 }
 
 function openMenu(){
+    document.getElementById("div-edit-menu").classList.add("open");
     console.log("s");
 }
 
