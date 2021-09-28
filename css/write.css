@@ -241,3 +241,11 @@ body{
 .div-edit-menu-open{
     right: 0!important;
 }
+
+.div-edit-menu-open p{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 72px;
+    color: #dddddd;
+}
