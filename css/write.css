@@ -248,7 +248,7 @@ body{
     font-size: 72px;
     color: #dddddd;
 }
-#div-edit-menu div:first-child{
+#div-edit-menu div:nth-child(1){
     display: inline-block;
     width: 100%;
     padding: 0 25px;
