@@ -3,6 +3,10 @@
     --nav-size: 10vw;
     --nav-line-fix: 5vw;
 }
+#nav-bar{
+    margin: 21px 0!important;
+}
+
 @media only screen and (max-width: 1110px) and (min-width: 1010px) {
     * {
         --icerik-w: 1000px;
