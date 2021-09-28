@@ -236,7 +236,7 @@ function openItemMenu(t){
     }   
 }
 
-function openMenu(b){
+function openMenu(b=true){
     if(b){
         document.getElementById("div-edit-menu").classList.add("div-edit-menu-open");
     }
