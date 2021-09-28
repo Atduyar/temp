@@ -247,6 +247,11 @@ function openMenu(b=true){
     }
 }
 
+function publishBlog(){
+    var b = createblog();
+    
+}
+
 //////////////
 
 function getDefualtElement(htl, itemTag){

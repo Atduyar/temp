@@ -27,6 +27,7 @@
     display: flex;
     /* font-size: 1.7em; */
     margin-top: 10px;
+    transform: translateX(-5%);
 }
 
 .item-plus {
