@@ -8,10 +8,10 @@
              'setParam("' . $x[2] . '");',
              '</script>';
     }
-    elseif(str_contains($x[1], ".xml")){
+    elseif(strpos($x[1], '.xml')){
         $y = __DIR__ . '/' . $x[1] ;
     }
-    elseif(count($x) > 1 and $x[1] != ""){
+    elseif(count($x) > 1 and $x[1] != ''){
         $y = __DIR__ . '/' . $x[1] . '.html';
         require $y;
     }else {
