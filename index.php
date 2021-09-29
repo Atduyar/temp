@@ -1,8 +1,10 @@
 <?php
     $x = explode("/", $_SERVER["REQUEST_URI"]);
     // print_r($x);
-
-    if (count($x) > 2){
+    if(str_contains($x[1], ".xml")){
+        $y = __DIR__ . '/' . $x[1] ;
+    }
+    else if (count($x) > 2){
         $y = __DIR__ . '/' . $x[1] . '.html';
         require $y;
         echo '<script type="text/javascript">',
