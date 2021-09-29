@@ -4,7 +4,7 @@
     if(str_contains($x[1], ".xml")){
         $y = __DIR__ . '/' . $x[1] ;
     }
-    else if (count($x) > 2){
+    elseif (count($x) > 2){
         $y = __DIR__ . '/' . $x[1] . '.html';
         require $y;
         echo '<script type="text/javascript">',
