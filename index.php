@@ -4,7 +4,7 @@
     if (count($x) > 2){
         if($x[1] == "blogView"){
             $y = __DIR__ . '/' . $x[1] . '.html';
-            echo $y;
+            echo "1\n";
             $tmp = explode("-", $x[2]);
             $content = @file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end($tmp));
             if($content != false){
@@ -12,6 +12,7 @@
                 $result->blogSummary = htmlentities($result->blogSummary);
                 $result->blogTitle = htmlentities($result->blogTitle);
                 
+            echo "1\n";
                 echo '<!DOCTYPE html>',
                      '<html lang="tr">',
                      '<head>',
@@ -39,6 +40,7 @@
                      '<meta name="twitter:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
                      '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
             }
+            echo "1\n";
 
             require $y;
             echo '<script type="text/javascript">',
