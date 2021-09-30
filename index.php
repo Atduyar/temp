@@ -27,11 +27,11 @@
                      '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
             }
             else{
-                print_r($content);
+                //print_r($content);
                 $result = json_decode($content);
-                print_r($result);
-                //$result->blogSummary = htmlentities($result->blogSummary);
-                //$result->blogTitle = htmlentities($result->blogTitle);
+                //print_r($result);
+                $result->blogSummary = htmlentities($result->blogSummary);
+                $result->blogTitle = htmlentities($result->blogTitle);
                 
                 echo '<!DOCTYPE html>',
                      '<html lang="tr">',
