@@ -20,7 +20,7 @@ function setBlogs(b) {
         var blogDes = blogDescriptionDiv[1];
 
         blogDivDes.classList.add("show");
-        blogDes.innerHTML = (firstBlog[i].blogSummary.length > 250) ? firstBlog[i].blogSummary.substring(0, 225) + "...":firstBlog[i].blogSummary ;//firstBlog.blogSummary;
+        blogDes.innerHTML = (firstBlog[i].blogSummary.length > 250) ? firstBlog[i].blogSummary.substring(0, 225) + "..." : firstBlog[i].blogSummary ;//firstBlog.blogSummary;
         blogImg.src = firstBlog.blogTitlePhotoUrl;
         blogImg.style = "";
         blogTitle.innerHTML = firstBlog.blogTitle;
