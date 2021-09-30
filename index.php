@@ -5,7 +5,9 @@
         if($x[1] == "blogView"){
 
             $y = __DIR__ . '/' . $x[1] . '.html';
-            echo '<meta name="description" content="Test ile bizimle bilimi kesfedin.">',
+            echo '<!DOCTYPE html>',
+                 '<html lang="tr">',
+                 '<head><meta name="description" content="Test ile bizimle bilimi kesfedin.">',
                  '<meta property="og:title" content="Test">',
                  '<meta property="og:description" content="Test ile bizimle bilimi kesfedin.">',
                  '<meta property="og:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
