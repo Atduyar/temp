@@ -6,7 +6,7 @@
 
             $y = __DIR__ . '/' . $x[1] . '.html';
 
-            $tmp = explode("-", $x);
+            $tmp = explode("-", $x[2]);
             $content = file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end($tmp));
             $result  = json_decode($content);
 
