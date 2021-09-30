@@ -7,7 +7,8 @@
             $y = __DIR__ . '/' . $x[1] . '.html';
             echo '<!DOCTYPE html>',
                  '<html lang="tr">',
-                 '<head><meta name="description" content="Test ile bizimle bilimi kesfedin.">',
+                 '<head>',
+                 '<meta name="description" content="Test ile bizimle bilimi kesfedin.">',
                  '<meta property="og:title" content="Test">',
                  '<meta property="og:description" content="Test ile bizimle bilimi kesfedin.">',
                  '<meta property="og:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
@@ -25,6 +26,20 @@
         }
         else{
             $y = __DIR__ . '/' . $x[1] . '.html';
+
+            echo '<!DOCTYPE html>',
+                 '<html lang="tr">',
+                 '<head>',
+                 '<meta name="description" content="Evrenomi ile bizimle bilimi kesfedin.">',
+                 '<meta property="og:title" content="Evrenomi">',
+                 '<meta property="og:description" content="Evrenomi ile bizimle bilimi kesfedin.">',
+                 '<meta property="og:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
+                 '<meta property="og:site_name" content="Evrenomi">',
+                 '<meta name="twitter:title" content="Evrenomi">',
+                 '<meta name="twitter:description" content="Evrenomi ile bizimle bilimi kesfedin.">',
+                 '<meta name="twitter:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
+                 '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
+
             require $y;
             echo '<script type="text/javascript">',
                  'setParam("' . $x[2] . '");',
@@ -35,9 +50,15 @@
         $y = __DIR__ . '/' . $x[1] ;
     }
     elseif(count($x) > 1 and $x[1] != ''){
+        echo '<!DOCTYPE html>',
+             '<html lang="tr">',
+             '<head>';
         $y = __DIR__ . '/' . $x[1] . '.html';
         require $y;
     }else {
+        echo '<!DOCTYPE html>',
+             '<html lang="tr">',
+             '<head>';
         $y = __DIR__ . '/blogs.html';
         require $y;
     }
