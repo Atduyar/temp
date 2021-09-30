@@ -2,11 +2,22 @@
     $x = explode("/", $_SERVER["REQUEST_URI"]);
     // print_r($x);
     if (count($x) > 2){
-        $y = __DIR__ . '/' . $x[1] . '.html';
-        require $y;
-        echo '<script type="text/javascript">',
-             'setParam("' . $x[2] . '");',
-             '</script>';
+        if($x[1] == "blogView"){
+
+            $y = __DIR__ . '/' . $x[1] . '.html';
+            require $y;
+            echo '<script type="text/javascript">',
+                 'console.log("blogView");',
+                 'setParam("' . $x[2] . '");',
+                 '</script>';
+        }
+        else{
+            $y = __DIR__ . '/' . $x[1] . '.html';
+            require $y;
+            echo '<script type="text/javascript">',
+                 'setParam("' . $x[2] . '");',
+                 '</script>';
+        }
     }
     elseif(strpos($x[1], '.xml') !== false){
         $y = __DIR__ . '/' . $x[1] ;
