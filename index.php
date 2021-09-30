@@ -3,7 +3,6 @@
     // print_r($x);
     if (count($x) > 2){
         if($x[1] == "blogView"){
-
             $y = __DIR__ . '/' . $x[1] . '.html';
 
             $tmp = explode("-", $x[2]);
