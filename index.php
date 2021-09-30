@@ -1,5 +1,10 @@
 <?php
     $x = explode("/", $_SERVER["REQUEST_URI"]);
+    
+    $personJSON = '{"name":"Johny Carson","title":"CTO"}';
+    $person = json_decode($personJSON);
+    echo $person->name; // Johny Carson
+    
     //print_r($x);
     if (count($x) > 2){
         if($x[1] == "blogView"){
