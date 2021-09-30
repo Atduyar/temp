@@ -9,8 +9,8 @@
             $content = @file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end($tmp));
             if($content != false){
                 $result  = json_decode($content);
-                $result->blogSummary = htmlentities($result->blogSummary);
-                $result->blogTitle = htmlentities($result->blogTitle);
+                //$result->blogSummary = htmlentities($result->blogSummary);
+                //$result->blogTitle = htmlentities($result->blogTitle);
                 
                 echo "1\n";
                 echo '<!DOCTYPE html>',
