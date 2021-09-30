@@ -12,7 +12,7 @@
                 //$result->blogSummary = htmlentities($result->blogSummary);
                 //$result->blogTitle = htmlentities($result->blogTitle);
                 
-                echo "1\n";
+                echo "2\n";
                 echo '<!DOCTYPE html>',
                      '<html lang="tr">',
                      '<head>',
@@ -40,7 +40,7 @@
                      '<meta name="twitter:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
                      '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
             }
-            echo "1\n";
+            echo "3\n";
 
             require $y;
             echo '<script type="text/javascript">',
