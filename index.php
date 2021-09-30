@@ -4,7 +4,7 @@
     $personJSON = '{"name":"Johny Carson","title":"CTO"}';
     $person = json_decode($personJSON);
     echo $person->name; // Johny Carson
-    
+
     //print_r($x);
     if (count($x) > 2){
         if($x[1] == "blogView"){
@@ -27,6 +27,7 @@
                      '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
             }
             else{
+                print_r($content);
                 $result = json_decode($content);
                 print_r($result);
                 //$result->blogSummary = htmlentities($result->blogSummary);
