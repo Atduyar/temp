@@ -8,8 +8,8 @@
             $content = @file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end($tmp));
             echo $content;
             if($content != false){
-                echo "2\n";
                 $result  = json_decode($content);
+                print_r($result);
                 //$result->blogSummary = htmlentities($result->blogSummary);
                 //$result->blogTitle = htmlentities($result->blogTitle);
                 
