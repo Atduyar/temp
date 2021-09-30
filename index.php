@@ -12,7 +12,7 @@
                 $result->blogSummary = htmlentities($result->blogSummary);
                 $result->blogTitle = htmlentities($result->blogTitle);
                 
-            echo "1\n";
+                echo "1\n";
                 echo '<!DOCTYPE html>',
                      '<html lang="tr">',
                      '<head>',
