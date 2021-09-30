@@ -1,14 +1,15 @@
 <?php
     $x = explode("/", $_SERVER["REQUEST_URI"]);
-    print_r($x);
+    //print_r($x);
     if (count($x) > 2){
         if($x[1] == "blogView"){
             $y = __DIR__ . '/' . $x[1] . '.html';
+
             $tmp = explode("-", $x[2]);
             $content = @file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end($tmp));
-            if($content != false){
+            if($content == false){
                 $result = json_decode($content);
-                print_r($result);
+                //print_r($result);
                 //$result->blogSummary = htmlentities($result->blogSummary);
                 //$result->blogTitle = htmlentities($result->blogTitle);
                 
@@ -39,7 +40,6 @@
                      '<meta name="twitter:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
                      '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
             }
-            echo "3\n";
 
             require $y;
             echo '<script type="text/javascript">',
