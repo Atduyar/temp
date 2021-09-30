@@ -23,7 +23,7 @@
                  '<meta name="twitter:title" content="' . $result->blogTitle . '">',
                  '<meta name="twitter:description" content="' . $result->blogSummary . '">',
                  '<meta name="twitter:image" content="' . $result->blogTitlePhotoUrl . '">',
-                 '<meta name="twitter:card" content="' . $result->blogTitlePhotoUrl . '>';
+                 '<meta name="twitter:card" content="' . $result->blogTitlePhotoUrl . '">';
 
             require $y;
             echo '<script type="text/javascript">',
