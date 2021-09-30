@@ -23,7 +23,7 @@
             }
             else{
                 $result = json_decode($content);
-                //print_r($result);
+                print_r($result);
                 //$result->blogSummary = htmlentities($result->blogSummary);
                 //$result->blogTitle = htmlentities($result->blogTitle);
                 
