@@ -9,7 +9,9 @@
             $tmp = explode("-", $x[2]);
             $content = file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end($tmp));
             $result  = json_decode($content);
-
+            $result->blogSummary = htmlentities($result->blogSummary);
+            $result->blogTitle = htmlentities($result->blogTitle);
+            
             echo '<!DOCTYPE html>',
                  '<html lang="tr">',
                  '<head>',
