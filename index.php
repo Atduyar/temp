@@ -1,6 +1,6 @@
 <?php
     $x = explode("/", $_SERVER["REQUEST_URI"]);
-    // print_r($x);
+    print_r($x);
     if (count($x) > 2){
         if($x[1] == "blogView"){
             $y = __DIR__ . '/' . $x[1] . '.html';
@@ -46,9 +46,7 @@
                  '<meta name="twitter:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
                  '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
 
-                 echo x[1];
-
-                 require $y;
+            require $y;
             echo '<script type="text/javascript">',
                  'setParam("' . $x[2] . '");',
                  '</script>';
