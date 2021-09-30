@@ -46,7 +46,9 @@
                  '<meta name="twitter:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
                  '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
 
-            require $y;
+                 echo x[1];
+
+                 require $y;
             echo '<script type="text/javascript">',
                  'setParam("' . $x[2] . '");',
                  '</script>';
