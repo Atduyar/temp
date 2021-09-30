@@ -27,18 +27,21 @@
         else{
             $y = __DIR__ . '/' . $x[1] . '.html';
 
+            $content =     file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=1");
+            $result  = json_decode($content);
+
             echo '<!DOCTYPE html>',
                  '<html lang="tr">',
                  '<head>',
-                 '<meta name="description" content="Evrenomi ile bizimle bilimi kesfedin.">',
-                 '<meta property="og:title" content="Evrenomi">',
-                 '<meta property="og:description" content="Evrenomi ile bizimle bilimi kesfedin.">',
-                 '<meta property="og:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
+                 '<meta name="description" content="' . $result->blogSummary . '">',
+                 '<meta property="og:title" content="' . $result->blogTitle . '">',
+                 '<meta property="og:description" content="' . $result->blogSummary . '">',
+                 '<meta property="og:image" content="' . $result->blogTitlePhotoUrl . '">',
                  '<meta property="og:site_name" content="Evrenomi">',
-                 '<meta name="twitter:title" content="Evrenomi">',
-                 '<meta name="twitter:description" content="Evrenomi ile bizimle bilimi kesfedin.">',
-                 '<meta name="twitter:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
-                 '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
+                 '<meta name="twitter:title" content="' . $result->blogTitle . '">',
+                 '<meta name="twitter:description" content="' . $result->blogSummary . '">',
+                 '<meta name="twitter:image" content="' . $result->blogTitlePhotoUrl . '">',
+                 '<meta name="twitter:card" content="' . $result->blogTitlePhotoUrl . '>';
 
             require $y;
             echo '<script type="text/javascript">',
