@@ -6,7 +6,7 @@
 
             $y = __DIR__ . '/' . $x[1] . '.html';
 
-            $content = file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=1");
+            $content = file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end(explode("-", $x[2])));
             $result  = json_decode($content);
 
             echo '<!DOCTYPE html>',
