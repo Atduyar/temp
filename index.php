@@ -5,8 +5,8 @@
         if($x[1] == "blogView"){
             $y = __DIR__ . '/' . $x[1] . '.html';
             $tmp = explode("-", $x[2]);
-            print_r($tmp);
             $content = @file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end($tmp));
+            echo $content;
             if($content != false){
                 $result  = json_decode($content);
                 //$result->blogSummary = htmlentities($result->blogSummary);
