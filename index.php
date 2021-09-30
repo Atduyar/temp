@@ -5,6 +5,16 @@
         if($x[1] == "blogView"){
 
             $y = __DIR__ . '/' . $x[1] . '.html';
+            echo '<meta name="description" content="Test ile bizimle bilimi kesfedin.">',
+                 '<meta property="og:title" content="Test">',
+                 '<meta property="og:description" content="Test ile bizimle bilimi kesfedin.">',
+                 '<meta property="og:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
+                 '<meta property="og:site_name" content="Test">',
+                 '<meta name="twitter:title" content="Test">',
+                 '<meta name="twitter:description" content="Test ile bizimle bilimi kesfedin.">',
+                 '<meta name="twitter:image" content="https://api.atduyar.com/ConstImage/titleBanner.png">',
+                 '<meta name="twitter:card" content="https://api.atduyar.com/ConstImage/titleBanner.png">';
+
             require $y;
             echo '<script type="text/javascript">',
                  'console.log("blogView");',
