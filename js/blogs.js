@@ -81,6 +81,7 @@ function getBlogs(pageNumber = 1) {
         if (t instanceof TypeError) {
             pageNumberTemp = -1; // make last page
             console.log("Sanslı zaman ;D");
+            console.log(t);
         } else {
             console.log(t);
         }
