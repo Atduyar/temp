@@ -4,7 +4,7 @@
     if (count($x) > 2){
         if($x[1] == "blogView"){
             $y = __DIR__ . '/' . $x[1] . '.html';
-
+            echo $y;
             $tmp = explode("-", $x[2]);
             $content = @file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end($tmp));
             if($content != false){
