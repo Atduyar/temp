@@ -176,6 +176,10 @@ function createblog(){
     aaa = blog;
     console.table(blog);
     console.log(JSON.stringify(blog));
+
+    var bd = {"blogContent":bblog};
+    document.getElementById("mobilView").contentWindow.setBlogDetail(bd);
+
     return blog;
 }
 function getItemJson(item){
@@ -249,8 +253,6 @@ function openMenu(b=true){
 
 function publishBlog(){
     var b = createblog();
-    var bd = {"blogContent":b};
-    document.getElementById("mobilView").contentWindow.setBlogDetail(bd);
 }
 
 //////////////
