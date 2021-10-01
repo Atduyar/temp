@@ -1,3 +1,4 @@
+var user;
 //window.location = "twitter://mentions"
 
 var mySidenav = document.getElementById("mySidenav");
@@ -21,11 +22,11 @@ function closeNav() {
 var apiNav = new ApiAuth;
 
 getUser()
-
 function getUser() {
     apiNav.resultFunction = (t) => { //token alırsan
         apiNav.resultFunction = (u) => { //kullanıcıyı alırsan
                 console.log(u);
+                user = u;
                 document.getElementById("mySidenav").getElementsByClassName("menu-items")[0].classList.add("auth");
                 document.getElementById("nav-bar-menu").classList.add("auth");
 
