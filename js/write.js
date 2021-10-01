@@ -176,8 +176,8 @@ class AtdElement{
 
 function createblog(){
     var blog = [];
-    var blogTitle = blog.push(getItemJson(icerikDiv.children[0]));
-    var blogTitlePhotoUrl = blog.push(getItemJson(icerikDiv.children[1]));
+    var blogTitle = getItemJson(icerikDiv.children[0]);
+    var blogTitlePhotoUrl = getItemJson(icerikDiv.children[1]);
     for(var i = 2; icerikDiv.children.length > i; i++){
         blog.push(getItemJson(icerikDiv.children[i]));
     }
