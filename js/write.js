@@ -38,7 +38,7 @@ function addEvent(x){
     x.addEventListener('paste', function (evt) {
         evt.preventDefault();
         var text = evt.clipboardData.getData('text/plain').replace(/\n/g,"");
-        console.log(text);
+        console.log("pasted: " + text);
         document.execCommand('insertText', false, text);
     })
 }
@@ -184,8 +184,8 @@ function createblog(){
         blog.push(getItemJson(icerikDiv.children[i]));
     }
     aaa = blog;
-    console.table(blog);
-    console.log(JSON.stringify(blog));
+    console.table(blog,JSON.stringify(blog));
+    console.log();
 
     var bd = {
         "blogTitle": blogTitle.data,
