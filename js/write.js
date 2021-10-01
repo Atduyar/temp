@@ -15,8 +15,8 @@ function addEvent(x){
     }
     x.addEventListener('keydown', (evt) => {
         if (evt.keyCode === 13) {
-
-            addElementToNext(evt.target.parentElement.parentElement, findNextElement(evt.target.tagName))
+            var itemTemp = evt.target.parentElement.parentElement;
+            addElementToNext(itemTemp, findNextElement(evt.target.tagName))
             // evt.target.parentElement.parentElement.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
             // addEvent(document.getElementById(evt.target.id));//fix clicked element
             
@@ -28,9 +28,9 @@ function addEvent(x){
         }
         else if (evt.key === "Backspace" || evt.key === "Delete") {
             console.log(evt.target.textContent);
-            console.log(evt.target.parentElement.parentElement);
-            if(evt.target.textContent == ""){
-                deleteElement(evt.target.parentElement.parentElement);
+            console.log(itemTemp);
+            if(evt.target.textContent == "" && itemTemp.getAttribute("lock") == null){
+                deleteElement(itemTemp);
             }
         }
     });
