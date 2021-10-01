@@ -170,14 +170,22 @@ class AtdElement{
 
 function createblog(){
     var blog = [];
-    for(var i = 0; icerikDiv.children.length > i; i++){
+    var blogTitle = blog.push(getItemJson(icerikDiv.children[0]));
+    var blogTitlePhotoUrl = blog.push(getItemJson(icerikDiv.children[1]));
+    blog.push(getItemJson(icerikDiv.children[i]));
+    for(var i = 2; icerikDiv.children.length > i; i++){
         blog.push(getItemJson(icerikDiv.children[i]));
     }
     aaa = blog;
     console.table(blog);
     console.log(JSON.stringify(blog));
 
-    var bd = {"blogContent":blog, "blogTags":[], "authorSummary":{"nickname":"Sen"}};
+    var bd = {
+        "blogTitle": blogTitle.data,
+        "blogTitlePhotoUrl": blogTitlePhotoUrl.data,
+        "blogContent":blog, "blogTags":[], 
+        "authorSummary":{"nickname":"Sen"}
+    };
     document.getElementById("mobilView").contentWindow.setBlogDetail(bd);
 
     return blog;
