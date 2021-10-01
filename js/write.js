@@ -249,7 +249,7 @@ function openMenu(b=true){
 
 function publishBlog(){
     var b = createblog();
-    
+    document.getElementById("mobilView").contentWindow.setBlogDetail(b);
 }
 
 //////////////
