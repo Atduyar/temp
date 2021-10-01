@@ -23,6 +23,9 @@ var apiNav = new ApiAuth;
 
 getUser()
 function getUser() {
+    if(globalUser != undefined){
+        console.log(globalUser);
+    }
     apiNav.resultFunction = (t) => { //token alırsan
         apiNav.resultFunction = (u) => { //kullanıcıyı alırsan
                 console.log(u);
