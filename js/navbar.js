@@ -19,24 +19,30 @@ function closeNav() {
 
 }
 
+function setUser(u){
+    
+    document.getElementById("mySidenav").getElementsByClassName("menu-items")[0].classList.add("auth");
+    document.getElementById("nav-bar-menu").classList.add("auth");
+
+    document.getElementById("mySidenav").getElementsByClassName("menu-items")[0].getElementsByClassName("profil")[0].href = "/user/" + u.nickname;
+    document.getElementById("nav-bar-menu").getElementsByClassName("profil")[0].children[0].href = "/user/" + u.nickname;
+    // document.getElementsByClassName("nav-bar")[0].getElementsByClassName("nav-bar-pc")[0].children[0].innerText = capitalizeFirstLetter(u.nickname);
+}
+
 var apiNav = new ApiAuth;
 
 getUser()
 function getUser() {
     if(globalUser != undefined){
         console.log(globalUser);
+        setUser(u);
         return;
     }
     apiNav.resultFunction = (t) => { //token alırsan
         apiNav.resultFunction = (u) => { //kullanıcıyı alırsan
                 console.log(u);
                 globalUser = u;
-                document.getElementById("mySidenav").getElementsByClassName("menu-items")[0].classList.add("auth");
-                document.getElementById("nav-bar-menu").classList.add("auth");
-
-                document.getElementById("mySidenav").getElementsByClassName("menu-items")[0].getElementsByClassName("profil")[0].href = "/user/" + u.nickname;
-                document.getElementById("nav-bar-menu").getElementsByClassName("profil")[0].children[0].href = "/user/" + u.nickname;
-                // document.getElementsByClassName("nav-bar")[0].getElementsByClassName("nav-bar-pc")[0].children[0].innerText = capitalizeFirstLetter(u.nickname);
+                setUser(u);
             }
         apiNav.GetMyProfil(t.token);
     };
