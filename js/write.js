@@ -129,8 +129,8 @@ function addElement(tagName,inlineText=""){
     }
 }
 
-function addElementToEnd(tagName){
-    icerikDiv.innerHTML += addElement(tagName);
+function addElementToEnd(tagName,inlineText=""){
+    icerikDiv.innerHTML += addElement(tagName,inlineText);
 }
 function addElementToNext(thisItem, tagName){
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
