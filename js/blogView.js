@@ -98,6 +98,9 @@ function addBlogContent(content, blogContent){
 
 }
 function getBlogDetail(id, fixUrl = ()=>{}){
+    if(id == 0){
+        return;
+    }
     apiBlogDetail.resultFunction = (t)=>{
         apiBlogDetail.resultFunction = (b)=>{
             console.log(b);
