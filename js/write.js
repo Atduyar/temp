@@ -171,9 +171,6 @@ class AtdElement{
         this.data=data;
         this.description=description;
     }
-  	displayInfo(){
-    	return this.name + "is " + this.age + " years old!";
-    }
 }
 
 function createblog(){
@@ -184,8 +181,8 @@ function createblog(){
         blog.push(getItemJson(icerikDiv.children[i]));
     }
     aaa = blog;
-    console.table(blog,JSON.stringify(blog));
-    console.log();
+    console.table(blog);
+    console.log(JSON.stringify(blog));
 
     var bd = {
         "blogTitle": blogTitle.data,
