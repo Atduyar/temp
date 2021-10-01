@@ -27,9 +27,10 @@ function addEvent(x){
             evt.preventDefault();
         }
         else if (evt.key === "Backspace" || evt.key === "Delete") {
-            console.log(evt.target.textContent);
-            console.log(itemTemp);
+            //console.log(evt.target.textContent);
+            //console.log(itemTemp);
             if(evt.target.textContent == "" && itemTemp.getAttribute("lock") == null){
+                console.log("deletedItem: " + evt.target.tagName);
                 deleteElement(itemTemp);
             }
         }
