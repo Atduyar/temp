@@ -141,3 +141,6 @@ function fixUrlChar(text){
     text = text.turkishToUrl();
     return text;
 }
+function fun(a){
+    console.log(a);
+}
