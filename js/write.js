@@ -54,7 +54,7 @@ function fixEvents(){
     for(var i = 0; i < textboxs.length; i++) {
         if(textboxs[i].getAttribute("id") != null){
             if(max < textboxs[i].getAttribute("id")){
-                max = textboxs[i].getAttribute("id");
+                max = parseInt(textboxs[i].getAttribute("id"));
             }
         }
     }
