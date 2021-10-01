@@ -277,7 +277,7 @@ function publishBlog(){
 
 function getDefualtElement(htl, itemTag, lock=false){
     return `
-    <div class="item" atdTag="${itemTag}" ${lock ? "" : "lock"} >
+    <div class="item" atdTag="${itemTag}" ${lock ? "lock" : ""} >
         <div class="item-plus" onclick="openItemMenu(this.parentElement)">
             <div class="fake-top"></div>
             <div class="cros">
