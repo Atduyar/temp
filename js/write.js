@@ -177,7 +177,7 @@ function createblog(){
     console.table(blog);
     console.log(JSON.stringify(blog));
 
-    var bd = {"blogContent":blog};
+    var bd = {"blogContent":blog, "blogTags":[]};
     document.getElementById("mobilView").contentWindow.setBlogDetail(bd);
 
     return blog;
