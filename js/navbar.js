@@ -25,6 +25,7 @@ getUser()
 function getUser() {
     if(globalUser != undefined){
         console.log(globalUser);
+        return;
     }
     apiNav.resultFunction = (t) => { //token alırsan
         apiNav.resultFunction = (u) => { //kullanıcıyı alırsan
