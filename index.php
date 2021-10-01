@@ -12,7 +12,7 @@
 
             $tmp = explode("-", $x[2]);
             $content = @file_get_contents("https://api.atduyar.com/api/blogs/getBlogMeta?id=" . end($tmp));
-            if($content == false){
+            if(true){//$content == false){
                 echo '<!DOCTYPE html>',
                      '<html lang="tr">',
                      '<head>',
