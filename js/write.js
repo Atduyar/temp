@@ -42,8 +42,8 @@ function addEvent(x){
 }
 
 addElementToEnd("img");
-addElementToEnd("h");
-addElementToEnd("p");
+addElementToEnd("h","Baslık");
+addElementToEnd("p","paragraf");
 fixEvents();
 var max = -1;
 function fixEvents(){
@@ -91,34 +91,40 @@ function findNextElement(tagName){
     }
     return tagName;
 }
-function addElement(tagName){
+function addElement(tagName,inlineText=""){
     switch(tagName){
         case "p":
-            return getDefualtElement(`<p contenteditable class="textbox" placeholder="Type something..."></p>`, "p")
+            return getDefualtElement(`<p contenteditable class="textbox" placeholder="Type something...">${inlineText}</p>`, "p")
             break;
         case "h":
-            return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something..."></h1>`, "h")
+            return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something..."><${inlineText}/h1>`, "h")
             break;
         case "quote":
-            return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something..."></p>`, "quote")
+            return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something...">${inlineText}</p>`, "quote")
             break;
         case "a":
-            return getDefualtElement(`<a contenteditable class="textbox" spellcheck="false" placeholder="Type something..."></a>`, "a")
+            return getDefualtElement(`<a contenteditable class="textbox" spellcheck="false" placeholder="Type something...">${inlineText}</a>`, "a")
             break;
         case "li":
         case "lı":
-            return getDefualtElement(`<li contenteditable class="textbox li" placeholder="Type something..."></li>`, "li")
+            return getDefualtElement(`<li contenteditable class="textbox li" placeholder="Type something...">${inlineText}</li>`, "li")
             break;
         case "hr":
             return getDefualtElement(`<hr>`, "hr")
             break;
         case "img":
         case "ımg":
-            return getDefualtElement(`<img onerror="this.src='https://api.atduyar.com/ConstImage/errorImg.jpg';" src="https://api.atduyar.com/BlogImages/manzara.jpg"><p contenteditable class="textbox img" placeholder="Type some url...">https://api.atduyar.com/BlogImages/manzara.jpg</p>`, "img")
+            if(inlineText == ""){
+                inlineText = "https://api.atduyar.com/BlogImages/manzara.jpg";
+            }
+            return getDefualtElement(`<img onerror="this.src='https://api.atduyar.com/ConstImage/errorImg.jpg';" src="https://api.atduyar.com/BlogImages/manzara.jpg"><p contenteditable class="textbox img" placeholder="Type some url...">${inlineText}</p>`, "img")
             break;
         case "video":
         case "vıdeo":
-            return getDefualtElement(`<iframe onerror="this.src='https://www.youtube.com/embed/iik25wqIuFo';" src="https://www.youtube.com/embed/iik25wqIuFo"></iframe><p contenteditable class="textbox video" placeholder="Type some url...">https://www.youtube.com/embed/iik25wqIuFo</p>`, "img")
+            if(inlineText == ""){
+                inlineText = "https://www.youtube.com/embed/iik25wqIuFo";
+            }
+            return getDefualtElement(`<iframe onerror="this.src='https://www.youtube.com/embed/iik25wqIuFo';" src="https://www.youtube.com/embed/iik25wqIuFo"></iframe><p contenteditable class="textbox video" placeholder="Type some url...">${inlineText}</p>`, "img")
             break;
     }
 }
