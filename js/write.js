@@ -14,8 +14,8 @@ function addEvent(x){
         }, false);
     }
     x.addEventListener('keydown', (evt) => {
+        var itemTemp = evt.target.parentElement.parentElement;
         if (evt.keyCode === 13) {
-            var itemTemp = evt.target.parentElement.parentElement;
             addElementToNext(itemTemp, findNextElement(evt.target.tagName))
             // evt.target.parentElement.parentElement.outerHTML += addNextElement(evt.target.tagName.toLocaleLowerCase());
             // addEvent(document.getElementById(evt.target.id));//fix clicked element
