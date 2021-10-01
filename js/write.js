@@ -97,7 +97,7 @@ function addElement(tagName,inlineText=""){
             return getDefualtElement(`<p contenteditable class="textbox" placeholder="Type something...">${inlineText}</p>`, "p")
             break;
         case "h":
-            return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something..."><${inlineText}/h1>`, "h")
+            return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something...">${inlineText}</h1>`, "h")
             break;
         case "quote":
             return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something...">${inlineText}</p>`, "quote")
