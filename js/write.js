@@ -178,7 +178,6 @@ function createblog(){
     var blog = [];
     var blogTitle = blog.push(getItemJson(icerikDiv.children[0]));
     var blogTitlePhotoUrl = blog.push(getItemJson(icerikDiv.children[1]));
-    blog.push(getItemJson(icerikDiv.children[i]));
     for(var i = 2; icerikDiv.children.length > i; i++){
         blog.push(getItemJson(icerikDiv.children[i]));
     }
