@@ -28,6 +28,7 @@ function addEvent(x){
         }
         else if (evt.key === "Backspace" || evt.key === "Delete") {
             console.log(evt.target.textContent);
+            console.log(evt.target.parentElement.parentElement);
             if(evt.target.textContent == ""){
                 deleteElement(evt.target.parentElement.parentElement);
             }
@@ -41,9 +42,9 @@ function addEvent(x){
     })
 }
 
-addElementToEnd("img");
-addElementToEnd("h","Baslık");
-addElementToEnd("p","paragraf");
+addElementToEnd("img","",true);
+addElementToEnd("h","Baslık",true);
+addElementToEnd("p","paragraf",true);
 fixEvents();
 var max = -1;
 function fixEvents(){
@@ -91,46 +92,46 @@ function findNextElement(tagName){
     }
     return tagName;
 }
-function addElement(tagName,inlineText=""){
+function addElement(tagName,inlineText="", lock=false){
     switch(tagName){
         case "p":
-            return getDefualtElement(`<p contenteditable class="textbox" placeholder="Type something...">${inlineText}</p>`, "p")
+            return getDefualtElement(`<p contenteditable class="textbox" placeholder="Type something...">${inlineText}</p>`, "p", lock)
             break;
         case "h":
-            return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something...">${inlineText}</h1>`, "h")
+            return getDefualtElement(`<h1 contenteditable class="textbox title" placeholder="Type something...">${inlineText}</h1>`, "h", lock)
             break;
         case "quote":
-            return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something...">${inlineText}</p>`, "quote")
+            return getDefualtElement(`<p contenteditable class="textbox quote" placeholder="Type something...">${inlineText}</p>`, "quote", lock)
             break;
         case "a":
-            return getDefualtElement(`<a contenteditable class="textbox" spellcheck="false" placeholder="Type something...">${inlineText}</a>`, "a")
+            return getDefualtElement(`<a contenteditable class="textbox" spellcheck="false" placeholder="Type something...">${inlineText}</a>`, "a", lock)
             break;
         case "li":
         case "lı":
-            return getDefualtElement(`<li contenteditable class="textbox li" placeholder="Type something...">${inlineText}</li>`, "li")
+            return getDefualtElement(`<li contenteditable class="textbox li" placeholder="Type something...">${inlineText}</li>`, "li", lock)
             break;
         case "hr":
-            return getDefualtElement(`<hr>`, "hr")
+            return getDefualtElement(`<hr>`, "hr", lock)
             break;
         case "img":
         case "ımg":
             if(inlineText == ""){
                 inlineText = "https://api.atduyar.com/BlogImages/manzara.jpg";
             }
-            return getDefualtElement(`<img onerror="this.src='https://api.atduyar.com/ConstImage/errorImg.jpg';" src="https://api.atduyar.com/BlogImages/manzara.jpg"><p contenteditable class="textbox img" placeholder="Type some url...">${inlineText}</p>`, "img")
+            return getDefualtElement(`<img onerror="this.src='https://api.atduyar.com/ConstImage/errorImg.jpg';" src="https://api.atduyar.com/BlogImages/manzara.jpg"><p contenteditable class="textbox img" placeholder="Type some url...">${inlineText}</p>`, "img", lock)
             break;
         case "video":
         case "vıdeo":
             if(inlineText == ""){
                 inlineText = "https://www.youtube.com/embed/iik25wqIuFo";
             }
-            return getDefualtElement(`<iframe onerror="this.src='https://www.youtube.com/embed/iik25wqIuFo';" src="https://www.youtube.com/embed/iik25wqIuFo"></iframe><p contenteditable class="textbox video" placeholder="Type some url...">${inlineText}</p>`, "img")
+            return getDefualtElement(`<iframe onerror="this.src='https://www.youtube.com/embed/iik25wqIuFo';" src="https://www.youtube.com/embed/iik25wqIuFo"></iframe><p contenteditable class="textbox video" placeholder="Type some url...">${inlineText}</p>`, "img", lock)
             break;
     }
 }
 
-function addElementToEnd(tagName,inlineText=""){
-    icerikDiv.innerHTML += addElement(tagName,inlineText);
+function addElementToEnd(tagName, inlineText="", lock=false){
+    icerikDiv.innerHTML += addElement(tagName, inlineText, lock);
 }
 function addElementToNext(thisItem, tagName){
     thisItem.outerHTML += addElement(tagName.toLocaleLowerCase());//outerHTML brok this element event
@@ -274,7 +275,7 @@ function publishBlog(){
 
 //////////////
 
-function getDefualtElement(htl, itemTag){
+function getDefualtElement(htl, itemTag, lock=false){
     return `
     <div class="item" atdTag="${itemTag}">
         <div class="item-plus" onclick="openItemMenu(this.parentElement)">
@@ -313,10 +314,11 @@ function getDefualtElement(htl, itemTag){
                     <li onclick="addElementToNext(this.parentElement.parentElement.parentElement.parentElement, 'video')">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="163.861px" height="163.861px" viewBox="0 0 163.861 163.861" style="enable-background:new 0 0 163.861 163.861;" xml:space="preserve"><path d="M34.857,3.613C20.084-4.861,8.107,2.081,8.107,19.106v125.637c0,17.042,11.977,23.975,26.75,15.509L144.67,97.275   c14.778-8.477,14.778-22.211,0-30.686L34.857,3.613z"/></svg>
                     </li>
-                    <div class="vertical-line" style="transform: translateX(-4px);"></div> 
+                    ${lock ? "" : 
+                    `<div class="vertical-line" style="transform: translateX(-4px);"></div> 
                     <li onclick="deleteElement(this.parentElement.parentElement.parentElement.parentElement)">
                         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" style="&#10;    fill: red;&#10;"><g><path d="m424 64h-88v-16c0-26.467-21.533-48-48-48h-64c-26.467 0-48 21.533-48 48v16h-88c-22.056 0-40 17.944-40 40v56c0 8.836 7.164 16 16 16h8.744l13.823 290.283c1.221 25.636 22.281 45.717 47.945 45.717h242.976c25.665 0 46.725-20.081 47.945-45.717l13.823-290.283h8.744c8.836 0 16-7.164 16-16v-56c0-22.056-17.944-40-40-40zm-216-16c0-8.822 7.178-16 16-16h64c8.822 0 16 7.178 16 16v16h-96zm-128 56c0-4.411 3.589-8 8-8h336c4.411 0 8 3.589 8 8v40c-4.931 0-331.567 0-352 0zm313.469 360.761c-.407 8.545-7.427 15.239-15.981 15.239h-242.976c-8.555 0-15.575-6.694-15.981-15.239l-13.751-288.761h302.44z"/><path d="m256 448c8.836 0 16-7.164 16-16v-208c0-8.836-7.164-16-16-16s-16 7.164-16 16v208c0 8.836 7.163 16 16 16z"/><path d="m336 448c8.836 0 16-7.164 16-16v-208c0-8.836-7.164-16-16-16s-16 7.164-16 16v208c0 8.836 7.163 16 16 16z"/><path d="m176 448c8.836 0 16-7.164 16-16v-208c0-8.836-7.164-16-16-16s-16 7.164-16 16v208c0 8.836 7.163 16 16 16z"/></g></svg>
-                    </li>
+                    </li>`}
                 </ul>
             </div>
             <div class="fake-menu"></div>
