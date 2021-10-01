@@ -188,8 +188,12 @@ function createblog(){
     var bd = {
         "blogTitle": blogTitle.data,
         "blogTitlePhotoUrl": blogTitlePhotoUrl.data,
-        "blogContent":blog, "blogTags":[], 
-        "authorSummary":{"nickname":"Sen"}
+        "blogSummary": "",
+        "blogContent":blog,
+        "blogTags":[], 
+        "authorSummary":{"nickname":"Sen"},
+        "blogDate":new Date().toDateString(),
+        "blogId":0
     };
     document.getElementById("mobilView").contentWindow.setBlogDetail(bd);
 
