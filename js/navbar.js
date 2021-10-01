@@ -34,7 +34,7 @@ var apiNav = new ApiAuth;
 getUser()
 function getUser() {
     if(globalUser != undefined){
-        console.log(globalUser);
+        console.log(globalUser);//session'a al
         setUser(u);
         return;
     }
