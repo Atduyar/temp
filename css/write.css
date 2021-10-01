@@ -223,6 +223,7 @@ body{
 }
 #div-edit-menu{
     position: absolute;
+    overflow: hidden;
     top: 0;
     z-index: 10;
     right: 0;
@@ -231,7 +232,7 @@ body{
     max-width: 100%;
     background-color: #0f0e15;
     background: linear-gradient(90deg, rgba(12,11,17,1) 0%, rgba(15,14,21,1) 5%);
-    transition: right .5s;
+    transition: .5s;
 }
 .div-edit-menu-open{
     width: 414px!important;
