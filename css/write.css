@@ -202,7 +202,7 @@
 /* ///////////// */
 
 #div-icerik-menu{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     height: 48px;
@@ -218,11 +218,8 @@
     border-top-left-radius: 48px;
 }
 
-body{
-    overflow: hidden;
-}
 #div-edit-menu{
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     top: 0;
     z-index: 10;
