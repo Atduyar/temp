@@ -19,8 +19,7 @@ function closeNav() {
 
 }
 
-function setUser(u){
-    
+function setUserAuth(u){
     document.getElementById("mySidenav").getElementsByClassName("menu-items")[0].classList.add("auth");
     document.getElementById("nav-bar-menu").classList.add("auth");
 
@@ -35,14 +34,14 @@ getUser()
 function getUser() {
     if(globalUser != undefined){
         console.log(globalUser);//session'a al
-        setUser(u);
+        setUserAuth(u);
         return;
     }
     apiNav.resultFunction = (t) => { //token alırsan
         apiNav.resultFunction = (u) => { //kullanıcıyı alırsan
                 console.log(u);
                 globalUser = u;
-                setUser(u);
+                setUserAuth(u);
             }
         apiNav.GetMyProfil(t.token);
     };
